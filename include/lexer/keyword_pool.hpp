@@ -1,5 +1,5 @@
-#ifndef KEYWORD_POOL
-#define KEYWORD_POOL
+#ifndef KEYWORD_POOL_HPP
+#define KEYWORD_POOL_HPP
 
 #include "../token/keyword_type.hpp"
 #include <string>

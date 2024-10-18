@@ -3,7 +3,16 @@
 
 namespace mycompiler {
 
-enum class Operator_Type { PLUS, DIV, SUB, MUL, EQUAL, DOUBLE_EQUAL };
+enum class Operator_Type {
+  PLUS,
+  DIV,
+  SUB,
+  MUL,
+  EQUAL,
+  DOUBLE_EQUAL,
+  NOT_EQUAL,
+  HAT // ^
+};
 
 class Operator {
 public:

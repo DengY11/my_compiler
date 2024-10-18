@@ -34,6 +34,14 @@ auto Lexer::is_keyword(std::string &word) -> bool {
   return this->keyword_pool_.find(word);
 }
 
+auto Lexer::is_operator(std::string &word) -> bool {
+  return this->operator_pool_.find(word);
+}
+
+auto Lexer::is_separator(std::string &word) -> bool {
+  return this->separator_pool_.find(word);
+}
+
 auto Lexer::getNextToken() -> mycompiler::Token {
   this->skipWhitespace();
 
@@ -67,14 +75,14 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   if (std::isalpha(current)) {
     // 字母开头，有可能是关键字，IDENT,
     bool have_underline = false;
-    std::string alphaStr(1, current);
+    std::string alphaStr;
     while (!this->is_end() && (is_keyword_type(this->peekChar()) ||
                                is_indent_type(this->peekChar()))) {
 
       if (peekChar() == '_') {
         have_underline = true;
       }
-      alphaStr += peekChar();
+      alphaStr += this->advanceChar();
     }
     if (have_underline) {
       return make_identifier_token(alphaStr);
@@ -83,7 +91,29 @@ auto Lexer::getNextToken() -> mycompiler::Token {
     }
     return make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE::ILLEGAL);
   }
-  // TODO:还有啥分隔符，符号开头之类的
+
+  if (mycompiler::is_operator_type(current)) {
+    std::string operatorStr;
+    while (!this->is_end() && is_operator_type(this->peekChar())) {
+      operatorStr += this->advanceChar();
+    }
+    if (this->is_operator(operatorStr)) {
+      return make_operator_token(get_operator_type_from_string(operatorStr));
+    }
+    throw std::runtime_error("operator: " + operatorStr + " illegal!");
+  }
+
+  if (mycompiler::is_separator_type(current)) {
+    std::string separatorStr;
+    while (!this->is_end() && is_separator_type(this->peekChar())) {
+      separatorStr += this->advanceChar();
+    }
+    if (this->is_separator(separatorStr)) {
+      return make_separator_token(separatorStr);
+    }
+    throw std::runtime_error("separator " + separatorStr + " illegal!");
+  }
+  // TODO:我不确定这里是否把token的种类全部枚举完了
 }
 
 } // namespace mycompiler

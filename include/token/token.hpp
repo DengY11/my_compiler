@@ -39,6 +39,8 @@ public:
 
   void print_info();
 
+  auto get_token_type() const -> TokenType;
+
 private:
   TokenType token_type_;
   TokenValueType token_value_;

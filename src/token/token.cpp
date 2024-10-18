@@ -27,6 +27,8 @@ Token::Token(TokenType Separator_type, mycompiler::Separator token_value)
 Token::Token(TokenType Preprocessor_type, mycompiler::Preprocessor token_value)
     : token_type_(Preprocessor_type), token_value_(token_value) {}
 
+auto Token::get_token_type() const -> TokenType { return this->token_type_; }
+
 auto make_constant_token(int value) -> Token {
   return Token(TokenType::CONSTANT, Constant(static_cast<int>(value)));
 }
@@ -124,6 +126,9 @@ void Token::print_info() {
     case mycompiler::Keyword_Type::FOR:
       std::cout << "FOR" << std::endl;
       break;
+    case mycompiler::Keyword_Type::RETURN:
+      std::cout << "RETURN" << std::endl;
+      break;
     }
     break;
 
@@ -144,8 +149,13 @@ void Token::print_info() {
       break;
     case mycompiler::Operator_Type::EQUAL:
       std::cout << "EQUAL" << std::endl;
+      break;
     case mycompiler::Operator_Type::DOUBLE_EQUAL:
       std::cout << "DOUBLE_EQUAL" << std::endl;
+      break;
+    case mycompiler::Operator_Type::NOT_EQUAL:
+      std::cout << "NOT_EQUAL" << std::endl;
+      break;
     }
     break;
 
