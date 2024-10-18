@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyCompilerLib.a CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o
+/usr/bin/ranlib libMyCompilerLib.a

@@ -12,6 +12,7 @@ class Lexer {
 public:
   Lexer(const std::string &input);
   auto getNextToken() -> Token;
+  void print_source();
 
 private:
   std::string input_;

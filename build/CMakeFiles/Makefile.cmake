@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/dylan/code/new_expr/CMakeLists.txt"
+  "/home/dylan/code/my_compiler/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/dylan/code/new_expr/test/token/CMakeLists.txt"
+  "/home/dylan/code/my_compiler/test/lexer/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
@@ -123,11 +123,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/token/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/lexer/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/token_lib.dir/DependInfo.cmake"
-  "test/token/CMakeFiles/test_token.dir/DependInfo.cmake"
+  "CMakeFiles/MyCompilerLib.dir/DependInfo.cmake"
+  "test/lexer/CMakeFiles/TestLexer.dir/DependInfo.cmake"
   )

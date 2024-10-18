@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dylan/code/new_expr
+CMAKE_SOURCE_DIR = /home/dylan/code/my_compiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dylan/code/new_expr/build
+CMAKE_BINARY_DIR = /home/dylan/code/my_compiler/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/new_expr/build/CMakeFiles /home/dylan/code/new_expr/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles /home/dylan/code/my_compiler/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/new_expr/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,37 +117,181 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named token_lib
+# Target rules for targets named MyCompilerLib
 
 # Build rule for target.
-token_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 token_lib
-.PHONY : token_lib
+MyCompilerLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyCompilerLib
+.PHONY : MyCompilerLib
 
 # fast build rule for target.
-token_lib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/token_lib.dir/build.make CMakeFiles/token_lib.dir/build
-.PHONY : token_lib/fast
+MyCompilerLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/build
+.PHONY : MyCompilerLib/fast
 
 #=============================================================================
-# Target rules for targets named test_token
+# Target rules for targets named TestLexer
 
 # Build rule for target.
-test_token: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_token
-.PHONY : test_token
+TestLexer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestLexer
+.PHONY : TestLexer
 
 # fast build rule for target.
-test_token/fast:
-	$(MAKE) $(MAKESILENT) -f test/token/CMakeFiles/test_token.dir/build.make test/token/CMakeFiles/test_token.dir/build
-.PHONY : test_token/fast
+TestLexer/fast:
+	$(MAKE) $(MAKESILENT) -f test/lexer/CMakeFiles/TestLexer.dir/build.make test/lexer/CMakeFiles/TestLexer.dir/build
+.PHONY : TestLexer/fast
+
+src/file_reader/reader.o: src/file_reader/reader.cpp.o
+.PHONY : src/file_reader/reader.o
+
+# target to build an object file
+src/file_reader/reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o
+.PHONY : src/file_reader/reader.cpp.o
+
+src/file_reader/reader.i: src/file_reader/reader.cpp.i
+.PHONY : src/file_reader/reader.i
+
+# target to preprocess a source file
+src/file_reader/reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.i
+.PHONY : src/file_reader/reader.cpp.i
+
+src/file_reader/reader.s: src/file_reader/reader.cpp.s
+.PHONY : src/file_reader/reader.s
+
+# target to generate assembly for a file
+src/file_reader/reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.s
+.PHONY : src/file_reader/reader.cpp.s
+
+src/lexer/keyword_pool.o: src/lexer/keyword_pool.cpp.o
+.PHONY : src/lexer/keyword_pool.o
+
+# target to build an object file
+src/lexer/keyword_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o
+.PHONY : src/lexer/keyword_pool.cpp.o
+
+src/lexer/keyword_pool.i: src/lexer/keyword_pool.cpp.i
+.PHONY : src/lexer/keyword_pool.i
+
+# target to preprocess a source file
+src/lexer/keyword_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.i
+.PHONY : src/lexer/keyword_pool.cpp.i
+
+src/lexer/keyword_pool.s: src/lexer/keyword_pool.cpp.s
+.PHONY : src/lexer/keyword_pool.s
+
+# target to generate assembly for a file
+src/lexer/keyword_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.s
+.PHONY : src/lexer/keyword_pool.cpp.s
+
+src/lexer/lexer.o: src/lexer/lexer.cpp.o
+.PHONY : src/lexer/lexer.o
+
+# target to build an object file
+src/lexer/lexer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o
+.PHONY : src/lexer/lexer.cpp.o
+
+src/lexer/lexer.i: src/lexer/lexer.cpp.i
+.PHONY : src/lexer/lexer.i
+
+# target to preprocess a source file
+src/lexer/lexer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.i
+.PHONY : src/lexer/lexer.cpp.i
+
+src/lexer/lexer.s: src/lexer/lexer.cpp.s
+.PHONY : src/lexer/lexer.s
+
+# target to generate assembly for a file
+src/lexer/lexer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.s
+.PHONY : src/lexer/lexer.cpp.s
+
+src/lexer/lexer_helper_functions.o: src/lexer/lexer_helper_functions.cpp.o
+.PHONY : src/lexer/lexer_helper_functions.o
+
+# target to build an object file
+src/lexer/lexer_helper_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o
+.PHONY : src/lexer/lexer_helper_functions.cpp.o
+
+src/lexer/lexer_helper_functions.i: src/lexer/lexer_helper_functions.cpp.i
+.PHONY : src/lexer/lexer_helper_functions.i
+
+# target to preprocess a source file
+src/lexer/lexer_helper_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.i
+.PHONY : src/lexer/lexer_helper_functions.cpp.i
+
+src/lexer/lexer_helper_functions.s: src/lexer/lexer_helper_functions.cpp.s
+.PHONY : src/lexer/lexer_helper_functions.s
+
+# target to generate assembly for a file
+src/lexer/lexer_helper_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.s
+.PHONY : src/lexer/lexer_helper_functions.cpp.s
+
+src/lexer/operator_pool.o: src/lexer/operator_pool.cpp.o
+.PHONY : src/lexer/operator_pool.o
+
+# target to build an object file
+src/lexer/operator_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o
+.PHONY : src/lexer/operator_pool.cpp.o
+
+src/lexer/operator_pool.i: src/lexer/operator_pool.cpp.i
+.PHONY : src/lexer/operator_pool.i
+
+# target to preprocess a source file
+src/lexer/operator_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.i
+.PHONY : src/lexer/operator_pool.cpp.i
+
+src/lexer/operator_pool.s: src/lexer/operator_pool.cpp.s
+.PHONY : src/lexer/operator_pool.s
+
+# target to generate assembly for a file
+src/lexer/operator_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.s
+.PHONY : src/lexer/operator_pool.cpp.s
+
+src/lexer/separator_pool.o: src/lexer/separator_pool.cpp.o
+.PHONY : src/lexer/separator_pool.o
+
+# target to build an object file
+src/lexer/separator_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o
+.PHONY : src/lexer/separator_pool.cpp.o
+
+src/lexer/separator_pool.i: src/lexer/separator_pool.cpp.i
+.PHONY : src/lexer/separator_pool.i
+
+# target to preprocess a source file
+src/lexer/separator_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.i
+.PHONY : src/lexer/separator_pool.cpp.i
+
+src/lexer/separator_pool.s: src/lexer/separator_pool.cpp.s
+.PHONY : src/lexer/separator_pool.s
+
+# target to generate assembly for a file
+src/lexer/separator_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.s
+.PHONY : src/lexer/separator_pool.cpp.s
 
 src/token/token.o: src/token/token.cpp.o
 .PHONY : src/token/token.o
 
 # target to build an object file
 src/token/token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/token_lib.dir/build.make CMakeFiles/token_lib.dir/src/token/token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o
 .PHONY : src/token/token.cpp.o
 
 src/token/token.i: src/token/token.cpp.i
@@ -155,7 +299,7 @@ src/token/token.i: src/token/token.cpp.i
 
 # target to preprocess a source file
 src/token/token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/token_lib.dir/build.make CMakeFiles/token_lib.dir/src/token/token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.i
 .PHONY : src/token/token.cpp.i
 
 src/token/token.s: src/token/token.cpp.s
@@ -163,7 +307,7 @@ src/token/token.s: src/token/token.cpp.s
 
 # target to generate assembly for a file
 src/token/token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/token_lib.dir/build.make CMakeFiles/token_lib.dir/src/token/token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.s
 .PHONY : src/token/token.cpp.s
 
 # Help Target
@@ -174,8 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_token"
-	@echo "... token_lib"
+	@echo "... MyCompilerLib"
+	@echo "... TestLexer"
+	@echo "... src/file_reader/reader.o"
+	@echo "... src/file_reader/reader.i"
+	@echo "... src/file_reader/reader.s"
+	@echo "... src/lexer/keyword_pool.o"
+	@echo "... src/lexer/keyword_pool.i"
+	@echo "... src/lexer/keyword_pool.s"
+	@echo "... src/lexer/lexer.o"
+	@echo "... src/lexer/lexer.i"
+	@echo "... src/lexer/lexer.s"
+	@echo "... src/lexer/lexer_helper_functions.o"
+	@echo "... src/lexer/lexer_helper_functions.i"
+	@echo "... src/lexer/lexer_helper_functions.s"
+	@echo "... src/lexer/operator_pool.o"
+	@echo "... src/lexer/operator_pool.i"
+	@echo "... src/lexer/operator_pool.s"
+	@echo "... src/lexer/separator_pool.o"
+	@echo "... src/lexer/separator_pool.i"
+	@echo "... src/lexer/separator_pool.s"
 	@echo "... src/token/token.o"
 	@echo "... src/token/token.i"
 	@echo "... src/token/token.s"

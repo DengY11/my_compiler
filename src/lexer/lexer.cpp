@@ -10,6 +10,10 @@ Lexer::Lexer(const std::string &input) : input_(input), index_(0) {}
 
 auto Lexer::is_end() -> bool { return this->index_ >= input_.length(); }
 
+void Lexer::print_source() {
+  std::cout << "source: " + this->input_ << std::endl;
+}
+
 void Lexer::skipWhitespace() {
   while (!this->is_end() && std::isspace(this->input_[index_])) {
     ++index_;
@@ -52,7 +56,8 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   char current = this->advanceChar();
 
   if (std::isdigit(current)) {
-    std::string numberStr(1, current);
+    std::cout << "getNextToken digit" << std::endl;
+    std::string numberStr;
     size_t number_of_dot = 0;
     while (!this->is_end() && is_constant_number_type(this->peekChar())) {
       if (peekChar() == '.') {
@@ -73,6 +78,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   }
 
   if (std::isalpha(current)) {
+    std::cout << "getNextToken alpha" << std::endl;
     // 字母开头，有可能是关键字，IDENT,
     bool have_underline = false;
     std::string alphaStr;
@@ -89,10 +95,11 @@ auto Lexer::getNextToken() -> mycompiler::Token {
     } else if (is_keyword(alphaStr)) {
       return make_keyword_token(get_keyword_type_from_string(alphaStr));
     }
-    return make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE::ILLEGAL);
+    return make_identifier_token(alphaStr);
   }
 
   if (mycompiler::is_operator_type(current)) {
+    std::cout << "getNextToken operator" << std::endl;
     std::string operatorStr;
     while (!this->is_end() && is_operator_type(this->peekChar())) {
       operatorStr += this->advanceChar();
@@ -104,6 +111,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   }
 
   if (mycompiler::is_separator_type(current)) {
+    std::cout << "getNextToken separator" << std::endl;
     std::string separatorStr;
     while (!this->is_end() && is_separator_type(this->peekChar())) {
       separatorStr += this->advanceChar();
