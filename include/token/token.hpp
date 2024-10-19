@@ -26,6 +26,8 @@ class Token {
 public:
   Token() = delete;
 
+  Token(const Token &other) = default;
+
   Token(Token &&other) = default;
 
   Token(TokenType Constant_type, mycompiler::Constant token_value);
@@ -36,6 +38,8 @@ public:
   Token(TokenType eof_or_illegal_type, mycompiler::EOF_OR_ILLEGAL token_value);
   Token(TokenType Separator_type, mycompiler::Separator token_value);
   Token(TokenType Preprocessor_type, mycompiler::Preprocessor token_value);
+
+  auto operator=(const Token &other) -> void; // TODO:
 
   void print_info();
 

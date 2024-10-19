@@ -156,6 +156,9 @@ void Token::print_info() {
     case mycompiler::Operator_Type::NOT_EQUAL:
       std::cout << "NOT_EQUAL" << std::endl;
       break;
+    case mycompiler::Operator_Type::HAT:
+      std::cout << "HAT" << std::endl;
+      break;
     }
     break;
 
@@ -175,6 +178,11 @@ void Token::print_info() {
     std::cout << std::get<mycompiler::Comment>(this->token_value_).value_
               << std::endl;
   }
+}
+
+auto Token::operator=(const Token &other) -> void {
+  this->token_type_ = other.token_type_;
+  this->token_value_ = other.token_value_;
 }
 
 } // namespace mycompiler
