@@ -67,7 +67,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   char current = this->advanceChar();
 
   if (std::isdigit(current)) {
-    // std::cout << "getNextToken digit" << std::endl;
+    std::cout << "getNextToken digit" << std::endl;
     std::string numberStr(1, current);
     size_t number_of_dot = 0;
     while (!this->is_end() && is_constant_number_type(this->peekChar())) {
@@ -94,7 +94,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   }
 
   if (std::isalpha(current)) {
-    // std::cout << "getNextToken alpha" << std::endl;
+    std::cout << "getNextToken alpha" << std::endl;
     //  字母开头，有可能是关键字，IDENT,
     bool have_underline = false;
     std::string alphaStr(1, current);
@@ -118,7 +118,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   }
 
   if (mycompiler::is_operator_type(current)) {
-    // std::cout << "getNextToken operator" << std::endl;
+    std::cout << "getNextToken operator" << std::endl;
     std::string operatorStr(1, current);
     while (!this->is_end() && is_operator_type(this->peekChar())) {
       operatorStr += this->advanceChar();
@@ -132,9 +132,10 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   }
 
   if (mycompiler::is_separator_type(current)) {
-    // std::cout << "getNextToken separator" << std::endl;
+    std::cout << "getNextToken separator" << std::endl;
     std::string separatorStr(1, current);
-    while (!this->is_end() && is_separator_type(this->peekChar())) {
+    while (!this->is_end() && is_separator_type(this->peekChar()) &&
+           separator_can_combine(separatorStr, this->peekChar())) {
       separatorStr += this->advanceChar();
     }
     if (this->is_separator(separatorStr)) {

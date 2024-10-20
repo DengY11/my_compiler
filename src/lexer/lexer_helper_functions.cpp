@@ -25,4 +25,14 @@ auto is_separator_type(char ch) -> bool {
           ch == ']' || ch == ',' || ch == ';' || ch == '"');
 }
 
+auto separator_can_combine(std::string &pre, char cur) -> bool {
+  if (pre[pre.length() - 1] == '[' && cur == '[') {
+    return true;
+  }
+  if (pre[pre.length() - 1] == ']' && cur == ']') {
+    return true;
+  }
+  return false;
+}
+
 } // namespace mycompiler

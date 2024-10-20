@@ -1,10 +1,10 @@
+#include "../../include/file_reader/reader.hpp"
 #include "../../include/lexer/lexer.hpp"
 #include <string>
 
 auto main() -> int {
-
   std::string code =
-      "let a = 100 ; let func = function ( a , b ) { return a + b + 53.4 } ?";
+      "let a = 1;let b = 114514.114;let func = function(a,b){return a+b;}; ?";
   std::cout << "source length:";
   std::cout << code.length() << std::endl;
   mycompiler::Lexer lexer(code);

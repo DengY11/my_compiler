@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/TestLexer.dir/test_lexer.cpp.o -o TestLexer  ../../libMyCompilerLib.a 
