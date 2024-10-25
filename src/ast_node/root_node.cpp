@@ -3,7 +3,7 @@
 
 namespace mycompiler {
 
-RootNode::RootNode() : BasicNode() {
+RootNode::RootNode(std::shared_ptr<Lexer> lexer) : BasicNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::ROOT;
 }
 

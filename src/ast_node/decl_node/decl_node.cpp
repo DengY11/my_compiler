@@ -2,12 +2,12 @@
 
 namespace mycompiler {
 
-DeclNode::DeclNode() : BasicNode() {
+DeclNode::DeclNode(std::shared_ptr<Lexer> lexer) : BasicNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::DECL;
 }
 
 void DeclNode::print_info() {
-  std::cout << "Node type: BASIC_DELC" << std::endl;
+  std::cout << "Node type: DELC" << std::endl;
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });

@@ -4,7 +4,8 @@
 
 namespace mycompiler {
 
-BasicNode::BasicNode() : ast_node_type_(mycompiler::AST_NODE_TYPE::BASIC) {}
+BasicNode::BasicNode(std::shared_ptr<Lexer> lexer)
+    : ast_node_type_(mycompiler::AST_NODE_TYPE::BASIC), lexer_(lexer) {}
 
 void BasicNode::print_info() {
   std::cout << "Node type: BASIC" << std::endl;

@@ -1,12 +1,13 @@
-#ifndef DELC_NODE_HPP
-#define DELC_NODE_HPP
+#ifndef EXPR_NODE_HPP
+#define EXPR_NODE_HPP
 #include "../basic_node.hpp"
+#include <memory>
 
 namespace mycompiler {
 
-class DeclNode : public BasicNode {
+class ExprNode : public BasicNode {
 public:
-  DeclNode(std::shared_ptr<Lexer> lexer);
+  ExprNode(std::shared_ptr<Lexer> lexer);
 
   virtual void print_info() override;
 

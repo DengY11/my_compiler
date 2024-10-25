@@ -1,15 +1,16 @@
 #ifndef FUNCTION_DECL_NODE_HPP
 #define FUNCTION_DECL_NODE_HPP
 #include "./decl_node.hpp"
+#include <memory>
 
 namespace mycompiler {
 
 class FuncDeclNode : DeclNode {
 public:
-  FuncDeclNode();
-  virtual void print_info() final;
+  FuncDeclNode(std::shared_ptr<Lexer> lexer);
+  virtual void print_info() override final;
 
-  auto Parse() -> ChildPtr; // TODO:
+  virtual void Parse() override final; // TODO:
 
 private:
   // TODO:

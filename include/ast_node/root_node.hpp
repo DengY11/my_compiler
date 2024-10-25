@@ -6,9 +6,11 @@ namespace mycompiler {
 
 class RootNode : public BasicNode {
 public:
-  RootNode();
+  RootNode(std::shared_ptr<Lexer> lexer);
 
   virtual void print_info() override;
+
+  virtual void Parse() override; // TODO:
 };
 
 } // namespace mycompiler

@@ -1,13 +1,14 @@
-#ifndef VARIABLE_DECL_NODE_HPP
-#define VARIABLE_DECL_NODE_HPP
-#include "./decl_node.hpp"
+#ifndef BINARY_EXPR_NODE_HPP
+#define BINARY_EXPR_NODE_HPP
+#include "./expr_node.hpp"
 #include <memory>
 
 namespace mycompiler {
 
-class VarDeclNode : public DeclNode {
+class BinaryExprNode : public ExprNode {
+
 public:
-  VarDeclNode(std::shared_ptr<Lexer> lexer);
+  BinaryExprNode(std::shared_ptr<Lexer> lexer);
 
   virtual void print_info() override final;
 

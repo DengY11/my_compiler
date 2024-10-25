@@ -1,8 +1,9 @@
 #include "../../../include/ast_node/decl_node/function_decl_node.hpp"
+#include <memory>
 
 namespace mycompiler {
 
-FuncDeclNode::FuncDeclNode() : DeclNode() {
+FuncDeclNode::FuncDeclNode(std::shared_ptr<Lexer> lexer) : DeclNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::FUNCTION_DECL;
 }
 

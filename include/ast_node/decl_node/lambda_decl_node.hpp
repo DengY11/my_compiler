@@ -1,16 +1,17 @@
 #ifndef LAMBDA_DECL_NODE_HPP
 #define LAMBDA_DECL_NODE_HPP
 #include "./decl_node.hpp"
+#include <memory>
 
 namespace mycompiler {
 
 class LambdaDeclNode : public DeclNode {
 public:
-  LambdaDeclNode();
+  LambdaDeclNode(std::shared_ptr<Lexer> lexer);
 
-  virtual void print_info() final;
+  virtual void print_info() override final;
 
-  auto parse() -> ChildPtr;
+  virtual void Parse() override final; // TODO:
 
 private:
 };
