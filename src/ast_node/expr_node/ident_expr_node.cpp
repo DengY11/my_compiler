@@ -1,4 +1,5 @@
 #include "../../../include/ast_node/expr_node/ident_expr_node.hpp"
+#include "../terminal_symbols/terminal_ident_literal.cpp"
 #include <memory>
 
 namespace mycompiler {
@@ -13,6 +14,13 @@ auto IdentifierExprNode::print_info() -> void {
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });
+}
+
+auto IdentifierExprNode::Parse() -> void {
+  Token token = this->lexer_->getCurrentToken();
+  auto child_ident_literal = std::make_shared<TerminalIdentLiteral>();
+  child_ident_literal->Parse();
+  this->children_.push_back(child_ident_literal);
 }
 
 } // namespace mycompiler

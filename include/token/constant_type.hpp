@@ -5,22 +5,12 @@
 
 namespace mycompiler {
 
-enum ConstantType {
-
-  INT,
-  FLOAT,
-  STRING
-
-};
-
 class Constant {
 public:
-  Constant(int value) : value_(value), type_(ConstantType::INT) {}
-  Constant(double value) : value_(value), type_(ConstantType::FLOAT) {}
-  Constant(std::string value) : value_(value), type_(ConstantType::STRING) {}
+  Constant(std::string value) : value_(value) {}
 
-  std::variant<int, double, std::string> value_;
-  mycompiler::ConstantType type_;
+  std::string value_;
+  // TODO::先全部用string存值，到语义分析再将string转化为int doule之类的
 };
 
 } // namespace mycompiler

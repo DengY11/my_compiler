@@ -33,7 +33,10 @@ enum class AST_NODE_TYPE {
   TENARY_EXPR,
 
   // terminal
-  LET
+  LET,
+  EQUAL,
+  IDENT_LITERAL,
+  VALUE_LITERAL
 };
 
 }

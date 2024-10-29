@@ -9,7 +9,7 @@ TerminalLet::TerminalLet(std::shared_ptr<Lexer> lexer) : BasicNode(lexer) {
 }
 
 void TerminalLet::print_info() {
-  std::cout << "Node type: DELC" << std::endl;
+  std::cout << "Node type: LET" << std::endl;
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });

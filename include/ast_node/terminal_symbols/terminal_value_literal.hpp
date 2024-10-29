@@ -1,18 +1,19 @@
-#ifndef TERMINAL_LET_HPP
-#define TERMINAL_LET_HPP
-
+#ifndef TERMINAL_VALUE_LITERAL_HPP
+#define TERMINAL_VALUE_LITERAL_HPP
 #include "../basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {
 
-class TerminalLet : public BasicNode {
+class TerminalValueLiteral : public BasicNode {
 public:
-  TerminalLet(std::shared_ptr<Lexer> lexer);
+  TerminalValueLiteral(std::shared_ptr<Lexer> lexer);
 
   virtual void print_info() override final;
 
   virtual void Parse() override final;
+
+  std::string literal_;
 };
 
 } // namespace mycompiler

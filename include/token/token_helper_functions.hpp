@@ -18,6 +18,12 @@ namespace mycompiler {
 
 auto get_keyword_type_from_token_class(Token token) -> Keyword_Type;
 
+auto get_operator_type_from_token_class(Token token) -> Operator_Type;
+
+auto get_ident_literal_type_from_token_class(Token token) -> std::string;
+
+auto get_value_literal_type_from_token_class(Token token) -> std::string;
+
 // TODO:
 
 } // namespace mycompiler

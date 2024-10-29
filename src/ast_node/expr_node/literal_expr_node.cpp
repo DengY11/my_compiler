@@ -1,4 +1,5 @@
 #include "../../../include/ast_node/expr_node/literal_expr_node.hpp"
+#include "../../../include/ast_node/terminal_symbols/terminal_value_literal.hpp"
 #include <memory>
 
 namespace mycompiler {
@@ -15,4 +16,10 @@ void LiteralExprNode::print_info() {
                 [](ChildPtr child) { child->print_info(); });
 }
 
+void LiteralExprNode::Parse() {
+  Token token = this->lexer_->getCurrentToken();
+  auto child_value_literal = std::make_shared<TerminalValueLiteral>();
+  child_value_literal->Parse();
+  this->children_.push_back(child_value_literal);
+}
 } // namespace mycompiler
