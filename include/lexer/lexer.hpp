@@ -1,6 +1,7 @@
 #ifndef LEXER_HPP
 #define LEXER_HPP
 #include "../token/token.hpp"
+#include "../token/token_helper_functions.hpp"
 #include "./keyword_pool.hpp"
 #include "./operator_pool.hpp"
 #include "./separator_pool.hpp"

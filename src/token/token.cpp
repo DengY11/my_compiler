@@ -29,6 +29,10 @@ Token::Token(TokenType Preprocessor_type, mycompiler::Preprocessor token_value)
 
 auto Token::get_token_type() const -> TokenType { return this->token_type_; }
 
+auto Token::get_token_value() const -> TokenValueType {
+  return this->token_value_;
+}
+
 auto make_constant_token(int value) -> Token {
   return Token(TokenType::CONSTANT, Constant(static_cast<int>(value)));
 }

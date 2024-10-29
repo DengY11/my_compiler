@@ -10,7 +10,7 @@ public:
 
   virtual void print_info() override;
 
-  virtual void Parse() override; // TODO:
+  virtual void Parse() override = 0; // TODO:
 };
 
 } // namespace mycompiler

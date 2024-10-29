@@ -30,8 +30,10 @@ enum class AST_NODE_TYPE {
   LITERAL_EXPR,
   IDENTIFIER_EXPR,
   GROUPING_EXPR,
-  TENARY_EXPR
+  TENARY_EXPR,
 
+  // terminal
+  LET
 };
 
 }
