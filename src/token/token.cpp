@@ -1,4 +1,6 @@
 #include "../../include/token/token.hpp"
+#include "../../include/token/token_helper_functions.hpp"
+#include <string>
 
 namespace mycompiler {
 
@@ -34,10 +36,10 @@ auto Token::get_token_value() const -> TokenValueType {
 }
 
 auto make_constant_token(int value) -> Token {
-  return Token(TokenType::CONSTANT, Constant(static_cast<int>(value)));
+  return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
 }
 auto make_constant_token(double value) -> Token {
-  return Token(TokenType::CONSTANT, Constant(static_cast<double>(value)));
+  return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
 }
 auto make_constant_token(std::string value) -> Token {
   return Token(TokenType::CONSTANT, Constant(static_cast<std::string>(value)));
@@ -95,21 +97,8 @@ void Token::print_info() {
 
   case TokenType::CONSTANT:
     std::cout << "CONSTANT, TokenValue: ";
-    if (std::get<mycompiler::Constant>(this->token_value_).type_ ==
-        ConstantType::INT) {
-      std::cout << std::get<int>(std::get<Constant>(this->token_value_).value_)
-                << std::endl;
-    } else if (std::get<mycompiler::Constant>(this->token_value_).type_ ==
-               ConstantType::FLOAT) {
-      std::cout << std::get<double>(
-                       std::get<Constant>(this->token_value_).value_)
-                << std::endl;
-    } else if (std::get<mycompiler::Constant>(this->token_value_).type_ ==
-               ConstantType::STRING) {
-      std::cout << std::get<std::string>(
-                       std::get<Constant>(this->token_value_).value_)
-                << std::endl;
-    }
+    std::cout << get_value_literal_type_from_token_class(*this);
+
     break;
 
   case TokenType::KEYWORD:

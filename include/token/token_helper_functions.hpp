@@ -16,13 +16,20 @@
 
 namespace mycompiler {
 
-auto get_keyword_type_from_token_class(Token token) -> Keyword_Type;
+auto get_keyword_type_from_token_class(const Token &token)
+    -> Keyword_Type const;
 
-auto get_operator_type_from_token_class(Token token) -> Operator_Type;
+auto get_operator_type_from_token_class(const Token &token)
+    -> Operator_Type const;
 
-auto get_ident_literal_type_from_token_class(Token token) -> std::string;
+auto get_ident_literal_type_from_token_class(const Token &token)
+    -> std::string const;
 
-auto get_value_literal_type_from_token_class(Token token) -> std::string;
+auto get_value_literal_type_from_token_class(const Token &token)
+    -> std::string const;
+
+auto get_separator_type_from_token_class(const Token &token)
+    -> std::string const;
 
 // TODO:
 

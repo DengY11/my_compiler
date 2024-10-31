@@ -16,6 +16,7 @@ public:
   auto getNextToken() -> Token;
   auto getCurrentToken() const -> Token;
   auto getCurrentIndex() const -> std::size_t;
+  auto lookNextChar() -> char; // dont move
 
   void print_source();
 

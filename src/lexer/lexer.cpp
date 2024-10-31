@@ -19,6 +19,14 @@ void Lexer::print_source() {
 
 auto Lexer::getCurrentIndex() const -> size_t { return this->index_; }
 
+auto Lexer::lookNextChar() -> char {
+  int nextIndex = ++index_;
+  if (nextIndex >= this->input_.length()) {
+    return '\0';
+  }
+  return input_[nextIndex];
+}
+
 void Lexer::skipWhitespace() {
   if (this->index_ >= this->input_.length() - 1) {
     ++index_;
@@ -60,7 +68,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
   // std::cout << "current index: ";
   // std::cout << this->getCurrentIndex() << std::endl;
 
-  if (is_end()) {
+  if (is_end() || peekChar() == '\0') {
     return make_eof_or_illegal_token(mycompiler::EOF_OR_ILLEGAL_TYPE::EOF_);
   }
 

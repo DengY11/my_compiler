@@ -2,6 +2,7 @@
 #include "../../../include/ast_node/expr_node/ident_expr_node.hpp"
 #include "../../../include/ast_node/expr_node/literal_expr_node.hpp"
 #include "../../../include/ast_node/terminal_symbols/terminal_equal.hpp"
+#include "../../../include/ast_node/terminal_symbols/terminal_ident_literal.hpp"
 #include "../../../include/ast_node/terminal_symbols/terminal_let.hpp"
 #include "../terminal_symbols/terminal_let.cpp"
 #include <memory>
@@ -30,7 +31,7 @@ void VarDeclNode::Parse() {
 
   this->lexer_->getNextToken();
 
-  auto child_identifier = std::make_shared<IdentifierExprNode>(this->lexer_);
+  auto child_identifier = std::make_shared<TerminalIdentLiteral>(this->lexer_);
   child_identifier->Parse();
   this->children_.push_back(child_identifier);
 
