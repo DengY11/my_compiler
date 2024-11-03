@@ -4,6 +4,7 @@
 #include "../../../include/ast_node/terminal_symbols/terminal_equal.hpp"
 #include "../../../include/ast_node/terminal_symbols/terminal_ident_literal.hpp"
 #include "../../../include/ast_node/terminal_symbols/terminal_let.hpp"
+#include "../../../include/ast_node/terminal_symbols/terminal_separator.hpp"
 #include "../terminal_symbols/terminal_let.cpp"
 #include <memory>
 #include <stdexcept>
@@ -21,6 +22,7 @@ void VarDeclNode::print_info() {
 }
 
 void VarDeclNode::Parse() {
+  // let ident = expr;
   Token &&token = this->lexer_->getCurrentToken();
   if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
     throw std::runtime_error("illegal token or end of file");
@@ -46,6 +48,17 @@ void VarDeclNode::Parse() {
   auto child_value = std::make_shared<LiteralExprNode>(this->lexer_);
   child_value->Parse();
   this->children_.push_back(child_value);
+
+  this->lexer_->getNextToken();
+
+  auto child_semicolon = std::make_shared<TerminalSeparator>(this->lexer_);
+  child_semicolon->Parse();
+  if (child_semicolon->separator_ != ";") {
+    throw std::runtime_error("expect ;");
+  }
+  this->children_.push_back(child_semicolon);
+
+  // 卧槽，写了一周终于写完了
 }
 
 } // namespace mycompiler
