@@ -1,4 +1,4 @@
-#include "../../../include/ast_node/terminal_symbols/terminal_equal.hpp"
+#include "ast_node/terminal_symbols/terminal_equal.hpp"
 #include <memory>
 #include <stdexcept>
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestToken.dir/test_token.cpp.o -o TestToken  ../../libMyCompilerLib.a 

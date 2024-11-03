@@ -1,6 +1,6 @@
 #ifndef TERMINAL_EQUAL_HPP
 #define TERMINAL_EQUAL_HPP
-#include "../basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {

@@ -1,4 +1,4 @@
-#include "../../include/lexer/separator_pool.hpp"
+#include "lexer/separator_pool.hpp"
 
 namespace mycompiler {
 

@@ -1,10 +1,10 @@
-#include "../../../include/ast_node/expr_node/function_called_return_value_expr_node.hpp"
-#include "../../../include/ast_node/expr_node/ident_expr_node.hpp"
-#include "../../../include/ast_node/expr_node/literal_expr_node.hpp"
-#include "../../../include/ast_node/stat_node/parameter_list_stat_node.hpp"
-#include "../../../include/ast_node/terminal_symbols/terminal_ident_literal.hpp"
-#include "../../../include/ast_node/terminal_symbols/terminal_separator.hpp"
-#include "../../../include/ast_node/terminal_symbols/terminal_value_literal.hpp"
+#include "ast_node/expr_node/function_called_return_value_expr_node.hpp"
+#include "ast_node/expr_node/ident_expr_node.hpp"
+#include "ast_node/expr_node/literal_expr_node.hpp"
+#include "ast_node/stat_node/parameter_list_stat_node.hpp"
+#include "ast_node/terminal_symbols/terminal_ident_literal.hpp"
+#include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "ast_node/terminal_symbols/terminal_value_literal.hpp"
 #include <memory>
 #include <stdexcept>
 

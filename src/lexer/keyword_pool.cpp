@@ -1,5 +1,5 @@
-#include "../../include/lexer/keyword_pool.hpp"
-#include "../../include/token/token.hpp"
+#include "lexer/keyword_pool.hpp"
+#include "token/token.hpp"
 #include <stdexcept>
 
 namespace mycompiler {

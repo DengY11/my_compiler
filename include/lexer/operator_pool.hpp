@@ -1,7 +1,7 @@
 #ifndef OPERATOR_POOL_HPP
 #define OPERATOR_POOL_HPP
 
-#include "../token/operator_type.hpp"
+#include "token/operator_type.hpp"
 #include <string>
 #include <unordered_set>
 

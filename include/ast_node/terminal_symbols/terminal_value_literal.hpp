@@ -1,6 +1,6 @@
 #ifndef TERMINAL_VALUE_LITERAL_HPP
 #define TERMINAL_VALUE_LITERAL_HPP
-#include "../basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {

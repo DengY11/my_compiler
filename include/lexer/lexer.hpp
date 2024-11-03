@@ -1,10 +1,10 @@
 #ifndef LEXER_HPP
 #define LEXER_HPP
-#include "../token/token.hpp"
-#include "../token/token_helper_functions.hpp"
-#include "./keyword_pool.hpp"
-#include "./operator_pool.hpp"
-#include "./separator_pool.hpp"
+#include "lexer/keyword_pool.hpp"
+#include "lexer/operator_pool.hpp"
+#include "lexer/separator_pool.hpp"
+#include "token/token.hpp"
+#include "token/token_helper_functions.hpp"
 #include <cstddef>
 
 namespace mycompiler {

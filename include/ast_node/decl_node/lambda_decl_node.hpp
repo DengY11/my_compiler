@@ -1,6 +1,6 @@
 #ifndef LAMBDA_DECL_NODE_HPP
 #define LAMBDA_DECL_NODE_HPP
-#include "./decl_node.hpp"
+#include "ast_node/decl_node/decl_node.hpp"
 #include <memory>
 
 namespace mycompiler {

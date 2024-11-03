@@ -1,4 +1,4 @@
-#include "../../../include/ast_node/expr_node/tenary_expr_node.hpp"
+#include "ast_node/expr_node/tenary_expr_node.hpp"
 #include <memory>
 
 namespace mycompiler {

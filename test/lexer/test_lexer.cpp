@@ -1,5 +1,5 @@
-#include "../../include/file_reader/reader.hpp"
-#include "../../include/lexer/lexer.hpp"
+#include "file_reader/reader.hpp"
+#include "lexer/lexer.hpp"
 #include <string>
 
 auto main() -> int {

@@ -1,4 +1,4 @@
-#include "../../include/ast_node/root_node.hpp"
+#include "ast_node/root_node.hpp"
 #include <ostream>
 
 namespace mycompiler {

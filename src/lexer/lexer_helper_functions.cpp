@@ -1,4 +1,4 @@
-#include "../../include/lexer/lexer_helper_functions.hpp"
+#include "lexer/lexer_helper_functions.hpp"
 #include <cctype>
 
 namespace mycompiler {

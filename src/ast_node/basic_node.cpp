@@ -1,4 +1,4 @@
-#include "../../include/ast_node/basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 #include <algorithm>
 #include <memory>
 

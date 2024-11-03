@@ -1,7 +1,7 @@
 #ifndef KEYWORD_POOL_HPP
 #define KEYWORD_POOL_HPP
 
-#include "../token/keyword_type.hpp"
+#include "token/keyword_type.hpp"
 #include <string>
 #include <unordered_set>
 

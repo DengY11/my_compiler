@@ -1,5 +1,5 @@
-#include "../../include/token/token.hpp"
-#include "../../include/token/token_helper_functions.hpp"
+#include "token/token.hpp"
+#include "token/token_helper_functions.hpp"
 #include <string>
 
 namespace mycompiler {

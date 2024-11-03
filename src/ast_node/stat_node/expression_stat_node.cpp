@@ -1,4 +1,4 @@
-#include "../../../include/ast_node/stat_node/expression_stat_node.hpp"
+#include "ast_node/stat_node/expression_stat_node.hpp"
 #include <memory>
 
 namespace mycompiler {

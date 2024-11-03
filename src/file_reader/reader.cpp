@@ -1,4 +1,4 @@
-#include "../../include/file_reader/reader.hpp"
+#include "file_reader/reader.hpp"
 #include <fstream>
 #include <stdexcept>
 

@@ -1,4 +1,4 @@
-#include "../../../include/ast_node/expr_node/binary_expr.hpp"
+#include "ast_node/expr_node/binary_expr.hpp"
 namespace mycompiler {
 
 BinaryExprNode::BinaryExprNode(std::shared_ptr<Lexer> lexer) : ExprNode(lexer) {

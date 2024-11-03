@@ -1,4 +1,4 @@
-#include "../../include/lexer/operator_pool.hpp"
+#include "lexer/operator_pool.hpp"
 
 #include <stdexcept>
 

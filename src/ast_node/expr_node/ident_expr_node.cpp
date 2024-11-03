@@ -1,5 +1,5 @@
-#include "../../../include/ast_node/expr_node/ident_expr_node.hpp"
-#include "../terminal_symbols/terminal_ident_literal.cpp"
+#include "ast_node/expr_node/ident_expr_node.hpp"
+#include "ast_node/terminal_symbols/terminal_ident_literal.hpp"
 #include <memory>
 
 namespace mycompiler {

@@ -1,7 +1,7 @@
 #ifndef LEXER_HELPER_FUNCTIONS_HPP
 #define LEXER_HELPER_FUNCTIONS_HPP
 
-#include "./lexer.hpp"
+#include "lexer/lexer.hpp"
 namespace mycompiler {
 
 auto is_constant_number_type(char ch) -> bool;

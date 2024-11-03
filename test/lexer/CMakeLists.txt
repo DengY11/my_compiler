@@ -1,13 +1,7 @@
-# 查找测试代码的源文件
-file(GLOB TEST_SOURCE_FILES
-    ${PROJECT_SOURCE_DIR}/test/lexer/*.cpp
-)
+# 指定测试可执行文件的源文件
+set(TEST_SOURCES test_lexer.cpp)
 
-# 编译测试可执行文件
-add_executable(TestLexer ${TEST_SOURCE_FILES})
-
-# 链接静态库 MyCompilerLib
+# 创建可执行文件并链接静态库
+add_executable(TestLexer ${TEST_SOURCES})
 target_link_libraries(TestLexer MyCompilerLib)
-
-set(CMAKE_BUILD_TYPE Debug)
 

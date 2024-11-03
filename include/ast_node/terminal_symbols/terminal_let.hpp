@@ -1,7 +1,7 @@
 #ifndef TERMINAL_LET_HPP
 #define TERMINAL_LET_HPP
 
-#include "../basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {

@@ -1,7 +1,7 @@
-#include "../../../include/ast_node/stat_node/parameter_list_stat_node.hpp"
-#include "../../../include/ast_node/stat_node/parameter_stat_node.hpp"
-#include "../../../include/ast_node/terminal_symbols/terminal_separator.hpp"
-#include "../../../include/token/token_helper_functions.hpp"
+#include "ast_node/stat_node/parameter_list_stat_node.hpp"
+#include "ast_node/stat_node/parameter_stat_node.hpp"
+#include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "token/token_helper_functions.hpp"
 
 #include <memory>
 #include <stdexcept>

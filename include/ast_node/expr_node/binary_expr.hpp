@@ -1,6 +1,6 @@
 #ifndef BINARY_EXPR_NODE_HPP
 #define BINARY_EXPR_NODE_HPP
-#include "./expr_node.hpp"
+#include "ast_node/expr_node/expr_node.hpp"
 #include <memory>
 
 namespace mycompiler {

@@ -1,4 +1,4 @@
-#include "../../include/token/token.hpp"
+#include "token/token.hpp"
 #include <iostream>
 
 int main() {

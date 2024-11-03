@@ -1,6 +1,6 @@
 #ifndef BLOCK_STAT_NODE_HPP
 #define BLOCK_STAT_NODE_HPP
-#include "./stat_node.hpp"
+#include "ast_node/stat_node/stat_node.hpp"
 #include <memory>
 
 namespace mycompiler {

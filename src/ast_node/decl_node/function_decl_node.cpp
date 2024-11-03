@@ -1,4 +1,4 @@
-#include "../../../include/ast_node/decl_node/function_decl_node.hpp"
+#include "ast_node/decl_node/function_decl_node.hpp"
 #include <memory>
 
 namespace mycompiler {

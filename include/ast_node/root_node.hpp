@@ -1,6 +1,6 @@
 #ifndef ROOT_NODE
 #define ROOT_NODE
-#include "./basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 
 namespace mycompiler {
 

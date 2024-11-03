@@ -1,6 +1,6 @@
 #ifndef STAT_NODE_HPP
 #define STAT_NODE_HPP
-#include "../basic_node.hpp"
+#include "ast_node/basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {

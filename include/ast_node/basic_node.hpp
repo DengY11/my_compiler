@@ -1,9 +1,9 @@
 #ifndef BASIC_NODE_HPP
 #define BASIC_NODE_HPP
 
-#include "../lexer/lexer.hpp"
-#include "../token/token.hpp"
-#include "./node_type.hpp"
+#include "ast_node/node_type.hpp"
+#include "lexer/lexer.hpp"
+#include "token/token.hpp"
 #include <algorithm>
 #include <iostream>
 #include <memory>

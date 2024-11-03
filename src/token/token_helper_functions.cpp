@@ -1,4 +1,4 @@
-#include "../../include/token/token_helper_functions.hpp"
+#include "token/token_helper_functions.hpp"
 
 namespace mycompiler {
 

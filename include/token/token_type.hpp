@@ -1,7 +1,6 @@
 #ifndef TOKEN_TYPE_HPP
 #define TOKEN_TYPE_HPP
 
-#include "comment_type.hpp"
 namespace mycompiler {
 
 enum class TokenType {

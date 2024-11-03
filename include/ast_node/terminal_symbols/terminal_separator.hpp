@@ -1,7 +1,7 @@
 #ifndef TERMINAL_SEPARATOR_HPP
 #define TERMINAL_SEPARATOR_HPP
-#include "../../lexer/separator_pool.hpp"
-#include "../basic_node.hpp"
+#include "ast_node/basic_node.hpp"
+#include "lexer/separator_pool.hpp"
 #include <memory>
 
 namespace mycompiler {

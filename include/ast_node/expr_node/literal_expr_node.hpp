@@ -1,8 +1,9 @@
 #ifndef LITERAL_EXPR_NDOE_HPP
 #define LITERAL_EXPR_NDOE_HPP
 
-#include "expr_node.hpp"
+#include "ast_node/expr_node/expr_node.hpp"
 #include <memory>
+
 namespace mycompiler {
 
 class LiteralExprNode : public ExprNode {
