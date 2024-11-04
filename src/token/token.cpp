@@ -104,8 +104,8 @@ void Token::print_info() {
   case TokenType::KEYWORD:
     std::cout << "KEYWORD, TokenValue: ";
     switch (std::get<mycompiler::Keyword>(this->token_value_).Keyword_type_) {
-    case mycompiler::Keyword_Type::FUNCTION:
-      std::cout << "FUNCTION" << std::endl;
+    case mycompiler::Keyword_Type::FUNC:
+      std::cout << "FUNC" << std::endl;
       break;
     case mycompiler::Keyword_Type::LET:
       std::cout << "LET" << std::endl;

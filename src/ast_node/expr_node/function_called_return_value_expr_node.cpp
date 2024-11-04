@@ -31,8 +31,8 @@ void FunctionCalledReturnValueExprNode::Parse() {
 
   this->lexer_->getNextToken();
 
-  auto child_parameter_list =
-      std::make_shared<ParameterListStatNode>(this->lexer_);
+  auto child_parameter_list = std::make_shared<ParameterListStatNode>(
+      this->lexer_, ParameterListType::FUNC_CALL);
   child_parameter_list->Parse();
   this->children_.push_back(child_parameter_list);
 }

@@ -107,7 +107,7 @@ auto Lexer::getNextToken() -> mycompiler::Token {
     bool have_underline = false;
     std::string alphaStr(1, current);
     while (!this->is_end() && (is_keyword_type(this->peekChar()) ||
-                               is_indent_type(this->peekChar()))) {
+                               is_ident_type(this->peekChar()))) {
 
       if (peekChar() == '_') {
         have_underline = true;

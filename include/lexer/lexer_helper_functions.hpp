@@ -8,7 +8,7 @@ auto is_constant_number_type(char ch) -> bool;
 
 auto is_constant_string_type(char ch) -> bool;
 
-auto is_indent_type(char ch) -> bool;
+auto is_ident_type(char ch) -> bool;
 
 auto is_keyword_type(char ch) -> bool;
 

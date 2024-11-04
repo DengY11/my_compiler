@@ -9,7 +9,7 @@ auto is_constant_number_type(char ch) -> bool {
 
 auto is_constant_string_type(char ch) -> bool { return ch != '\0'; }
 
-auto is_indent_type(char ch) -> bool {
+auto is_ident_type(char ch) -> bool {
   return (std::isdigit(ch) || std::isalpha(ch) || ch == '_');
 }
 

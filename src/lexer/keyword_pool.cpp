@@ -5,15 +5,15 @@
 namespace mycompiler {
 
 KeywordPool::KeywordPool()
-    : keywords_({"let", "if", "else", "for", "return", "function"}) {}
+    : keywords_({"let", "if", "else", "for", "return", "func"}) {}
 
 auto KeywordPool::find(std::string &word) -> bool {
   return this->keywords_.find(word) != keywords_.end();
 }
 
 auto get_keyword_type_from_string(std::string &str) -> Keyword_Type {
-  if (str == "function") {
-    return Keyword_Type::FUNCTION;
+  if (str == "func") {
+    return Keyword_Type::FUNC;
   } else if (str == "let") {
     return Keyword_Type::LET;
   } else if (str == "else") {

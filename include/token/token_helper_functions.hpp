@@ -31,6 +31,8 @@ auto get_value_literal_type_from_token_class(const Token &token)
 auto get_separator_type_from_token_class(const Token &token)
     -> std::string const;
 
+auto is_identifier_type(const Token &token) -> bool;
+
 // TODO:
 
 } // namespace mycompiler

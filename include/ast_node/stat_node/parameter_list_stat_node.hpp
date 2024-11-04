@@ -5,15 +5,23 @@
 
 namespace mycompiler {
 
+enum class ParameterListType { FUNC_DECL, FUNC_CALL };
+
 class ParameterListStatNode : public StatNode {
 public:
-  ParameterListStatNode(std::shared_ptr<Lexer> lexer);
+  ParameterListStatNode(std::shared_ptr<Lexer> lexer,
+                        ParameterListType para_type);
 
   virtual auto print_info() -> void override;
 
   virtual auto Parse() -> void override;
 
   auto is_parameter_list_type(const Token &token) -> bool;
+
+  auto is_decl_func_parameter_list_type(const Token &token) -> bool;
+
+private:
+  ParameterListType para_type_;
 };
 
 } // namespace mycompiler

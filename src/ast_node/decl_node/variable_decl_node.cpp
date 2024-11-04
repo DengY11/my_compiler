@@ -26,6 +26,7 @@ void VarDeclNode::Parse() {
   if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
     throw std::runtime_error("illegal token or end of file");
   }
+
   auto child_let = std::make_shared<TerminalLet>(this->lexer_);
   child_let->Parse();
   this->children_.push_back(child_let);

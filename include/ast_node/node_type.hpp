@@ -36,6 +36,7 @@ enum class AST_NODE_TYPE {
   FUNCTION_CALL_EXPR,
 
   // terminal
+  FUNC,
   LET,
   EQUAL,
   IDENT_LITERAL,
