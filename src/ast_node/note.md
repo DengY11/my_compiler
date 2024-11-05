@@ -15,3 +15,8 @@ parameter -> func_ident + parameter_list |
 
 可以看到parameter和 literal_value 是一样的 , 但为了
 避免循环依赖，采用了这样的设计
+
+2024.11.4
+把函数声明节点写了一半
+
+2024.11.5准确的说，函数声明是写完了的，但是其中要用到的StatList节点还在写

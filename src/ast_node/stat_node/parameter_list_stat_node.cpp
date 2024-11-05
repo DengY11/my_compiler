@@ -13,6 +13,7 @@ ParameterListStatNode::ParameterListStatNode(std::shared_ptr<Lexer> lexer,
                                              ParameterListType para_type)
     : StatNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::PARAMETER_LIST_STAT;
+  this->para_type_ = para_type;
 }
 
 void ParameterListStatNode::print_info() {
