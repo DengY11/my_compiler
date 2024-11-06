@@ -13,6 +13,7 @@ public:
 
   virtual auto Parse() -> void override;
   // TODO:
+  virtual ~StatListNode() = default;
 };
 
 } // namespace mycompiler

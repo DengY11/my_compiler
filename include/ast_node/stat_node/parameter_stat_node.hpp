@@ -12,6 +12,8 @@ public:
   virtual auto print_info() -> void override;
 
   virtual auto Parse() -> void override;
+
+  virtual ~ParameterStatNode() = default;
 };
 
 } // namespace mycompiler

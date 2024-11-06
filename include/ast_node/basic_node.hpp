@@ -22,6 +22,8 @@ public:
 
   virtual void Parse() = 0;
 
+  virtual ~BasicNode() = default;
+
 protected:
   AST_NODE_TYPE ast_node_type_ = AST_NODE_TYPE::BASIC;
   std::shared_ptr<Lexer> lexer_;

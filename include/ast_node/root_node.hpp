@@ -11,6 +11,8 @@ public:
   virtual void print_info() override;
 
   virtual void Parse() override; // TODO:
+
+  virtual ~RootNode() = default;
 };
 
 } // namespace mycompiler

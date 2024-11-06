@@ -1,20 +1,20 @@
-#ifndef TERMINAL_LET_HPP
-#define TERMINAL_LET_HPP
+#ifndef TERMINAL_IF_HPP
+#define TERMINAL_IF_HPP
 
 #include "ast_node/basic_node.hpp"
 #include <memory>
 
 namespace mycompiler {
 
-class TerminalLet : public BasicNode {
+class TerminalIf : public BasicNode {
 public:
-  TerminalLet(std::shared_ptr<Lexer> lexer);
+  TerminalIf(std::shared_ptr<Lexer> lexer);
 
   virtual void print_info() override final;
 
   virtual void Parse() override final;
 
-  virtual ~TerminalLet() = default;
+  virtual ~TerminalIf() = default;
 };
 
 } // namespace mycompiler

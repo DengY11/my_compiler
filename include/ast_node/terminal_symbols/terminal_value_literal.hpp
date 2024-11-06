@@ -13,6 +13,8 @@ public:
 
   virtual void Parse() override final;
 
+  virtual ~TerminalValueLiteral() = default;
+
   std::string literal_;
 };
 

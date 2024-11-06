@@ -40,6 +40,7 @@ enum class AST_NODE_TYPE {
   // terminal
   FUNC,
   LET,
+  IF,
   EQUAL,
   IDENT_LITERAL,
   VALUE_LITERAL,

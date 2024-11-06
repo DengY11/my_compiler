@@ -13,6 +13,8 @@ public:
   virtual void print_info() override final;
 
   virtual void Parse() override final; // TODO:
+
+  virtual ~BinaryExprNode() = default;
 };
 
 } // namespace mycompiler

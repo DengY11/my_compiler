@@ -12,6 +12,8 @@ public:
 
   virtual void Parse() override final; // TODO:
 
+  virtual ~FuncDeclNode() = default;
+
 private:
   // TODO:
 };

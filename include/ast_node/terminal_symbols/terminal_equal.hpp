@@ -12,6 +12,8 @@ public:
   virtual void print_info() override final;
 
   virtual void Parse() override final;
+
+  virtual ~TerminalEqual() = default;
 };
 
 } // namespace mycompiler

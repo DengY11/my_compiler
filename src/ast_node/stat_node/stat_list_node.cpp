@@ -22,6 +22,10 @@ void StatListNode::print_info() {
 
 void StatListNode::Parse() {
   // TODO:
+  Token &&token = this->lexer_->getCurrentToken();
+  if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
+    throw std::runtime_error("illegal token or end of file");
+  }
 }
 
 } // namespace mycompiler

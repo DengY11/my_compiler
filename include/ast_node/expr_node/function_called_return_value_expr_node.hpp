@@ -11,6 +11,8 @@ public:
   virtual auto print_info() -> void override final;
 
   virtual auto Parse() -> void override final;
+
+  virtual ~FunctionCalledReturnValueExprNode() = default;
 };
 
 } // namespace mycompiler

@@ -14,6 +14,8 @@ public:
 
   virtual void Parse() override final;
 
+  virtual ~TerminalSeparator() = default;
+
   std::string separator_;
 };
 

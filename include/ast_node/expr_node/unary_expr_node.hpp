@@ -12,6 +12,8 @@ public:
   virtual auto Parse() -> void override final;
 
   virtual auto print_info() -> void override final;
+
+  virtual ~UnaryExprNode() = default;
 };
 
 } // namespace mycompiler

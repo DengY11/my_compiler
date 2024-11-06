@@ -13,6 +13,8 @@ public:
 
   virtual void Parse() override final; // TODO:
 
+  virtual ~LambdaDeclNode() = default;
+
 private:
 };
 

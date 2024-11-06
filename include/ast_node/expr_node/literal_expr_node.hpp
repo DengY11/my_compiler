@@ -13,6 +13,8 @@ public:
   virtual auto Parse() -> void override final;
 
   virtual auto print_info() -> void override final;
+
+  virtual ~LiteralExprNode() = default;
 };
 
 } // namespace mycompiler

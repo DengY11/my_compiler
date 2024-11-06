@@ -16,6 +16,8 @@ public:
 
   virtual auto Parse() -> void override;
 
+  virtual ~ParameterListStatNode() = default;
+
   auto is_parameter_list_type(const Token &token) -> bool;
 
   auto is_decl_func_parameter_list_type(const Token &token) -> bool;

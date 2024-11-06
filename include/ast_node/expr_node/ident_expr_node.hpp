@@ -9,8 +9,12 @@ namespace mycompiler {
 class IdentifierExprNode : public ExprNode {
 public:
   IdentifierExprNode(std::shared_ptr<Lexer> lexer);
+
   virtual auto print_info() -> void override final;
+
   virtual auto Parse() -> void override final;
+
+  virtual ~IdentifierExprNode() = default;
 };
 
 } // namespace mycompiler
