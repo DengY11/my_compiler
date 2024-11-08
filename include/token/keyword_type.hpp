@@ -4,7 +4,7 @@
 
 namespace mycompiler {
 
-enum class Keyword_Type { FUNC, LET, RETURN, IF, ELSE, FOR };
+enum class Keyword_Type { FUNC, LET, RETURN, IF, ELSE, FOR, WHILE };
 // NOTE::添加关键词记得修改lexer的keyword_pool
 
 class Keyword {
