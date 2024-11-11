@@ -82,16 +82,6 @@ void IfStatNode::Parse() {
   } else {
     this->children_.push_back(child_right_big);
   }
-
-  this->lexer_->getNextToken();
-
-  auto child_semicolon = std::make_shared<TerminalSeparator>(this->lexer_);
-  child_semicolon->Parse();
-  if (child_semicolon->separator_ != ";") {
-    throw std::runtime_error("expect ;");
-  } else {
-    this->children_.push_back(child_semicolon);
-  }
 }
 
 } // namespace mycompiler
