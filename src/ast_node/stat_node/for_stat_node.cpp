@@ -1,6 +1,11 @@
 #include "ast_node/stat_node/for_stat_node.hpp"
+#include "ast_node/decl_node/variable_decl_node.hpp"
+#include "ast_node/stat_node/stat_node.hpp"
+#include "ast_node/stat_node/void_stat_node.hpp"
 #include "ast_node/terminal_symbols/terminal_for.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "token/token_helper_functions.hpp"
+#include "token/token_type.hpp"
 
 #include <memory>
 #include <stdexcept>
@@ -37,8 +42,34 @@ auto ForStatNode::Parse() -> void {
   }
   this->children_.push_back(child_left);
 
+  this->lexer_->getNextToken(); // TODO:
+
+  if (this->lexer_->getCurrentToken().get_token_type() ==
+          TokenType::SEPARATOR &&
+      get_separator_type_from_token_class(this->lexer_->getCurrentToken()) ==
+          ";") {
+    auto child_void_stat = std::make_shared<VoidStatNode>(this->lexer_);
+    this->children_.push_back(child_void_stat);
+
+    auto child_sep_1 = std::make_shared<TerminalSeparator>(this->lexer_);
+    child_sep_1->Parse();
+    this->children_.push_back(child_sep_1);
+  } else {
+    // TODO:以后再来弄for语法
+    auto child_init_stat = std::make_shared<VarDeclNode>(this->lexer_);
+    child_init_stat->Parse();
+    this->children_.push_back(child_init_stat);
+
+    this->lexer_->getNextToken();
+
+    auto child_sep_1 = std::make_shared<TerminalSeparator>(this->lexer_);
+    child_sep_1->Parse();
+    if (child_sep_1->separator_ != ";") {
+      throw std::runtime_error("expect ;");
+    }
+  }
+
   this->lexer_->getNextToken();
-  // TODO:
 }
 
 } // namespace mycompiler
