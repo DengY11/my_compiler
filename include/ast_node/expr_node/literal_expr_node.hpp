@@ -2,6 +2,7 @@
 #define LITERAL_EXPR_NDOE_HPP
 
 #include "ast_node/expr_node/expr_node.hpp"
+#include "ast_node/terminal_symbols/terminal_value_literal.hpp"
 #include <memory>
 
 namespace mycompiler {
@@ -15,6 +16,8 @@ public:
   virtual auto print_info() -> void override final;
 
   virtual ~LiteralExprNode() = default;
+
+  void add_terminalvalue_node(std::shared_ptr<TerminalValueLiteral> val);
 };
 
 } // namespace mycompiler

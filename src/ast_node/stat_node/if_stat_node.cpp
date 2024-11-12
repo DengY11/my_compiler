@@ -1,4 +1,5 @@
 #include "ast_node/stat_node/if_stat_node.hpp"
+#include "ast_node/expr_node/condition_expr_node.hpp"
 #include "ast_node/expr_node/literal_expr_node.hpp"
 #include "ast_node/stat_node/stat_list_node.hpp"
 #include "ast_node/terminal_symbols/terminal_if.hpp"
@@ -45,7 +46,7 @@ void IfStatNode::Parse() {
 
   // TODO: 注意，if的条件应该用CompareExpr
 
-  auto child_value = std::make_shared<LiteralExprNode>(this->lexer_);
+  auto child_value = std::make_shared<ConditionExprNode>(this->lexer_);
   child_value->Parse();
   this->children_.push_back(child_value);
 

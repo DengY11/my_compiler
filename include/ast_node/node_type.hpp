@@ -37,6 +37,7 @@ enum class AST_NODE_TYPE {
   GROUPING_EXPR,
   TENARY_EXPR,
   FUNCTION_CALL_EXPR,
+  COMPARE_EXPR,
 
   // terminal
   FUNC,

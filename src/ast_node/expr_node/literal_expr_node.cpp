@@ -1,7 +1,10 @@
 #include "ast_node/expr_node/literal_expr_node.hpp"
 #include "ast_node/expr_node/function_called_return_value_expr_node.hpp"
 #include "ast_node/expr_node/ident_expr_node.hpp"
+#include "ast_node/expr_node/tenary_expr_node.hpp"
+#include "ast_node/terminal_symbols/terminal_operator.hpp"
 #include "ast_node/terminal_symbols/terminal_value_literal.hpp"
+#include "lexer/lexer_helper_functions.hpp"
 #include <memory>
 #include <stdexcept>
 
@@ -36,17 +39,83 @@ void LiteralExprNode::Parse() {
       auto child_function_call_return_value =
           std::make_shared<FunctionCalledReturnValueExprNode>(this->lexer_);
       child_function_call_return_value->Parse();
-      this->children_.push_back(child_function_call_return_value);
+
+      nextChar = this->lexer_->lookNextChar();
+      if (is_operator_type(nextChar)) {
+        auto child_operator = std::make_shared<TerminalOperator>(this->lexer_);
+        child_operator->Parse();
+        auto child_right = std::make_shared<LiteralExprNode>(this->lexer_);
+        child_right->Parse();
+
+        auto child_tenaty_expr_node =
+            std::make_shared<TenaryExprNode>(this->lexer_);
+
+        child_tenaty_expr_node->add_child(child_function_call_return_value,
+                                          child_operator, child_right);
+
+        this->children_.push_back(child_tenaty_expr_node);
+
+      } else {
+
+        this->children_.push_back(child_function_call_return_value);
+      }
     } else {
+
       auto child_variable_value =
           std::make_shared<IdentifierExprNode>(this->lexer_);
       child_variable_value->Parse();
-      this->children_.push_back(child_variable_value);
+
+      nextChar = this->lexer_->lookNextChar();
+
+      if (is_operator_type(nextChar)) {
+        auto child_operator = std::make_shared<TerminalOperator>(this->lexer_);
+        child_operator->Parse();
+        auto child_right = std::make_shared<LiteralExprNode>(this->lexer_);
+        child_right->Parse();
+
+        auto child_tenaty_expr_node =
+            std::make_shared<TenaryExprNode>(this->lexer_);
+
+        child_tenaty_expr_node->add_child(child_variable_value, child_operator,
+                                          child_right);
+
+        this->children_.push_back(child_tenaty_expr_node);
+
+      } else {
+
+        this->children_.push_back(child_variable_value);
+      }
     }
   } else if (token.get_token_type() == TokenType::CONSTANT) {
+
     auto child_terminal_value = std::make_shared<TerminalValueLiteral>(lexer_);
     child_terminal_value->Parse();
-    this->children_.push_back(child_terminal_value);
+
+    char nextChar = this->lexer_->lookNextChar();
+
+    if (is_operator_type(nextChar)) {
+      auto child_operator = std::make_shared<TerminalOperator>(this->lexer_);
+      child_operator->Parse();
+      auto child_right = std::make_shared<LiteralExprNode>(this->lexer_);
+      child_right->Parse();
+
+      auto child_tenaty_expr_node =
+          std::make_shared<TenaryExprNode>(this->lexer_);
+
+      auto left_value =
+          std::make_shared<LiteralExprNode>(nullptr); // NOTE: 别手贱parse了
+
+      left_value->add_terminalvalue_node(child_terminal_value);
+
+      child_tenaty_expr_node->add_child(left_value, child_operator,
+                                        child_right);
+
+      this->children_.push_back(child_tenaty_expr_node);
+
+    } else {
+
+      this->children_.push_back(child_terminal_value);
+    }
   }
 }
 } // namespace mycompiler

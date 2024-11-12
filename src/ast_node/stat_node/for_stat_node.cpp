@@ -1,9 +1,14 @@
 #include "ast_node/stat_node/for_stat_node.hpp"
 #include "ast_node/decl_node/variable_decl_node.hpp"
+#include "ast_node/expr_node/condition_expr_node.hpp"
+#include "ast_node/expr_node/literal_expr_node.hpp"
+#include "ast_node/stat_node/stat_list_node.hpp"
 #include "ast_node/stat_node/stat_node.hpp"
 #include "ast_node/stat_node/void_stat_node.hpp"
 #include "ast_node/terminal_symbols/terminal_for.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "ast_node/terminal_symbols/terminal_value_literal.hpp"
+#include "lexer/lexer.hpp"
 #include "token/token_helper_functions.hpp"
 #include "token/token_type.hpp"
 
@@ -55,7 +60,7 @@ auto ForStatNode::Parse() -> void {
     child_sep_1->Parse();
     this->children_.push_back(child_sep_1);
   } else {
-    // TODO:以后再来弄for语法
+    // TODO:   for(a = 1,10,1)
     auto child_init_stat = std::make_shared<VarDeclNode>(this->lexer_);
     child_init_stat->Parse();
     this->children_.push_back(child_init_stat);
@@ -64,8 +69,39 @@ auto ForStatNode::Parse() -> void {
 
     auto child_sep_1 = std::make_shared<TerminalSeparator>(this->lexer_);
     child_sep_1->Parse();
-    if (child_sep_1->separator_ != ";") {
+    if (child_sep_1->separator_ != ",") {
+      throw std::runtime_error("expect ,");
+    }
+
+    auto child_end_condition = std::make_shared<LiteralExprNode>(this->lexer_);
+    child_end_condition->Parse();
+
+    this->children_.push_back(child_end_condition);
+
+    auto child_sep_2 = std::make_shared<TerminalSeparator>(this->lexer_);
+    child_sep_2->Parse();
+    if (child_sep_2->separator_ != ";") {
       throw std::runtime_error("expect ;");
+    }
+
+    auto child_step_value = std::make_shared<LiteralExprNode>(this->lexer_);
+    child_step_value->Parse();
+    this->children_.push_back(child_step_value);
+
+    auto child_big_left = std::make_shared<TerminalSeparator>(this->lexer_);
+    child_big_left->Parse();
+    if (child_big_left->separator_ != "{") {
+      throw std::runtime_error("expect {");
+    }
+
+    auto child_stat_list = std::make_shared<StatListNode>(this->lexer_);
+    child_stat_list->Parse();
+    this->children_.push_back(child_stat_list);
+
+    auto child_big_right = std::make_shared<TerminalSeparator>(this->lexer_);
+    child_big_right->Parse();
+    if (child_big_right->separator_ != "}") {
+      throw std::runtime_error("expect }");
     }
   }
 
