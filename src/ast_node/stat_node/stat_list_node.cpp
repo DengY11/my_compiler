@@ -26,6 +26,8 @@ void StatListNode::Parse() {
   if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
     throw std::runtime_error("illegal token or end of file");
   }
+
+  size_t cnt_big_trace = 0;
 }
 
 } // namespace mycompiler

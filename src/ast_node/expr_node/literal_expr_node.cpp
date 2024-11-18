@@ -1,7 +1,9 @@
 #include "ast_node/expr_node/literal_expr_node.hpp"
+#include "ast_node/expr_node/expr_node.hpp"
 #include "ast_node/expr_node/function_called_return_value_expr_node.hpp"
 #include "ast_node/expr_node/ident_expr_node.hpp"
 #include "ast_node/expr_node/tenary_expr_node.hpp"
+#include "ast_node/terminal_symbols/terminal_ident_literal.hpp"
 #include "ast_node/terminal_symbols/terminal_operator.hpp"
 #include "ast_node/terminal_symbols/terminal_value_literal.hpp"
 #include "lexer/lexer_helper_functions.hpp"
@@ -15,6 +17,18 @@ LiteralExprNode::LiteralExprNode(std::shared_ptr<Lexer> lexer)
   this->ast_node_type_ = AST_NODE_TYPE::LITERAL_EXPR;
 }
 
+LiteralExprNode::LiteralExprNode(std::shared_ptr<TerminalIdentLiteral> var_name,
+                                 std::shared_ptr<TerminalOperator> op,
+                                 std::shared_ptr<TerminalValueLiteral> value)
+    : ExprNode(nullptr) {
+
+  this->ast_node_type_ = AST_NODE_TYPE::LITERAL_EXPR;
+
+  this->children_.push_back(var_name);
+  this->children_.push_back(op);
+  this->children_.push_back(value);
+}
+
 void LiteralExprNode::print_info() {
   std::cout << "Node type: LITERAL_EXPR" << std::endl;
   std::cout << "Children: " << std::endl;
@@ -23,6 +37,9 @@ void LiteralExprNode::print_info() {
 }
 
 void LiteralExprNode::Parse() {
+  if (!this->lexer_) {
+    throw std::runtime_error("can not Parse");
+  }
   Token token = this->lexer_->getCurrentToken();
   if (!(token.get_token_type() == TokenType::CONSTANT ||
         token.get_token_type() == TokenType::IDENT)) {

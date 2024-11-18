@@ -11,7 +11,9 @@ enum class Operator_Type {
   EQUAL,
   DOUBLE_EQUAL,
   NOT_EQUAL,
-  HAT // ^
+  HAT, // ^
+  SELF_ADD,
+  SELFT_SUB
 };
 
 class Operator {

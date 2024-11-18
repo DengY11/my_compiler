@@ -33,8 +33,6 @@ void ExpressionStatNode::Parse() {
   child_semicolon->Parse();
   if (child_semicolon->separator_ != ";") {
     throw std::runtime_error("expect ;");
-  } else {
-    this->children_.push_back(child_semicolon);
   }
 }
 

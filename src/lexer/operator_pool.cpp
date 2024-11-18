@@ -1,11 +1,12 @@
 #include "lexer/operator_pool.hpp"
+#include "token/operator_type.hpp"
 
 #include <stdexcept>
 
 namespace mycompiler {
 
 OperatorPool::OperatorPool()
-    : operators_({"+", "-", "*", "/", "!=", "==", "=", "^"}) {}
+    : operators_({"+", "-", "*", "/", "!=", "==", "=", "^", "++", "--"}) {}
 
 auto OperatorPool::find(std::string &word) -> bool {
   return this->operators_.find(word) != operators_.end();
@@ -28,6 +29,8 @@ auto get_operator_type_from_string(std::string &str) -> Operator_Type {
     return Operator_Type::EQUAL;
   } else if (str == "^") {
     return Operator_Type::HAT;
+  } else if (str == "++") {
+    return Operator_Type::SELF_ADD;
   }
 
   throw std::runtime_error("operator not found: " + str);
