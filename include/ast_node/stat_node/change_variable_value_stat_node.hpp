@@ -5,15 +5,15 @@
 
 namespace mycompiler {
 
-class ChangeVariableValueStatNodeHpp : public StatNode {
+class ChangeVariableValueStatNode : public StatNode {
 public:
-  ChangeVariableValueStatNodeHpp(std::shared_ptr<Lexer> lexer);
+  ChangeVariableValueStatNode(std::shared_ptr<Lexer> lexer);
 
   virtual auto print_info() -> void override;
 
   virtual auto Parse() -> void override;
 
-  virtual ~ChangeVariableValueStatNodeHpp() = default;
+  virtual ~ChangeVariableValueStatNode() = default;
 };
 
 } // namespace mycompiler

@@ -8,20 +8,20 @@
 
 namespace mycompiler {
 
-ChangeVariableValueStatNodeHpp::ChangeVariableValueStatNodeHpp(
+ChangeVariableValueStatNode::ChangeVariableValueStatNode(
     std::shared_ptr<Lexer> lexer)
     : StatNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::CHANGE_VAR_STAT;
 }
 
-void ChangeVariableValueStatNodeHpp::print_info() {
+void ChangeVariableValueStatNode::print_info() {
   std::cout << "Node type: CHANGE_VAR_STAT" << std::endl;
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });
 }
 
-void ChangeVariableValueStatNodeHpp::Parse() {
+void ChangeVariableValueStatNode::Parse() {
 
   Token &&token = this->lexer_->getCurrentToken();
   if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {

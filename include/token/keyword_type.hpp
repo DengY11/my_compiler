@@ -6,6 +6,7 @@ namespace mycompiler {
 
 enum class Keyword_Type { FUNC, LET, RETURN, IF, ELSE, FOR, WHILE };
 // NOTE::添加关键词记得修改lexer的keyword_pool
+// NOTE::还要在stat_node.cpp里添加相应的语法解析
 
 class Keyword {
 public:

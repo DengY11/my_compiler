@@ -1,4 +1,6 @@
 #include "token/token.hpp"
+#include "token/keyword_type.hpp"
+#include "token/operator_type.hpp"
 #include "token/token_helper_functions.hpp"
 #include <string>
 
@@ -122,6 +124,9 @@ void Token::print_info() {
     case mycompiler::Keyword_Type::RETURN:
       std::cout << "RETURN" << std::endl;
       break;
+    case mycompiler::Keyword_Type::WHILE:
+      std::cout << "WHILE" << std::endl;
+      break;
     }
     break;
 
@@ -152,6 +157,11 @@ void Token::print_info() {
     case mycompiler::Operator_Type::HAT:
       std::cout << "HAT" << std::endl;
       break;
+    case mycompiler::Operator_Type::SELF_SUB:
+      std::cout << "SELF_SUB" << std::endl;
+      break;
+    case mycompiler::Operator_Type::SELF_ADD:
+      std::cout << "SELF_ADD" << std::endl;
     }
     break;
 
