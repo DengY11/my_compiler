@@ -299,6 +299,30 @@ src/ast_node/expr_node/binary_expr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.s
 .PHONY : src/ast_node/expr_node/binary_expr.cpp.s
 
+src/ast_node/expr_node/condition_expr_node.o: src/ast_node/expr_node/condition_expr_node.cpp.o
+.PHONY : src/ast_node/expr_node/condition_expr_node.o
+
+# target to build an object file
+src/ast_node/expr_node/condition_expr_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o
+.PHONY : src/ast_node/expr_node/condition_expr_node.cpp.o
+
+src/ast_node/expr_node/condition_expr_node.i: src/ast_node/expr_node/condition_expr_node.cpp.i
+.PHONY : src/ast_node/expr_node/condition_expr_node.i
+
+# target to preprocess a source file
+src/ast_node/expr_node/condition_expr_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.i
+.PHONY : src/ast_node/expr_node/condition_expr_node.cpp.i
+
+src/ast_node/expr_node/condition_expr_node.s: src/ast_node/expr_node/condition_expr_node.cpp.s
+.PHONY : src/ast_node/expr_node/condition_expr_node.s
+
+# target to generate assembly for a file
+src/ast_node/expr_node/condition_expr_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.s
+.PHONY : src/ast_node/expr_node/condition_expr_node.cpp.s
+
 src/ast_node/expr_node/expr_node.o: src/ast_node/expr_node/expr_node.cpp.o
 .PHONY : src/ast_node/expr_node/expr_node.o
 
@@ -539,6 +563,30 @@ src/ast_node/stat_node/break_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/break_stat_node.cpp.s
 
+src/ast_node/stat_node/change_variable_value_stat_node.o: src/ast_node/stat_node/change_variable_value_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/change_variable_value_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.cpp.o
+
+src/ast_node/stat_node/change_variable_value_stat_node.i: src/ast_node/stat_node/change_variable_value_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/change_variable_value_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.cpp.i
+
+src/ast_node/stat_node/change_variable_value_stat_node.s: src/ast_node/stat_node/change_variable_value_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/change_variable_value_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/change_variable_value_stat_node.cpp.s
+
 src/ast_node/stat_node/continue_stat_node.o: src/ast_node/stat_node/continue_stat_node.cpp.o
 .PHONY : src/ast_node/stat_node/continue_stat_node.o
 
@@ -562,6 +610,30 @@ src/ast_node/stat_node/continue_stat_node.s: src/ast_node/stat_node/continue_sta
 src/ast_node/stat_node/continue_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/continue_stat_node.cpp.s
+
+src/ast_node/stat_node/else_stat_node.o: src/ast_node/stat_node/else_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/else_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/else_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/else_stat_node.cpp.o
+
+src/ast_node/stat_node/else_stat_node.i: src/ast_node/stat_node/else_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/else_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/else_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/else_stat_node.cpp.i
+
+src/ast_node/stat_node/else_stat_node.s: src/ast_node/stat_node/else_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/else_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/else_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/else_stat_node.cpp.s
 
 src/ast_node/stat_node/expression_stat_node.o: src/ast_node/stat_node/expression_stat_node.cpp.o
 .PHONY : src/ast_node/stat_node/expression_stat_node.o
@@ -610,6 +682,30 @@ src/ast_node/stat_node/for_stat_node.s: src/ast_node/stat_node/for_stat_node.cpp
 src/ast_node/stat_node/for_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/for_stat_node.cpp.s
+
+src/ast_node/stat_node/function_decl_stat_node.o: src/ast_node/stat_node/function_decl_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/function_decl_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.cpp.o
+
+src/ast_node/stat_node/function_decl_stat_node.i: src/ast_node/stat_node/function_decl_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/function_decl_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.cpp.i
+
+src/ast_node/stat_node/function_decl_stat_node.s: src/ast_node/stat_node/function_decl_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/function_decl_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/function_decl_stat_node.cpp.s
 
 src/ast_node/stat_node/if_stat_node.o: src/ast_node/stat_node/if_stat_node.cpp.o
 .PHONY : src/ast_node/stat_node/if_stat_node.o
@@ -707,6 +803,54 @@ src/ast_node/stat_node/return_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/return_stat_node.cpp.s
 
+src/ast_node/stat_node/self_change_stat_node.o: src/ast_node/stat_node/self_change_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/self_change_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/self_change_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/self_change_stat_node.cpp.o
+
+src/ast_node/stat_node/self_change_stat_node.i: src/ast_node/stat_node/self_change_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/self_change_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/self_change_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/self_change_stat_node.cpp.i
+
+src/ast_node/stat_node/self_change_stat_node.s: src/ast_node/stat_node/self_change_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/self_change_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/self_change_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/self_change_stat_node.cpp.s
+
+src/ast_node/stat_node/stat_list_node.o: src/ast_node/stat_node/stat_list_node.cpp.o
+.PHONY : src/ast_node/stat_node/stat_list_node.o
+
+# target to build an object file
+src/ast_node/stat_node/stat_list_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o
+.PHONY : src/ast_node/stat_node/stat_list_node.cpp.o
+
+src/ast_node/stat_node/stat_list_node.i: src/ast_node/stat_node/stat_list_node.cpp.i
+.PHONY : src/ast_node/stat_node/stat_list_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/stat_list_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.i
+.PHONY : src/ast_node/stat_node/stat_list_node.cpp.i
+
+src/ast_node/stat_node/stat_list_node.s: src/ast_node/stat_node/stat_list_node.cpp.s
+.PHONY : src/ast_node/stat_node/stat_list_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/stat_list_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.s
+.PHONY : src/ast_node/stat_node/stat_list_node.cpp.s
+
 src/ast_node/stat_node/stat_node.o: src/ast_node/stat_node/stat_node.cpp.o
 .PHONY : src/ast_node/stat_node/stat_node.o
 
@@ -755,6 +899,54 @@ src/ast_node/stat_node/switch_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/switch_stat_node.cpp.s
 
+src/ast_node/stat_node/variable_decl_stat_node.o: src/ast_node/stat_node/variable_decl_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/variable_decl_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.cpp.o
+
+src/ast_node/stat_node/variable_decl_stat_node.i: src/ast_node/stat_node/variable_decl_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/variable_decl_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.cpp.i
+
+src/ast_node/stat_node/variable_decl_stat_node.s: src/ast_node/stat_node/variable_decl_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/variable_decl_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/variable_decl_stat_node.cpp.s
+
+src/ast_node/stat_node/void_stat_node.o: src/ast_node/stat_node/void_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/void_stat_node.o
+
+# target to build an object file
+src/ast_node/stat_node/void_stat_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o
+.PHONY : src/ast_node/stat_node/void_stat_node.cpp.o
+
+src/ast_node/stat_node/void_stat_node.i: src/ast_node/stat_node/void_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/void_stat_node.i
+
+# target to preprocess a source file
+src/ast_node/stat_node/void_stat_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.i
+.PHONY : src/ast_node/stat_node/void_stat_node.cpp.i
+
+src/ast_node/stat_node/void_stat_node.s: src/ast_node/stat_node/void_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/void_stat_node.s
+
+# target to generate assembly for a file
+src/ast_node/stat_node/void_stat_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.s
+.PHONY : src/ast_node/stat_node/void_stat_node.cpp.s
+
 src/ast_node/stat_node/while_stat_node.o: src/ast_node/stat_node/while_stat_node.cpp.o
 .PHONY : src/ast_node/stat_node/while_stat_node.o
 
@@ -778,6 +970,30 @@ src/ast_node/stat_node/while_stat_node.s: src/ast_node/stat_node/while_stat_node
 src/ast_node/stat_node/while_stat_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.s
 .PHONY : src/ast_node/stat_node/while_stat_node.cpp.s
+
+src/ast_node/terminal_symbols/terminal_else.o: src/ast_node/terminal_symbols/terminal_else.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_else.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_else.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_else.cpp.o
+
+src/ast_node/terminal_symbols/terminal_else.i: src/ast_node/terminal_symbols/terminal_else.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_else.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_else.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_else.cpp.i
+
+src/ast_node/terminal_symbols/terminal_else.s: src/ast_node/terminal_symbols/terminal_else.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_else.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_else.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_else.cpp.s
 
 src/ast_node/terminal_symbols/terminal_equal.o: src/ast_node/terminal_symbols/terminal_equal.cpp.o
 .PHONY : src/ast_node/terminal_symbols/terminal_equal.o
@@ -803,6 +1019,54 @@ src/ast_node/terminal_symbols/terminal_equal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.s
 .PHONY : src/ast_node/terminal_symbols/terminal_equal.cpp.s
 
+src/ast_node/terminal_symbols/terminal_for.o: src/ast_node/terminal_symbols/terminal_for.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_for.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_for.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_for.cpp.o
+
+src/ast_node/terminal_symbols/terminal_for.i: src/ast_node/terminal_symbols/terminal_for.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_for.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_for.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_for.cpp.i
+
+src/ast_node/terminal_symbols/terminal_for.s: src/ast_node/terminal_symbols/terminal_for.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_for.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_for.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_for.cpp.s
+
+src/ast_node/terminal_symbols/terminal_func.o: src/ast_node/terminal_symbols/terminal_func.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_func.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_func.cpp.o
+
+src/ast_node/terminal_symbols/terminal_func.i: src/ast_node/terminal_symbols/terminal_func.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_func.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_func.cpp.i
+
+src/ast_node/terminal_symbols/terminal_func.s: src/ast_node/terminal_symbols/terminal_func.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_func.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_func.cpp.s
+
 src/ast_node/terminal_symbols/terminal_ident_literal.o: src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o
 .PHONY : src/ast_node/terminal_symbols/terminal_ident_literal.o
 
@@ -827,6 +1091,30 @@ src/ast_node/terminal_symbols/terminal_ident_literal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.s
 .PHONY : src/ast_node/terminal_symbols/terminal_ident_literal.cpp.s
 
+src/ast_node/terminal_symbols/terminal_if.o: src/ast_node/terminal_symbols/terminal_if.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_if.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_if.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_if.cpp.o
+
+src/ast_node/terminal_symbols/terminal_if.i: src/ast_node/terminal_symbols/terminal_if.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_if.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_if.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_if.cpp.i
+
+src/ast_node/terminal_symbols/terminal_if.s: src/ast_node/terminal_symbols/terminal_if.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_if.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_if.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_if.cpp.s
+
 src/ast_node/terminal_symbols/terminal_let.o: src/ast_node/terminal_symbols/terminal_let.cpp.o
 .PHONY : src/ast_node/terminal_symbols/terminal_let.o
 
@@ -850,6 +1138,30 @@ src/ast_node/terminal_symbols/terminal_let.s: src/ast_node/terminal_symbols/term
 src/ast_node/terminal_symbols/terminal_let.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.s
 .PHONY : src/ast_node/terminal_symbols/terminal_let.cpp.s
+
+src/ast_node/terminal_symbols/terminal_return.o: src/ast_node/terminal_symbols/terminal_return.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_return.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_return.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_return.cpp.o
+
+src/ast_node/terminal_symbols/terminal_return.i: src/ast_node/terminal_symbols/terminal_return.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_return.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_return.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_return.cpp.i
+
+src/ast_node/terminal_symbols/terminal_return.s: src/ast_node/terminal_symbols/terminal_return.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_return.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_return.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_return.cpp.s
 
 src/ast_node/terminal_symbols/terminal_separator.o: src/ast_node/terminal_symbols/terminal_separator.cpp.o
 .PHONY : src/ast_node/terminal_symbols/terminal_separator.o
@@ -898,6 +1210,30 @@ src/ast_node/terminal_symbols/terminal_value_literal.s: src/ast_node/terminal_sy
 src/ast_node/terminal_symbols/terminal_value_literal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.s
 .PHONY : src/ast_node/terminal_symbols/terminal_value_literal.cpp.s
+
+src/ast_node/terminal_symbols/terminal_while.o: src/ast_node/terminal_symbols/terminal_while.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_while.o
+
+# target to build an object file
+src/ast_node/terminal_symbols/terminal_while.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o
+.PHONY : src/ast_node/terminal_symbols/terminal_while.cpp.o
+
+src/ast_node/terminal_symbols/terminal_while.i: src/ast_node/terminal_symbols/terminal_while.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_while.i
+
+# target to preprocess a source file
+src/ast_node/terminal_symbols/terminal_while.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.i
+.PHONY : src/ast_node/terminal_symbols/terminal_while.cpp.i
+
+src/ast_node/terminal_symbols/terminal_while.s: src/ast_node/terminal_symbols/terminal_while.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_while.s
+
+# target to generate assembly for a file
+src/ast_node/terminal_symbols/terminal_while.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.s
+.PHONY : src/ast_node/terminal_symbols/terminal_while.cpp.s
 
 src/file_reader/reader.o: src/file_reader/reader.cpp.o
 .PHONY : src/file_reader/reader.o
@@ -1120,6 +1456,9 @@ help:
 	@echo "... src/ast_node/expr_node/binary_expr.o"
 	@echo "... src/ast_node/expr_node/binary_expr.i"
 	@echo "... src/ast_node/expr_node/binary_expr.s"
+	@echo "... src/ast_node/expr_node/condition_expr_node.o"
+	@echo "... src/ast_node/expr_node/condition_expr_node.i"
+	@echo "... src/ast_node/expr_node/condition_expr_node.s"
 	@echo "... src/ast_node/expr_node/expr_node.o"
 	@echo "... src/ast_node/expr_node/expr_node.i"
 	@echo "... src/ast_node/expr_node/expr_node.s"
@@ -1150,15 +1489,24 @@ help:
 	@echo "... src/ast_node/stat_node/break_stat_node.o"
 	@echo "... src/ast_node/stat_node/break_stat_node.i"
 	@echo "... src/ast_node/stat_node/break_stat_node.s"
+	@echo "... src/ast_node/stat_node/change_variable_value_stat_node.o"
+	@echo "... src/ast_node/stat_node/change_variable_value_stat_node.i"
+	@echo "... src/ast_node/stat_node/change_variable_value_stat_node.s"
 	@echo "... src/ast_node/stat_node/continue_stat_node.o"
 	@echo "... src/ast_node/stat_node/continue_stat_node.i"
 	@echo "... src/ast_node/stat_node/continue_stat_node.s"
+	@echo "... src/ast_node/stat_node/else_stat_node.o"
+	@echo "... src/ast_node/stat_node/else_stat_node.i"
+	@echo "... src/ast_node/stat_node/else_stat_node.s"
 	@echo "... src/ast_node/stat_node/expression_stat_node.o"
 	@echo "... src/ast_node/stat_node/expression_stat_node.i"
 	@echo "... src/ast_node/stat_node/expression_stat_node.s"
 	@echo "... src/ast_node/stat_node/for_stat_node.o"
 	@echo "... src/ast_node/stat_node/for_stat_node.i"
 	@echo "... src/ast_node/stat_node/for_stat_node.s"
+	@echo "... src/ast_node/stat_node/function_decl_stat_node.o"
+	@echo "... src/ast_node/stat_node/function_decl_stat_node.i"
+	@echo "... src/ast_node/stat_node/function_decl_stat_node.s"
 	@echo "... src/ast_node/stat_node/if_stat_node.o"
 	@echo "... src/ast_node/stat_node/if_stat_node.i"
 	@echo "... src/ast_node/stat_node/if_stat_node.s"
@@ -1171,30 +1519,60 @@ help:
 	@echo "... src/ast_node/stat_node/return_stat_node.o"
 	@echo "... src/ast_node/stat_node/return_stat_node.i"
 	@echo "... src/ast_node/stat_node/return_stat_node.s"
+	@echo "... src/ast_node/stat_node/self_change_stat_node.o"
+	@echo "... src/ast_node/stat_node/self_change_stat_node.i"
+	@echo "... src/ast_node/stat_node/self_change_stat_node.s"
+	@echo "... src/ast_node/stat_node/stat_list_node.o"
+	@echo "... src/ast_node/stat_node/stat_list_node.i"
+	@echo "... src/ast_node/stat_node/stat_list_node.s"
 	@echo "... src/ast_node/stat_node/stat_node.o"
 	@echo "... src/ast_node/stat_node/stat_node.i"
 	@echo "... src/ast_node/stat_node/stat_node.s"
 	@echo "... src/ast_node/stat_node/switch_stat_node.o"
 	@echo "... src/ast_node/stat_node/switch_stat_node.i"
 	@echo "... src/ast_node/stat_node/switch_stat_node.s"
+	@echo "... src/ast_node/stat_node/variable_decl_stat_node.o"
+	@echo "... src/ast_node/stat_node/variable_decl_stat_node.i"
+	@echo "... src/ast_node/stat_node/variable_decl_stat_node.s"
+	@echo "... src/ast_node/stat_node/void_stat_node.o"
+	@echo "... src/ast_node/stat_node/void_stat_node.i"
+	@echo "... src/ast_node/stat_node/void_stat_node.s"
 	@echo "... src/ast_node/stat_node/while_stat_node.o"
 	@echo "... src/ast_node/stat_node/while_stat_node.i"
 	@echo "... src/ast_node/stat_node/while_stat_node.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_else.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_else.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_else.s"
 	@echo "... src/ast_node/terminal_symbols/terminal_equal.o"
 	@echo "... src/ast_node/terminal_symbols/terminal_equal.i"
 	@echo "... src/ast_node/terminal_symbols/terminal_equal.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_for.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_for.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_for.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_func.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_func.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_func.s"
 	@echo "... src/ast_node/terminal_symbols/terminal_ident_literal.o"
 	@echo "... src/ast_node/terminal_symbols/terminal_ident_literal.i"
 	@echo "... src/ast_node/terminal_symbols/terminal_ident_literal.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_if.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_if.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_if.s"
 	@echo "... src/ast_node/terminal_symbols/terminal_let.o"
 	@echo "... src/ast_node/terminal_symbols/terminal_let.i"
 	@echo "... src/ast_node/terminal_symbols/terminal_let.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_return.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_return.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_return.s"
 	@echo "... src/ast_node/terminal_symbols/terminal_separator.o"
 	@echo "... src/ast_node/terminal_symbols/terminal_separator.i"
 	@echo "... src/ast_node/terminal_symbols/terminal_separator.s"
 	@echo "... src/ast_node/terminal_symbols/terminal_value_literal.o"
 	@echo "... src/ast_node/terminal_symbols/terminal_value_literal.i"
 	@echo "... src/ast_node/terminal_symbols/terminal_value_literal.s"
+	@echo "... src/ast_node/terminal_symbols/terminal_while.o"
+	@echo "... src/ast_node/terminal_symbols/terminal_while.i"
+	@echo "... src/ast_node/terminal_symbols/terminal_while.s"
 	@echo "... src/file_reader/reader.o"
 	@echo "... src/file_reader/reader.i"
 	@echo "... src/file_reader/reader.s"

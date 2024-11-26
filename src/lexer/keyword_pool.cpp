@@ -6,7 +6,8 @@
 namespace mycompiler {
 
 KeywordPool::KeywordPool()
-    : keywords_({"let", "if", "else", "for", "return", "func", "while"}) {}
+    : keywords_({"let", "if", "else", "for", "return", "func", "while", "break",
+                 "continue"}) {}
 
 auto KeywordPool::find(std::string &word) -> bool {
   return this->keywords_.find(word) != keywords_.end();
@@ -27,6 +28,10 @@ auto get_keyword_type_from_string(std::string &str) -> Keyword_Type {
     return Keyword_Type::IF;
   } else if (str == "while") {
     return Keyword_Type::WHILE;
+  } else if (str == "continue") {
+    return Keyword_Type::CONTINUE;
+  } else if (str == "break") {
+    return Keyword_Type::BREAK;
   }
   throw std::runtime_error(str + "is not a keyword");
 }

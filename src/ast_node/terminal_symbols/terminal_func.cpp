@@ -5,7 +5,7 @@
 namespace mycompiler {
 
 TerminalFunc::TerminalFunc(std::shared_ptr<Lexer> lexer) : BasicNode(lexer) {
-  this->ast_node_type_ = AST_NODE_TYPE::LET;
+  this->ast_node_type_ = AST_NODE_TYPE::FUNC;
 }
 
 void TerminalFunc::print_info() {

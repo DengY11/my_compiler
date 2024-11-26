@@ -37,6 +37,12 @@
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/expr_node.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/expr_node/expr_node.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o"
@@ -97,9 +103,21 @@
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/continue_stat_node.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/continue_stat_node.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
@@ -112,6 +130,12 @@
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/for_stat_node.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/for_stat_node.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
@@ -139,6 +163,18 @@
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_node.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/stat_node.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o"
@@ -151,9 +187,27 @@
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/while_stat_node.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/stat_node/while_stat_node.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
@@ -163,15 +217,39 @@
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_ident_literal.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_ident_literal.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_let.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_let.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",
@@ -184,6 +262,12 @@
   "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_value_literal.cpp",
   "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_value_literal.cpp",
   "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o"
+},
+{
+  "directory": "/home/dylan/code/my_compiler/build",
+  "command": "/usr/bin/c++  -I/home/dylan/code/my_compiler/include -std=gnu++20 -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp",
+  "file": "/home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp",
+  "output": "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o"
 },
 {
   "directory": "/home/dylan/code/my_compiler/build",

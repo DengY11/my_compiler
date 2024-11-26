@@ -116,12 +116,12 @@ test/token/clean: test/token/CMakeFiles/TestToken.dir/clean
 CMakeFiles/MyCompilerLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyCompilerLib.dir/build.make CMakeFiles/MyCompilerLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target MyCompilerLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target MyCompilerLib"
 .PHONY : CMakeFiles/MyCompilerLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyCompilerLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyCompilerLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyCompilerLib.dir/rule
@@ -142,12 +142,12 @@ CMakeFiles/MyCompilerLib.dir/clean:
 test/lexer/CMakeFiles/TestLexer.dir/all: CMakeFiles/MyCompilerLib.dir/all
 	$(MAKE) $(MAKESILENT) -f test/lexer/CMakeFiles/TestLexer.dir/build.make test/lexer/CMakeFiles/TestLexer.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/lexer/CMakeFiles/TestLexer.dir/build.make test/lexer/CMakeFiles/TestLexer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=41,42 "Built target TestLexer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=55,56 "Built target TestLexer"
 .PHONY : test/lexer/CMakeFiles/TestLexer.dir/all
 
 # Build rule for subdir invocation for target.
 test/lexer/CMakeFiles/TestLexer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexer/CMakeFiles/TestLexer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 0
 .PHONY : test/lexer/CMakeFiles/TestLexer.dir/rule
@@ -168,12 +168,12 @@ test/lexer/CMakeFiles/TestLexer.dir/clean:
 test/token/CMakeFiles/TestToken.dir/all: CMakeFiles/MyCompilerLib.dir/all
 	$(MAKE) $(MAKESILENT) -f test/token/CMakeFiles/TestToken.dir/build.make test/token/CMakeFiles/TestToken.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/token/CMakeFiles/TestToken.dir/build.make test/token/CMakeFiles/TestToken.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=43,44 "Built target TestToken"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=57,58 "Built target TestToken"
 .PHONY : test/token/CMakeFiles/TestToken.dir/all
 
 # Build rule for subdir invocation for target.
 test/token/CMakeFiles/TestToken.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/token/CMakeFiles/TestToken.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dylan/code/my_compiler/build/CMakeFiles 0
 .PHONY : test/token/CMakeFiles/TestToken.dir/rule

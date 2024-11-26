@@ -153,10 +153,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/expr_node/binary_expr.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/expr_node/condition_expr_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/function_called_return_value_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/function_called_return_value_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/group_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/group_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.s: cmake
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/ident_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/ident_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/ident_expr_node.cpp.s: cmake
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/literal_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/literal_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/literal_expr_node.cpp.s: cma
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/tenary_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/tenary_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/tenary_expr_node.cpp.s: cmak
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/expr_node/unary_expr_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/expr_node/unary_expr_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_expr_node.cpp.s: cmake
 CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/root_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/root_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/block_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/block_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.s: cmake
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/break_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/break_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.i: cmake_force
@@ -293,10 +307,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/break_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/change_variable_value_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/continue_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/continue_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.i: cmake_force
@@ -307,10 +335,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/continue_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/else_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/expression_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/expression_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.i: cmake_force
@@ -324,7 +366,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.s: 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/for_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/for_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.i: cmake_force
@@ -335,10 +377,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/for_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/function_decl_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/if_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/if_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.i: cmake_force
@@ -352,7 +408,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.s: cmake_fo
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/parameter_list_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/parameter_list_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.i: cmake_force
@@ -366,7 +422,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/parameter_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/parameter_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.i: cmake_force
@@ -380,7 +436,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.s: c
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/return_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/return_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.i: cmake_force
@@ -391,10 +447,38 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/return_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/self_change_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.s
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_list_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.i: cmake_force
@@ -408,7 +492,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/switch_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/switch_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.i: cmake_force
@@ -419,10 +503,38 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/switch_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/variable_decl_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.s
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/void_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o: /home/dylan/code/my_compiler/src/ast_node/stat_node/while_stat_node.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/stat_node/while_stat_node.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.i: cmake_force
@@ -433,10 +545,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/stat_node/while_stat_node.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_else.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_equal.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_equal.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.i: cmake_force
@@ -447,10 +573,38 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_equal.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_for.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.s
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_func.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_ident_literal.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_ident_literal.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.i: cmake_force
@@ -461,10 +615,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_litera
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_ident_literal.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_if.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_let.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_let.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.i: cmake_force
@@ -475,10 +643,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_let.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_return.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_separator.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_separator.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.i: cmake_force
@@ -492,7 +674,7 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_value_literal.cpp
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_value_literal.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.i: cmake_force
@@ -503,10 +685,24 @@ CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_litera
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_value_literal.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.s
 
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o: /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o -c /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp > CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.i
+
+CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/code/my_compiler/src/ast_node/terminal_symbols/terminal_while.cpp -o CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.s
+
 CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o: /home/dylan/code/my_compiler/src/file_reader/reader.cpp
 CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o -c /home/dylan/code/my_compiler/src/file_reader/reader.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.i: cmake_force
@@ -520,7 +716,7 @@ CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o: /home/dylan/code/my_compiler/src/lexer/keyword_pool.cpp
 CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o -c /home/dylan/code/my_compiler/src/lexer/keyword_pool.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.i: cmake_force
@@ -534,7 +730,7 @@ CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o: /home/dylan/code/my_compiler/src/lexer/lexer.cpp
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o -c /home/dylan/code/my_compiler/src/lexer/lexer.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.i: cmake_force
@@ -548,7 +744,7 @@ CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o: /home/dylan/code/my_compiler/src/lexer/lexer_helper_functions.cpp
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.o -c /home/dylan/code/my_compiler/src/lexer/lexer_helper_functions.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.i: cmake_force
@@ -562,7 +758,7 @@ CMakeFiles/MyCompilerLib.dir/src/lexer/lexer_helper_functions.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o: /home/dylan/code/my_compiler/src/lexer/operator_pool.cpp
 CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.o -c /home/dylan/code/my_compiler/src/lexer/operator_pool.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.i: cmake_force
@@ -576,7 +772,7 @@ CMakeFiles/MyCompilerLib.dir/src/lexer/operator_pool.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o: /home/dylan/code/my_compiler/src/lexer/separator_pool.cpp
 CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.o -c /home/dylan/code/my_compiler/src/lexer/separator_pool.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.i: cmake_force
@@ -590,7 +786,7 @@ CMakeFiles/MyCompilerLib.dir/src/lexer/separator_pool.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o: /home/dylan/code/my_compiler/src/token/token.cpp
 CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o -c /home/dylan/code/my_compiler/src/token/token.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.i: cmake_force
@@ -604,7 +800,7 @@ CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.s: cmake_force
 CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o: CMakeFiles/MyCompilerLib.dir/flags.make
 CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o: /home/dylan/code/my_compiler/src/token/token_helper_functions.cpp
 CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o: CMakeFiles/MyCompilerLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o -MF CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o.d -o CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o -c /home/dylan/code/my_compiler/src/token/token_helper_functions.cpp
 
 CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.i: cmake_force
@@ -623,6 +819,7 @@ MyCompilerLib_OBJECTS = \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/decl_node/lambda_decl_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/decl_node/variable_decl_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o" \
@@ -633,21 +830,34 @@ MyCompilerLib_OBJECTS = \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o" \
+"CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o" \
 "CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o" \
@@ -666,6 +876,7 @@ libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/decl_node/function
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/decl_node/lambda_decl_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/decl_node/variable_decl_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/binary_expr.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/condition_expr_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/expr_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/function_called_return_value_expr_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/group_expr_node.cpp.o
@@ -676,21 +887,34 @@ libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/expr_node/unary_ex
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/root_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/block_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/break_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/change_variable_value_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/continue_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/else_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/expression_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/for_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/function_decl_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/if_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_list_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/parameter_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/return_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/self_change_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_list_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/switch_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/variable_decl_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/void_stat_node.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/stat_node/while_stat_node.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_else.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_equal.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_for.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_func.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_ident_literal.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_if.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_let.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_return.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_separator.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_value_literal.cpp.o
+libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/ast_node/terminal_symbols/terminal_while.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/file_reader/reader.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/lexer/keyword_pool.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/lexer/lexer.cpp.o
@@ -701,7 +925,7 @@ libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/token/token.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/src/token/token_helper_functions.cpp.o
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/build.make
 libMyCompilerLib.a: CMakeFiles/MyCompilerLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX static library libMyCompilerLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dylan/code/my_compiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Linking CXX static library libMyCompilerLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/MyCompilerLib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyCompilerLib.dir/link.txt --verbose=$(VERBOSE)
 

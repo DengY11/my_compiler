@@ -15,4 +15,18 @@ void ContinueStatNode::print_info() {
                 [](ChildPtr child) { child->print_info(); });
 }
 
+void ContinueStatNode::Parse() {
+
+  Token token = this->lexer_->getCurrentToken();
+  if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
+    throw std::runtime_error("illegal or end of file");
+  }
+
+  auto child_terminal_continue =
+      std::make_shared<ContinueStatNode>(this->lexer_);
+  child_terminal_continue->Parse();
+
+  this->children_.push_back(child_terminal_continue);
+}
+
 } // namespace mycompiler

@@ -1,6 +1,0 @@
-/home/dylan/code/my_compiler/cmake-build-debug/CMakeFiles/MyCompilerLib.dir
-/home/dylan/code/my_compiler/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dylan/code/my_compiler/cmake-build-debug/test/lexer/CMakeFiles/TestLexer.dir
-/home/dylan/code/my_compiler/cmake-build-debug/test/lexer/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/cmake-build-debug/test/lexer/CMakeFiles/rebuild_cache.dir
