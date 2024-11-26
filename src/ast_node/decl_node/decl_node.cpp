@@ -1,4 +1,5 @@
 #include "ast_node/decl_node/decl_node.hpp"
+#include "ast_node/stat_node/stat_node.hpp"
 
 namespace mycompiler {
 

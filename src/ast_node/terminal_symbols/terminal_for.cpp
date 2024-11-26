@@ -1,6 +1,7 @@
 #include "ast_node/terminal_symbols/terminal_for.hpp"
 #include "ast_node/basic_node.hpp"
 #include "ast_node/node_type.hpp"
+#include "magic_enum/magic_enum.hpp"
 #include "token/keyword_type.hpp"
 #include "token/token_helper_functions.hpp"
 #include "token/token_type.hpp"
@@ -14,7 +15,10 @@ TerminalFor::TerminalFor(std::shared_ptr<Lexer> lexer) : BasicNode(lexer) {
 }
 
 void TerminalFor::print_info() {
-  std::cout << "Node type: FOR" << std::endl;
+  std::cout << "Node type: " << std::endl;
+  std::cout << std::string(magic_enum::enum_name(this->ast_node_type_))
+            << std::endl;
+
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });

@@ -5,7 +5,7 @@
 
 namespace mycompiler {
 
-class DeclNode : public StatNode {
+class DeclNode : public BasicNode {
 public:
   DeclNode(std::shared_ptr<Lexer> lexer);
 
@@ -15,7 +15,6 @@ public:
 
   virtual ~DeclNode() = default;
 };
-
 } // namespace mycompiler
 
 #endif

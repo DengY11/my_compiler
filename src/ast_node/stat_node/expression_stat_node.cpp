@@ -1,6 +1,7 @@
 #include "ast_node/stat_node/expression_stat_node.hpp"
 #include "ast_node/expr_node/literal_expr_node.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "magic_enum/magic_enum.hpp"
 #include <memory>
 
 namespace mycompiler {
@@ -11,7 +12,10 @@ ExpressionStatNode::ExpressionStatNode(std::shared_ptr<Lexer> lexer)
 }
 
 void ExpressionStatNode::print_info() {
-  std::cout << "Node type: EXPRESSION_STAT" << std::endl;
+  std::cout << "Node type: " << std::endl;
+  std::cout << std::string(magic_enum::enum_name(this->ast_node_type_))
+            << std::endl;
+
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });

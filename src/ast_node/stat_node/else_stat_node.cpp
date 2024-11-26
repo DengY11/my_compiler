@@ -2,6 +2,7 @@
 #include "ast_node/stat_node/stat_list_node.hpp"
 #include "ast_node/terminal_symbols/terminal_else.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "magic_enum/magic_enum.hpp"
 #include <memory>
 
 namespace mycompiler {
@@ -11,7 +12,10 @@ ElseStatNode::ElseStatNode(std::shared_ptr<Lexer> lexer) : StatNode(lexer) {
 }
 
 void ElseStatNode::print_info() {
-  std::cout << "Node type: BREAK_STAT" << std::endl;
+  std::cout << "Node type: " << std::endl;
+  std::cout << std::string(magic_enum::enum_name(this->ast_node_type_))
+            << std::endl;
+
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });
