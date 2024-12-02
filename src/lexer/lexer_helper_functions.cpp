@@ -20,6 +20,13 @@ auto is_operator_type(char ch) -> bool {
           ch == '!' || ch == '^');
 }
 
+auto maybe_binary_operator(char ch) -> bool {
+  return (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^' ||
+          ch == '=');
+}
+
+auto maybe_unary_operator(char ch) -> bool { return ch == '!'; }
+
 auto is_separator_type(char ch) -> bool {
   return (ch == '(' || ch == ')' || ch == '{' || ch == '}' || ch == '[' ||
           ch == ']' || ch == ',' || ch == ';' || ch == '"');

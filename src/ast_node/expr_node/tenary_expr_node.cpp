@@ -18,22 +18,7 @@ auto TenaryExprNode::print_info() -> void {
 
 auto TenaryExprNode::Parse() -> void {
 
-  Token &&token = this->lexer_->getCurrentToken();
-  if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
-    throw std::runtime_error("illegal token or end of file");
-  }
-
-  auto child_left_val = std::make_shared<LiteralExprNode>(this->lexer_);
-  child_left_val->Parse();
-  this->children_.push_back(child_left_val);
-
-  auto child_operator = std::make_shared<TerminalOperator>(this->lexer_);
-  child_operator->Parse();
-  this->children_.push_back(child_operator);
-
-  auto child_right_val = std::make_shared<LiteralExprNode>(this->lexer_);
-  child_right_val->Parse();
-  this->children_.push_back(child_left_val);
+  // TODO:
 }
 
 } // namespace mycompiler

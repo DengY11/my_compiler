@@ -13,6 +13,10 @@ public:
 
   virtual void Parse() override final;
 
+  auto is_binary_operator() -> bool;
+
+  auto is_unary_operator() -> bool;
+
   virtual ~TerminalOperator() = default;
 
   std::string operator_;

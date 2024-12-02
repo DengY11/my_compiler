@@ -33,6 +33,10 @@ auto get_separator_type_from_token_class(const Token &token)
 
 auto is_identifier_type(const Token &token) -> bool;
 
+auto is_unary_operator_token(const Token &token) -> bool;
+
+auto is_binary_operator_token(const Token &token) -> bool;
+
 // TODO:
 
 } // namespace mycompiler
