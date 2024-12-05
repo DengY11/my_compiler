@@ -37,6 +37,10 @@ auto is_unary_operator_token(const Token &token) -> bool;
 
 auto is_binary_operator_token(const Token &token) -> bool;
 
+auto get_operator_priority(const std::string &op) -> int;
+
+auto get_operator_priority(const Token &token) -> int;
+
 // TODO:
 
 } // namespace mycompiler

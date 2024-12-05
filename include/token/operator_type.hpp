@@ -13,7 +13,8 @@ enum class Operator_Type {
   NOT_EQUAL,
   HAT, // ^
   SELF_ADD,
-  SELF_SUB
+  SELF_SUB,
+  NOT
 };
 
 class Operator {

@@ -19,6 +19,14 @@ public:
 
   virtual auto Parse() -> void override final;
 
+  auto ParseExpression() -> void;
+
+  auto ParseTerm() -> void;
+
+  auto ParseFactor() -> void;
+
+  auto ParseUnary() -> void;
+
   virtual auto print_info() -> void override final;
 
   virtual ~LiteralExprNode() = default;

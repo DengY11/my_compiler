@@ -20,7 +20,7 @@ void Lexer::print_source() {
 auto Lexer::getCurrentIndex() const -> size_t { return this->index_; }
 
 auto Lexer::lookNextChar() -> char {
-  int nextIndex = ++index_;
+  int nextIndex = index_ + 1;
   if (nextIndex >= this->input_.length()) {
     return '\0';
   }

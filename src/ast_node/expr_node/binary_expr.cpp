@@ -43,9 +43,13 @@ auto BinaryExprNode::Parse() -> void {
   child_left_val->Parse();
   this->children_.push_back(child_left_val);
 
+  this->lexer_->getNextToken();
+
   auto child_operator = std::make_shared<TerminalOperator>(this->lexer_);
   child_operator->Parse();
   this->children_.push_back(child_operator);
+
+  this->lexer_->getNextToken();
 
   auto child_right_val = std::make_shared<LiteralExprNode>(this->lexer_);
   child_right_val->Parse();
