@@ -45,6 +45,14 @@ void WhileStatNode::Parse() {
     this->children_.push_back(child_left);
   }
 
+  auto child_right = std::make_shared<TerminalSeparator>(this->lexer_);
+  child_right->Parse();
+  if (child_right->separator_ != ")") {
+    throw std::runtime_error("expect )");
+  } else {
+    this->children_.push_back(child_right);
+  }
+
   this->lexer_->getNextToken();
 
   auto child_value = std::make_shared<ConditionExprNode>(this->lexer_);
