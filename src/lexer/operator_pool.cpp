@@ -12,25 +12,27 @@ auto OperatorPool::find(std::string &word) -> bool {
   return this->operators_.find(word) != operators_.end();
 }
 
-auto get_operator_type_from_string(std::string &str) -> Operator_Type {
+auto getOperatorTypeFromString(std::string &str) -> OperatorType {
   if (str == "+") {
-    return Operator_Type::PLUS;
+    return OperatorType::PLUS;
   } else if (str == "-") {
-    return Operator_Type::SUB;
+    return OperatorType::SUB;
   } else if (str == "*") {
-    return Operator_Type::MUL;
+    return OperatorType::MUL;
   } else if (str == "/") {
-    return Operator_Type::DIV;
+    return OperatorType::DIV;
   } else if (str == "==") {
-    return Operator_Type::DOUBLE_EQUAL;
+    return OperatorType::DOUBLE_EQUAL;
   } else if (str == "!=") {
-    return Operator_Type::NOT_EQUAL;
+    return OperatorType::NOT_EQUAL;
   } else if (str == "=") {
-    return Operator_Type::EQUAL;
+    return OperatorType::EQUAL;
   } else if (str == "^") {
-    return Operator_Type::HAT;
+    return OperatorType::HAT;
   } else if (str == "++") {
-    return Operator_Type::SELF_ADD;
+    return OperatorType::SELF_ADD;
+  } else if (str == "--") {
+    return OperatorType::SELF_SUB;
   }
 
   throw std::runtime_error("operator not found: " + str);

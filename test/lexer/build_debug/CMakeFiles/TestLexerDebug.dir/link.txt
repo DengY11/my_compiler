@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestLexerDebug.dir/test_lexer_debug.cpp.o -o TestLexerDebug  libLexerLib.a libTokenLib.a 

@@ -13,25 +13,25 @@ auto KeywordPool::find(std::string &word) -> bool {
   return this->keywords_.find(word) != keywords_.end();
 }
 
-auto get_keyword_type_from_string(std::string &str) -> Keyword_Type {
+auto getKeywordTypeFromString(std::string &str) -> KeywordType {
   if (str == "func") {
-    return Keyword_Type::FUNC;
+    return KeywordType::FUNC;
   } else if (str == "let") {
-    return Keyword_Type::LET;
+    return KeywordType::LET;
   } else if (str == "else") {
-    return Keyword_Type::ELSE;
+    return KeywordType::ELSE;
   } else if (str == "for") {
-    return Keyword_Type::FOR;
+    return KeywordType::FOR;
   } else if (str == "return") {
-    return Keyword_Type::RETURN;
+    return KeywordType::RETURN;
   } else if (str == "if") {
-    return Keyword_Type::IF;
+    return KeywordType::IF;
   } else if (str == "while") {
-    return Keyword_Type::WHILE;
+    return KeywordType::WHILE;
   } else if (str == "continue") {
-    return Keyword_Type::CONTINUE;
+    return KeywordType::CONTINUE;
   } else if (str == "break") {
-    return Keyword_Type::BREAK;
+    return KeywordType::BREAK;
   }
   throw std::runtime_error(str + "is not a keyword");
 }

@@ -15,59 +15,70 @@
 
 namespace mycompiler {
 
+// 基本的Token值类型
 using TokenValueType_ = std::variant<int, char, double, std::string>;
+
+// Token值类型，使用variant存储不同类型的值
 using TokenValueType =
     std::variant<mycompiler::Constant, mycompiler::Keyword, mycompiler::Comment,
                  mycompiler::Identifier, mycompiler::Operator,
-                 mycompiler::EOF_OR_ILLEGAL, mycompiler::Separator,
+                 mycompiler::EofOrIllegal, mycompiler::Separator,
                  mycompiler::Preprocessor>;
 
 class Token {
 public:
+  // 禁用默认构造函数
   Token() = delete;
 
+  // 允许拷贝构造和移动构造
   Token(const Token &other) = default;
-
   Token(Token &&other) = default;
 
-  Token(TokenType Constant_type, mycompiler::Constant token_value);
-  Token(TokenType Keyword_type, mycompiler::Keyword token_value);
-  Token(TokenType Comment_type, mycompiler::Comment token_value);
-  Token(TokenType Identifier_type, mycompiler::Identifier token_value);
-  Token(TokenType Operator_type, mycompiler::Operator token_value);
-  Token(TokenType eof_or_illegal_type, mycompiler::EOF_OR_ILLEGAL token_value);
-  Token(TokenType Separator_type, mycompiler::Separator token_value);
-  Token(TokenType Preprocessor_type, mycompiler::Preprocessor token_value);
+  // 各种类型的Token构造函数
+  Token(TokenType constantType, mycompiler::Constant tokenValue);
+  Token(TokenType keywordType, mycompiler::Keyword tokenValue);
+  Token(TokenType commentType, mycompiler::Comment tokenValue);
+  Token(TokenType identifierType, mycompiler::Identifier tokenValue);
+  Token(TokenType operatorType, mycompiler::Operator tokenValue);
+  Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue);
+  Token(TokenType separatorType, mycompiler::Separator tokenValue);
+  Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue);
 
-  auto operator=(const Token &other) -> void; // TODO:
+  // 赋值操作符
+  auto operator=(const Token &other) -> void;
 
-  void print_info();
+  // 打印Token信息
+  auto printInfo() -> void;
 
-  auto get_token_type() const -> TokenType;
-  auto get_token_value() const -> TokenValueType;
+  // 获取Token类型
+  auto getTokenType() const -> TokenType;
+  
+  // 获取Token值
+  auto getTokenValue() const -> TokenValueType;
 
 private:
-  TokenType token_type_;
-  TokenValueType token_value_;
+  TokenType tokenType_;     // Token类型
+  TokenValueType tokenValue_; // Token值
 };
 
-auto make_constant_token(int value) -> Token;
-auto make_constant_token(double value) -> Token;
-auto make_constant_token(std::string value) -> Token;
+// 创建各种类型的Token的工厂函数
+auto makeConstantToken(int value) -> Token;
+auto makeConstantToken(double value) -> Token;
+auto makeConstantToken(std::string value) -> Token;
 
-auto make_keyword_token(Keyword_Type value) -> Token;
+auto makeKeywordToken(KeywordType value) -> Token;
 
-auto make_comment_tokenokenTyp(std::string value) -> Token;
+auto makeCommentToken(std::string value) -> Token;
 
-auto make_identifier_token(std::string value) -> Token;
+auto makeIdentifierToken(std::string value) -> Token;
 
-auto make_operator_token(Operator_Type value) -> Token;
+auto makeOperatorToken(OperatorType value) -> Token;
 
-auto make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE value) -> Token;
+auto makeEofOrIllegalToken(EofOrIllegalType value) -> Token;
 
-auto make_separator_token(std::string value) -> Token;
+auto makeSeparatorToken(std::string value) -> Token;
 
-auto make_preprocessor_token(std::string value) -> Token;
+auto makePreprocessorToken(std::string value) -> Token;
 
 } // namespace mycompiler
 

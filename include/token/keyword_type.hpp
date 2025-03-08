@@ -4,26 +4,26 @@
 
 namespace mycompiler {
 
-enum class Keyword_Type {
-  FUNC,
-  LET,
-  RETURN,
-  IF,
-  ELSE,
-  FOR,
-  WHILE,
-  CONTINUE,
-  BREAK
+// 关键字类型枚举
+enum class KeywordType {
+  FUNC,     // function关键字
+  LET,      // let关键字
+  IF,       // if关键字
+  ELSE,     // else关键字
+  FOR,      // for关键字
+  RETURN,   // return关键字
+  WHILE,    // while关键字
+  CONTINUE, // continue关键字
+  BREAK     // break关键字
 };
-// NOTE::添加关键词记得修改lexer的keyword_pool
-// NOTE::还要在stat_node.cpp里添加相应的语法解析
 
+// 关键字类
 class Keyword {
 public:
   Keyword() = delete;
-  Keyword(Keyword_Type keyword_type) : Keyword_type_(keyword_type) {}
+  Keyword(KeywordType keywordType) : keywordType_(keywordType) {}
 
-  Keyword_Type Keyword_type_;
+  KeywordType keywordType_;
 };
 
 } // namespace mycompiler

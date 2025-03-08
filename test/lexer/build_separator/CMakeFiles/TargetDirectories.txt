@@ -1,0 +1,5 @@
+/home/dylan/code/my_compiler/test/lexer/build_separator/CMakeFiles/TokenLib.dir
+/home/dylan/code/my_compiler/test/lexer/build_separator/CMakeFiles/LexerLib.dir
+/home/dylan/code/my_compiler/test/lexer/build_separator/CMakeFiles/TestSeparator.dir
+/home/dylan/code/my_compiler/test/lexer/build_separator/CMakeFiles/edit_cache.dir
+/home/dylan/code/my_compiler/test/lexer/build_separator/CMakeFiles/rebuild_cache.dir

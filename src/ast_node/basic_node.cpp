@@ -2,6 +2,8 @@
 #include "magic_enum/magic_enum.hpp"
 #include <algorithm>
 #include <memory>
+#include <stdexcept>
+#include <sstream>
 
 namespace mycompiler {
 
@@ -18,8 +20,33 @@ void BasicNode::print_info() {
                 [](ChildPtr child) { child->print_info(); });
 }
 
+std::string BasicNode::toString() const {
+  std::stringstream ss;
+  ss << "Node type: " << std::string(magic_enum::enum_name(this->ast_node_type_));
+  return ss.str();
+}
+
 void BasicNode::add_child(std::shared_ptr<BasicNode> childptr) {
   this->children_.emplace_back(childptr);
+}
+
+bool BasicNode::expectNextToken(TokenType type) {
+  Token nextToken = lexer_->peekNextToken();
+  return nextToken.getTokenType() == type;
+}
+
+Token BasicNode::consumeToken(TokenType type) {
+  Token nextToken = lexer_->peekNextToken();
+  if (nextToken.getTokenType() != type) {
+    std::stringstream ss;
+    ss << "Expected token type " << static_cast<int>(type) 
+       << " but got " << static_cast<int>(nextToken.getTokenType())
+       << " at line " << nextToken.getLine() 
+       << ", column " << nextToken.getColumn();
+    throw std::runtime_error(ss.str());
+  }
+  lexer_->getNextToken();
+  return lexer_->getCurrentToken();
 }
 
 } // namespace mycompiler

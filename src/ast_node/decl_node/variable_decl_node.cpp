@@ -5,59 +5,109 @@
 #include "ast_node/terminal_symbols/terminal_ident_literal.hpp"
 #include "ast_node/terminal_symbols/terminal_let.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
+#include "token/token_helper_functions.hpp"
 #include <memory>
 #include <stdexcept>
+#include <sstream>
 
 namespace mycompiler {
 
-VarDeclNode::VarDeclNode(std::shared_ptr<Lexer> lexer) : DeclNode(lexer) {
+VariableDeclNode::VariableDeclNode(std::shared_ptr<Lexer> lexer) : DeclNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::VARIABLE_DECL;
 }
 
-void VarDeclNode::print_info() {
+void VariableDeclNode::print_info() {
   std::cout << "Node type: VARIABLE_DECL" << std::endl;
+  std::cout << "Name: " << name_ << std::endl;
+  std::cout << "Type: " << type_ << std::endl;
+  
+  std::cout << "Initial value: " << std::endl;
+  if (initialValue_) {
+    initialValue_->print_info();
+  } else {
+    std::cout << "None" << std::endl;
+  }
+  
+  std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });
 }
 
-void VarDeclNode::Parse() {
-  // let ident = expr;
-  Token &&token = this->lexer_->getCurrentToken();
-  if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
-    throw std::runtime_error("illegal token or end of file");
+std::string VariableDeclNode::toString() const {
+  std::stringstream ss;
+  ss << "Variable " << name_ << " with type " << type_;
+  if (initialValue_) {
+    ss << " and initial value: " << initialValue_->toString();
   }
+  return ss.str();
+}
 
-  auto child_let = std::make_shared<TerminalLet>(this->lexer_);
-  child_let->Parse();
-  this->children_.push_back(child_let);
-
-  this->lexer_->getNextToken();
-
-  auto child_identifier = std::make_shared<TerminalIdentLiteral>(this->lexer_);
-  child_identifier->Parse();
-  this->children_.push_back(child_identifier);
-
-  this->lexer_->getNextToken();
-
-  auto child_equal = std::make_shared<TerminalEqual>(this->lexer_);
-  child_equal->Parse();
-  this->children_.push_back(child_equal);
-
-  this->lexer_->getNextToken();
-
-  auto child_value = std::make_shared<LiteralExprNode>(this->lexer_);
-  child_value->Parse();
-  this->children_.push_back(child_value);
-
-  this->lexer_->getNextToken();
-
-  auto child_semicolon = std::make_shared<TerminalSeparator>(this->lexer_);
-  child_semicolon->Parse();
-  if (child_semicolon->separator_ != ";") {
-    throw std::runtime_error("expect ;");
+void VariableDeclNode::Parse() {
+  // 解析变量声明：let name = value;
+  
+  // 解析let关键字
+  Token token = lexer_->getCurrentToken();
+  if (token.getTokenType() != TokenType::KEYWORD || 
+      getKeywordTypeFromToken(token) != KeywordType::LET) {
+    throw std::runtime_error("Expected 'let' keyword");
   }
+  
+  auto letKeyword = std::make_shared<TerminalLet>(lexer_);
+  letKeyword->Parse();
+  add_child(letKeyword);
+  
+  // 解析变量名
+  lexer_->getNextToken();
+  token = lexer_->getCurrentToken();
+  if (token.getTokenType() != TokenType::IDENT) {
+    throw std::runtime_error("Expected variable name");
+  }
+  
+  auto identNode = std::make_shared<TerminalIdentLiteral>(lexer_);
+  identNode->Parse();
+  add_child(identNode);
+  name_ = getIdentifierValueFromToken(token);
+  
+  // 默认类型为auto
+  type_ = "auto";
+  
+  // 解析等号
+  lexer_->getNextToken();
+  token = lexer_->getCurrentToken();
+  if (token.getTokenType() != TokenType::OPERATOR || 
+      getOperatorTypeFromToken(token) != OperatorType::ASSIGN) {
+    // 如果没有等号，则没有初始值
+    return;
+  }
+  
+  auto opNode = std::make_shared<TerminalOperator>(lexer_);
+  opNode->Parse();
+  add_child(opNode);
+  
+  // 解析初始值
+  lexer_->getNextToken();
+  initialValue_ = std::make_shared<LiteralExprNode>(lexer_);
+  initialValue_->Parse();
+  add_child(initialValue_);
+  
+  // 解析分号
+  token = lexer_->getCurrentToken();
+  if (token.getTokenType() == TokenType::SEPARATOR && 
+      getSeparatorValueFromToken(token) == ";") {
+    lexer_->getNextToken();
+  }
+}
 
-  // 卧槽，写了一周终于写完了
+std::shared_ptr<ExprNode> VariableDeclNode::getInitialValue() const {
+  return initialValue_;
+}
+
+void VariableDeclNode::setInitialValue(std::shared_ptr<ExprNode> initialValue) {
+  initialValue_ = initialValue;
+}
+
+bool VariableDeclNode::hasInitialValue() const {
+  return initialValue_ != nullptr;
 }
 
 } // namespace mycompiler

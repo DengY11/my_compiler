@@ -5,9 +5,15 @@
 
 namespace mycompiler {
 
+// 注释类
 class Comment {
 public:
+  Comment() = delete;
+  
+  // 构造函数，接收注释内容
   Comment(std::string value) : value_(value) {}
+
+  // 注释内容
   std::string value_;
 };
 

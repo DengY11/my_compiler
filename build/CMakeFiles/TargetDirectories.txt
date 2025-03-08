@@ -1,9 +1,0 @@
-/home/dylan/code/my_compiler/build/CMakeFiles/MyCompilerLib.dir
-/home/dylan/code/my_compiler/build/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/build/CMakeFiles/rebuild_cache.dir
-/home/dylan/code/my_compiler/build/test/lexer/CMakeFiles/TestLexer.dir
-/home/dylan/code/my_compiler/build/test/lexer/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/build/test/lexer/CMakeFiles/rebuild_cache.dir
-/home/dylan/code/my_compiler/build/test/token/CMakeFiles/TestToken.dir
-/home/dylan/code/my_compiler/build/test/token/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/build/test/token/CMakeFiles/rebuild_cache.dir

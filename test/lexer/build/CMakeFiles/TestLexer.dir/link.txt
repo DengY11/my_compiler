@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestLexer.dir/test_lexer_separator.cpp.o -o TestLexer  libLexerLib.a libTokenLib.a /usr/lib/x86_64-linux-gnu/libgtest.a /usr/lib/x86_64-linux-gnu/libgtest_main.a -lpthread /usr/lib/x86_64-linux-gnu/libgtest.a 

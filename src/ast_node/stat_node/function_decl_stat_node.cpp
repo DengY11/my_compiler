@@ -31,8 +31,7 @@ void FunctionDeclStatNode::Parse() {
   auto function_decl_node = std::make_shared<FuncDeclNode>(this->lexer_);
   function_decl_node->Parse();
 
-  this->children_.push_back(
-      std::dynamic_pointer_cast<BasicNode>(function_decl_node));
+  this->children_.push_back(function_decl_node);
 }
 
 } // namespace mycompiler

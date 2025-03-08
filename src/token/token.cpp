@@ -6,125 +6,127 @@
 
 namespace mycompiler {
 
-Token::Token(TokenType Constant_type, mycompiler::Constant token_value)
-    : token_type_(Constant_type), token_value_(token_value) {}
+Token::Token(TokenType constantType, mycompiler::Constant tokenValue)
+    : tokenType_(constantType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Keyword_type, mycompiler::Keyword token_value)
-    : token_type_(Keyword_type), token_value_(token_value) {}
+Token::Token(TokenType keywordType, mycompiler::Keyword tokenValue)
+    : tokenType_(keywordType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Comment_type, mycompiler::Comment token_value)
-    : token_type_(Comment_type), token_value_(token_value) {}
+Token::Token(TokenType commentType, mycompiler::Comment tokenValue)
+    : tokenType_(commentType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Identifier_type, mycompiler::Identifier token_value)
-    : token_type_(Identifier_type), token_value_(token_value) {}
+Token::Token(TokenType identifierType, mycompiler::Identifier tokenValue)
+    : tokenType_(identifierType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Operator_type, mycompiler::Operator token_value)
-    : token_type_(Operator_type), token_value_(token_value) {}
+Token::Token(TokenType operatorType, mycompiler::Operator tokenValue)
+    : tokenType_(operatorType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType eof_or_illegal_type,
-             mycompiler::EOF_OR_ILLEGAL token_value)
-    : token_type_(eof_or_illegal_type), token_value_(token_value) {}
+Token::Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue)
+    : tokenType_(eofOrIllegalType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Separator_type, mycompiler::Separator token_value)
-    : token_type_(Separator_type), token_value_(token_value) {}
+Token::Token(TokenType separatorType, mycompiler::Separator tokenValue)
+    : tokenType_(separatorType), tokenValue_(tokenValue) {}
 
-Token::Token(TokenType Preprocessor_type, mycompiler::Preprocessor token_value)
-    : token_type_(Preprocessor_type), token_value_(token_value) {}
+Token::Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue)
+    : tokenType_(preprocessorType), tokenValue_(tokenValue) {}
 
-auto Token::get_token_type() const -> TokenType { return this->token_type_; }
-
-auto Token::get_token_value() const -> TokenValueType {
-  return this->token_value_;
+auto Token::getTokenType() const -> TokenType { 
+  return this->tokenType_; 
 }
 
-auto make_constant_token(int value) -> Token {
+auto Token::getTokenValue() const -> TokenValueType {
+  return this->tokenValue_;
+}
+
+auto makeConstantToken(int value) -> Token {
   return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
 }
-auto make_constant_token(double value) -> Token {
+
+auto makeConstantToken(double value) -> Token {
   return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
 }
-auto make_constant_token(std::string value) -> Token {
+
+auto makeConstantToken(std::string value) -> Token {
   return Token(TokenType::CONSTANT, Constant(static_cast<std::string>(value)));
 }
 
-auto make_keyword_token(Keyword_Type value) -> Token {
+auto makeKeywordToken(KeywordType value) -> Token {
   return Token(TokenType::KEYWORD, Keyword(value));
 }
 
-auto make_comment_tokenokenTyp(std::string value) -> Token {
+auto makeCommentToken(std::string value) -> Token {
   return Token(TokenType::COMMENT, Comment(value));
 }
 
-auto make_identifier_token(std::string value) -> Token {
+auto makeIdentifierToken(std::string value) -> Token {
   return Token(TokenType::IDENT, Identifier(value));
 }
 
-auto make_operator_token(Operator_Type value) -> Token {
+auto makeOperatorToken(OperatorType value) -> Token {
   return Token(TokenType::OPERATOR, Operator(value));
 }
 
-auto make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE value) -> Token {
-  return Token(TokenType::ILLEGAL_OR_EOF, EOF_OR_ILLEGAL(value));
+auto makeEofOrIllegalToken(EofOrIllegalType value) -> Token {
+  return Token(TokenType::ILLEGAL_OR_EOF, EofOrIllegal(value));
 }
 
-auto make_separator_token(std::string value) -> Token {
+auto makeSeparatorToken(std::string value) -> Token {
   return Token(TokenType::SEPARATOR, Separator(value));
 }
 
-auto make_preprocessor_token(std::string value) -> Token {
+auto makePreprocessorToken(std::string value) -> Token {
   return Token(TokenType::PREPROCESSOR, Preprocessor(value));
 }
 
-void Token::print_info() {
+auto Token::printInfo() -> void {
   std::cout << "TokenType: ";
-  switch (this->token_type_) {
+  switch (this->tokenType_) {
 
   case TokenType::ILLEGAL_OR_EOF:
     std::cout << "ILLEGAL_OR_EOF, TokenValue: ";
-    if (std::get<mycompiler::EOF_OR_ILLEGAL>(this->token_value_)
-            .eof_or_illegal_type_ == mycompiler::EOF_OR_ILLEGAL_TYPE::EOF_) {
+    if (std::get<mycompiler::EofOrIllegal>(this->tokenValue_)
+            .eofOrIllegalType_ == mycompiler::EofOrIllegalType::EOF_) {
       std::cout << "EOF" << std::endl;
-    } else if (std::get<mycompiler::EOF_OR_ILLEGAL>(this->token_value_)
-                   .eof_or_illegal_type_ ==
-               mycompiler::EOF_OR_ILLEGAL_TYPE::ILLEGAL) {
+    } else if (std::get<mycompiler::EofOrIllegal>(this->tokenValue_)
+                   .eofOrIllegalType_ ==
+               mycompiler::EofOrIllegalType::ILLEGAL) {
       std::cout << "ILLEGAL" << std::endl;
     }
     break;
 
   case TokenType::IDENT:
     std::cout << "IDENT, TokenValue: ";
-    std::cout << std::get<mycompiler::Identifier>(this->token_value_).value_
+    std::cout << std::get<mycompiler::Identifier>(this->tokenValue_).value_
               << std::endl;
     break;
 
   case TokenType::CONSTANT:
     std::cout << "CONSTANT, TokenValue: ";
-    std::cout << get_value_literal_type_from_token_class(*this);
-
+    std::cout << getConstantValueFromToken(*this);
     break;
 
   case TokenType::KEYWORD:
     std::cout << "KEYWORD, TokenValue: ";
-    switch (std::get<mycompiler::Keyword>(this->token_value_).Keyword_type_) {
-    case mycompiler::Keyword_Type::FUNC:
+    switch (std::get<mycompiler::Keyword>(this->tokenValue_).keywordType_) {
+    case mycompiler::KeywordType::FUNC:
       std::cout << "FUNC" << std::endl;
       break;
-    case mycompiler::Keyword_Type::LET:
+    case mycompiler::KeywordType::LET:
       std::cout << "LET" << std::endl;
       break;
-    case mycompiler::Keyword_Type::IF:
+    case mycompiler::KeywordType::IF:
       std::cout << "IF" << std::endl;
       break;
-    case mycompiler::Keyword_Type::ELSE:
+    case mycompiler::KeywordType::ELSE:
       std::cout << "ELSE" << std::endl;
       break;
-    case mycompiler::Keyword_Type::FOR:
+    case mycompiler::KeywordType::FOR:
       std::cout << "FOR" << std::endl;
       break;
-    case mycompiler::Keyword_Type::RETURN:
+    case mycompiler::KeywordType::RETURN:
       std::cout << "RETURN" << std::endl;
       break;
-    case mycompiler::Keyword_Type::WHILE:
+    case mycompiler::KeywordType::WHILE:
       std::cout << "WHILE" << std::endl;
       break;
     }
@@ -132,60 +134,60 @@ void Token::print_info() {
 
   case TokenType::OPERATOR:
     std::cout << "OPERATOR ,TokenValue: ";
-    switch (std::get<mycompiler::Operator>(this->token_value_).operator_type_) {
-    case mycompiler::Operator_Type::PLUS:
+    switch (std::get<mycompiler::Operator>(this->tokenValue_).operatorType_) {
+    case mycompiler::OperatorType::PLUS:
       std::cout << "PLUS" << std::endl;
       break;
-    case mycompiler::Operator_Type::DIV:
+    case mycompiler::OperatorType::DIV:
       std::cout << "DIV" << std::endl;
       break;
-    case mycompiler::Operator_Type::SUB:
+    case mycompiler::OperatorType::SUB:
       std::cout << "SUB" << std::endl;
       break;
-    case mycompiler::Operator_Type::MUL:
+    case mycompiler::OperatorType::MUL:
       std::cout << "MUL" << std::endl;
       break;
-    case mycompiler::Operator_Type::EQUAL:
+    case mycompiler::OperatorType::EQUAL:
       std::cout << "EQUAL" << std::endl;
       break;
-    case mycompiler::Operator_Type::DOUBLE_EQUAL:
+    case mycompiler::OperatorType::DOUBLE_EQUAL:
       std::cout << "DOUBLE_EQUAL" << std::endl;
       break;
-    case mycompiler::Operator_Type::NOT_EQUAL:
+    case mycompiler::OperatorType::NOT_EQUAL:
       std::cout << "NOT_EQUAL" << std::endl;
       break;
-    case mycompiler::Operator_Type::HAT:
+    case mycompiler::OperatorType::HAT:
       std::cout << "HAT" << std::endl;
       break;
-    case mycompiler::Operator_Type::SELF_SUB:
+    case mycompiler::OperatorType::SELF_SUB:
       std::cout << "SELF_SUB" << std::endl;
       break;
-    case mycompiler::Operator_Type::SELF_ADD:
+    case mycompiler::OperatorType::SELF_ADD:
       std::cout << "SELF_ADD" << std::endl;
     }
     break;
 
   case TokenType::SEPARATOR:
     std::cout << "SEPARATOR, TokenValue: ";
-    std::cout << std::get<mycompiler::Separator>(this->token_value_).value_
+    std::cout << std::get<mycompiler::Separator>(this->tokenValue_).value_
               << std::endl;
     break;
 
   case TokenType::PREPROCESSOR:
     std::cout << "PREPROCESSOR" << std::endl;
-    std::cout << std::get<mycompiler::Preprocessor>(this->token_value_).value_
+    std::cout << std::get<mycompiler::Preprocessor>(this->tokenValue_).value_
               << std::endl;
     break;
   case TokenType::COMMENT:
     std::cout << "COMMENT, TokenValue: ";
-    std::cout << std::get<mycompiler::Comment>(this->token_value_).value_
+    std::cout << std::get<mycompiler::Comment>(this->tokenValue_).value_
               << std::endl;
   }
 }
 
 auto Token::operator=(const Token &other) -> void {
-  this->token_type_ = other.token_type_;
-  this->token_value_ = other.token_value_;
+  this->tokenType_ = other.tokenType_;
+  this->tokenValue_ = other.tokenValue_;
 }
 
 } // namespace mycompiler

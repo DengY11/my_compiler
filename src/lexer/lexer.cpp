@@ -9,15 +9,19 @@ namespace mycompiler {
 Lexer::Lexer(const std::string &input)
     : input_(input), index_(0),
       curToken_(mycompiler::Token(
-          make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE::ILLEGAL))) {}
+          makeEofOrIllegalToken(EofOrIllegalType::ILLEGAL))) {}
 
-auto Lexer::is_end() -> bool { return this->index_ >= input_.length(); }
+auto Lexer::isEnd() -> bool { 
+  return this->index_ >= input_.length(); 
+}
 
-void Lexer::print_source() {
+auto Lexer::printSource() -> void {
   std::cout << "source: " + this->input_ << std::endl;
 }
 
-auto Lexer::getCurrentIndex() const -> size_t { return this->index_; }
+auto Lexer::getCurrentIndex() const -> size_t { 
+  return this->index_; 
+}
 
 auto Lexer::lookNextChar() -> char {
   int nextIndex = index_ + 1;
@@ -27,138 +31,171 @@ auto Lexer::lookNextChar() -> char {
   return input_[nextIndex];
 }
 
-void Lexer::skipWhitespace() {
-  if (this->index_ >= this->input_.length() - 1) {
-    ++index_;
+auto Lexer::peekNextToken() -> Token {
+  // 保存当前状态
+  size_t savedIndex = index_;
+  Token savedToken = curToken_;
+  
+  // 获取下一个Token
+  Token nextToken = getNextToken();
+  
+  // 恢复状态
+  index_ = savedIndex;
+  curToken_ = savedToken;
+  
+  return nextToken;
+}
+
+auto Lexer::skipWhitespace() -> void {
+  // 如果已经到达输入结束，直接返回
+  if (this->index_ >= this->input_.length()) {
     return;
   }
-  while (!this->is_end() && std::isspace(this->input_[index_])) {
+  
+  // 跳过空白字符
+  while (!this->isEnd() && std::isspace(this->input_[index_])) {
     ++index_;
   }
 }
 
 auto Lexer::peekChar() -> char {
-  if (!is_end()) {
+  if (!isEnd()) {
     return input_[index_];
   }
   return '\0';
 }
 
 auto Lexer::advanceChar() -> char {
-  if (!is_end()) {
+  if (!isEnd()) {
     return input_[index_++];
   }
   return '\0';
 }
 
-auto Lexer::is_keyword(std::string &word) -> bool {
-  return this->keyword_pool_.find(word);
+auto Lexer::isKeyword(std::string &word) -> bool {
+  return this->keywordPool_.find(word);
 }
 
-auto Lexer::is_operator(std::string &word) -> bool {
-  return this->operator_pool_.find(word);
+auto Lexer::isOperator(std::string &word) -> bool {
+  return this->operatorPool_.find(word);
 }
 
-auto Lexer::is_separator(std::string &word) -> bool {
-  return this->separator_pool_.find(word);
+auto Lexer::isSeparator(std::string &word) -> bool {
+  return this->separatorPool_.find(word);
 }
 
 auto Lexer::getNextToken() -> mycompiler::Token {
   this->skipWhitespace();
-  // std::cout << "current index: ";
-  // std::cout << this->getCurrentIndex() << std::endl;
 
-  if (is_end() || peekChar() == '\0') {
-    return make_eof_or_illegal_token(mycompiler::EOF_OR_ILLEGAL_TYPE::EOF_);
+  // 检查是否到达输入结束
+  if (isEnd() || peekChar() == '\0') {
+    curToken_ = makeEofOrIllegalToken(mycompiler::EofOrIllegalType::EOF_);
+    return curToken_;
   }
 
   char current = this->advanceChar();
 
+  // 处理数字
   if (std::isdigit(current)) {
-    std::cout << "getNextToken digit" << std::endl;
     std::string numberStr(1, current);
     size_t number_of_dot = 0;
-    while (!this->is_end() && is_constant_number_type(this->peekChar())) {
+    
+    // 读取完整的数字
+    while (!this->isEnd() && isConstantNumberType(this->peekChar())) {
       if (peekChar() == '.') {
-        // std::cout << "cur char: ";
-        // std::cout << peekChar() << std::endl;
         number_of_dot++;
         if (number_of_dot > 1) {
-          throw std::runtime_error(
-              "the amount of dot of the number should be 0 or 1");
+          throw std::runtime_error("数字中小数点数量不能超过1个");
         }
       }
       numberStr += this->advanceChar();
     }
+    
+    // 根据是否有小数点创建不同类型的常量Token
     if (number_of_dot == 0) {
-      curToken_ = make_constant_token(std::stoi(numberStr));
+      curToken_ = makeConstantToken(std::stoi(numberStr));
       return curToken_;
     } else if (number_of_dot == 1) {
-      curToken_ = make_constant_token(std::stod(numberStr));
+      curToken_ = makeConstantToken(std::stod(numberStr));
       return curToken_;
     }
-    curToken_ = make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE::ILLEGAL);
+    
+    // 如果出现异常情况，返回非法Token
+    curToken_ = makeEofOrIllegalToken(EofOrIllegalType::ILLEGAL);
     return curToken_;
   }
 
+  // 处理标识符和关键字
   if (std::isalpha(current)) {
-    std::cout << "getNextToken alpha" << std::endl;
-    //  字母开头，有可能是关键字，IDENT,
     bool have_underline = false;
     std::string alphaStr(1, current);
-    while (!this->is_end() && (is_keyword_type(this->peekChar()) ||
-                               is_ident_type(this->peekChar()))) {
-
+    
+    // 读取完整的标识符或关键字
+    while (!this->isEnd() && (isKeywordType(this->peekChar()) ||
+                             isIdentType(this->peekChar()))) {
       if (peekChar() == '_') {
         have_underline = true;
       }
       alphaStr += this->advanceChar();
     }
+    
+    // 如果包含下划线，一定是标识符
     if (have_underline) {
-      this->curToken_ = make_identifier_token(alphaStr);
+      this->curToken_ = makeIdentifierToken(alphaStr);
       return curToken_;
-    } else if (is_keyword(alphaStr)) {
-      curToken_ = make_keyword_token(get_keyword_type_from_string(alphaStr));
+    } 
+    // 检查是否是关键字
+    else if (isKeyword(alphaStr)) {
+      curToken_ = makeKeywordToken(getKeywordTypeFromString(alphaStr));
       return curToken_;
     }
-    curToken_ = make_identifier_token(alphaStr);
+    // 否则是普通标识符
+    curToken_ = makeIdentifierToken(alphaStr);
     return curToken_;
   }
 
-  if (mycompiler::is_operator_type(current)) {
-    std::cout << "getNextToken operator" << std::endl;
+  // 处理操作符
+  if (mycompiler::isOperatorType(current)) {
     std::string operatorStr(1, current);
-    while (!this->is_end() && is_operator_type(this->peekChar())) {
+    
+    // 读取可能的多字符操作符
+    while (!this->isEnd() && isOperatorType(this->peekChar())) {
       operatorStr += this->advanceChar();
     }
-    if (this->is_operator(operatorStr)) {
-      curToken_ =
-          make_operator_token(get_operator_type_from_string(operatorStr));
+    
+    // 检查是否是有效的操作符
+    if (this->isOperator(operatorStr)) {
+      curToken_ = makeOperatorToken(getOperatorTypeFromString(operatorStr));
       return curToken_;
     }
-    throw std::runtime_error("operator: " + operatorStr + " illegal!");
+    throw std::runtime_error("非法操作符: " + operatorStr);
   }
 
-  if (mycompiler::is_separator_type(current)) {
-    std::cout << "getNextToken separator" << std::endl;
+  // 处理分隔符
+  if (mycompiler::isSeparatorType(current)) {
     std::string separatorStr(1, current);
-    while (!this->is_end() && is_separator_type(this->peekChar()) &&
-           separator_can_combine(separatorStr, this->peekChar())) {
+    
+    // 读取可能的多字符分隔符
+    while (!this->isEnd() && isSeparatorType(this->peekChar()) &&
+           separatorCanCombine(separatorStr, this->peekChar())) {
       separatorStr += this->advanceChar();
     }
-    if (this->is_separator(separatorStr)) {
-      curToken_ = make_separator_token(separatorStr);
+    
+    // 检查是否是有效的分隔符
+    if (this->isSeparator(separatorStr)) {
+      curToken_ = makeSeparatorToken(separatorStr);
       return curToken_;
     }
-    throw std::runtime_error("separator " + separatorStr + " illegal!");
+    throw std::runtime_error("非法分隔符: " + separatorStr);
   }
-  // TODO:我不确定这里是否把token的种类全部枚举完了
 
-  curToken_ =
-      mycompiler::make_eof_or_illegal_token(EOF_OR_ILLEGAL_TYPE::ILLEGAL);
+  // 处理其他未识别的字符
+  curToken_ = makeEofOrIllegalToken(EofOrIllegalType::ILLEGAL);
   return curToken_;
 }
 
-auto Lexer::getCurrentToken() const -> Token { return this->curToken_; }
+auto Lexer::getCurrentToken() const -> Token { 
+  return this->curToken_; 
+}
 
 } // namespace mycompiler

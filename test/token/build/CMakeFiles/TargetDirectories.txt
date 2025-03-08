@@ -1,0 +1,4 @@
+/home/dylan/code/my_compiler/test/token/build/CMakeFiles/TokenLib.dir
+/home/dylan/code/my_compiler/test/token/build/CMakeFiles/TestToken.dir
+/home/dylan/code/my_compiler/test/token/build/CMakeFiles/edit_cache.dir
+/home/dylan/code/my_compiler/test/token/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTokenLib.a CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token.cpp.o CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp.o
+/usr/bin/ranlib libTokenLib.a

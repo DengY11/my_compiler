@@ -5,75 +5,103 @@
 
 namespace mycompiler {
 
-auto get_keyword_type_from_token_class(const Token &token)
-    -> Keyword_Type const {
-  return std::get<Keyword>(token.get_token_value()).Keyword_type_;
+auto getKeywordTypeFromToken(const Token &token)
+    -> KeywordType const {
+  return std::get<Keyword>(token.getTokenValue()).keywordType_;
 }
 
-auto get_operator_type_from_token_class(const Token &token)
-    -> Operator_Type const {
-  return std::get<Operator>(token.get_token_value()).operator_type_;
+auto getOperatorTypeFromToken(const Token &token)
+    -> OperatorType const {
+  return std::get<Operator>(token.getTokenValue()).operatorType_;
 }
 
-auto get_ident_literal_type_from_token_class(const Token &token)
+auto getIdentifierValueFromToken(const Token &token)
     -> std::string const {
-  return std::get<Identifier>(token.get_token_value()).value_;
+  return std::get<Identifier>(token.getTokenValue()).value_;
 }
 
-auto get_value_literal_type_from_token_class(const Token &token)
+auto getConstantValueFromToken(const Token &token)
     -> std::string const {
-  return std::get<Identifier>(token.get_token_value()).value_;
+  return std::get<Constant>(token.getTokenValue()).value_;
 }
 
-auto get_separator_type_from_token_class(const Token &token)
+auto getSeparatorValueFromToken(const Token &token)
     -> std::string const {
-  return std::get<Separator>(token.get_token_value()).value_;
+  return std::get<Separator>(token.getTokenValue()).value_;
 }
 
-auto is_identifier_type(const Token &token) -> bool {
-  return token.get_token_type() == TokenType::IDENT;
+auto isIdentifierType(const Token &token) -> bool {
+  return token.getTokenType() == TokenType::IDENT;
 }
 
-auto get_operator_priority(const Token &token) -> int {
+auto isUnaryOperator(const Token &token) -> bool {
+  // 实现一元操作符检查逻辑
+  if (token.getTokenType() != TokenType::OPERATOR) {
+    return false;
+  }
+  
+  OperatorType opType = getOperatorTypeFromToken(token);
+  return opType == OperatorType::NOT || 
+         opType == OperatorType::SELF_ADD || 
+         opType == OperatorType::SELF_SUB;
+}
 
-  switch (get_operator_type_from_token_class(token)) {
-  case Operator_Type::PLUS: {
+auto isBinaryOperator(const Token &token) -> bool {
+  // 实现二元操作符检查逻辑
+  if (token.getTokenType() != TokenType::OPERATOR) {
+    return false;
+  }
+  
+  OperatorType opType = getOperatorTypeFromToken(token);
+  return opType == OperatorType::PLUS || 
+         opType == OperatorType::SUB || 
+         opType == OperatorType::MUL || 
+         opType == OperatorType::DIV || 
+         opType == OperatorType::EQUAL || 
+         opType == OperatorType::DOUBLE_EQUAL || 
+         opType == OperatorType::NOT_EQUAL || 
+         opType == OperatorType::HAT;
+}
+
+auto getOperatorPriority(const Token &token) -> int {
+  switch (getOperatorTypeFromToken(token)) {
+  case OperatorType::PLUS: {
     return 1;
   }
-  case Operator_Type::SUB: {
+  case OperatorType::SUB: {
     return 1;
   }
-  case Operator_Type::MUL: {
+  case OperatorType::MUL: {
     return 2;
   }
-  case Operator_Type::DIV: {
+  case OperatorType::DIV: {
     return 2;
   }
-  case Operator_Type::NOT: {
+  case OperatorType::NOT: {
     return 4;
   }
-  case Operator_Type::NOT_EQUAL: {
+  case OperatorType::NOT_EQUAL: {
     return 4;
   }
-  case Operator_Type::SELF_ADD: {
+  case OperatorType::SELF_ADD: {
     return 4;
   }
-  case Operator_Type::SELF_SUB: {
+  case OperatorType::SELF_SUB: {
     return 4;
   }
-  case Operator_Type::DOUBLE_EQUAL: {
+  case OperatorType::DOUBLE_EQUAL: {
     return 4;
   }
-  case Operator_Type::HAT: {
+  case OperatorType::HAT: {
     return 3;
   }
   default: {
-    throw std::runtime_error("can't get operator priority");
+    throw std::runtime_error("无法获取操作符优先级");
   }
   }
 }
 
-auto get_operator_priority(const std::string &op) -> int {
+auto getOperatorPriority(const std::string &op) -> int {
   if (op == "+" || op == "-") {
     return 1;
   }
@@ -86,7 +114,7 @@ auto get_operator_priority(const std::string &op) -> int {
   if (op == "++" || op == "--" || op == "==" || op == "!=") {
     return 4;
   }
-  throw std::runtime_error("can't get operator priority");
+  throw std::runtime_error("无法获取操作符优先级: " + op);
 }
 
 } // namespace mycompiler

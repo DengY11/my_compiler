@@ -3,16 +3,19 @@
 
 namespace mycompiler {
 
-enum class EOF_OR_ILLEGAL_TYPE { EOF_, ILLEGAL };
+// EOF或非法类型枚举
+enum class EofOrIllegalType {
+  EOF_,    // 文件结束
+  ILLEGAL  // 非法字符
+};
 
-class EOF_OR_ILLEGAL {
-
+// EOF或非法类
+class EofOrIllegal {
 public:
-  EOF_OR_ILLEGAL() = delete;
-  EOF_OR_ILLEGAL(EOF_OR_ILLEGAL_TYPE eof_or_illegal_type)
-      : eof_or_illegal_type_(eof_or_illegal_type) {}
+  EofOrIllegal() = delete;
+  EofOrIllegal(EofOrIllegalType eofOrIllegalType) : eofOrIllegalType_(eofOrIllegalType) {}
 
-  EOF_OR_ILLEGAL_TYPE eof_or_illegal_type_;
+  EofOrIllegalType eofOrIllegalType_;
 };
 
 } // namespace mycompiler

@@ -3,50 +3,94 @@
 #include "ast_node/terminal_symbols/terminal_return.hpp"
 #include "ast_node/terminal_symbols/terminal_separator.hpp"
 #include "magic_enum/magic_enum.hpp"
+#include "token/token_helper_functions.hpp"
 #include <memory>
+#include <sstream>
 
 namespace mycompiler {
 
 ReturnStatNode::ReturnStatNode(std::shared_ptr<Lexer> lexer) : StatNode(lexer) {
   this->ast_node_type_ = AST_NODE_TYPE::RETURN_STAT;
+  this->statType_ = StatType::RETURN_STAT;
 }
 
-void ReturnStatNode::print_info() {
-  std::cout << "Node type: " << std::endl;
-  std::cout << std::string(magic_enum::enum_name(this->ast_node_type_))
-            << std::endl;
-
+auto ReturnStatNode::print_info() -> void {
+  std::cout << "Node type: RETURN_STAT" << std::endl;
+  
+  std::cout << "Return value: " << std::endl;
+  if (returnValue_) {
+    returnValue_->print_info();
+  } else {
+    std::cout << "None" << std::endl;
+  }
+  
   std::cout << "Children: " << std::endl;
   std::for_each(std::begin(children_), std::end(children_),
                 [](ChildPtr child) { child->print_info(); });
 }
 
-void ReturnStatNode::Parse() {
-
-  Token &&token = this->lexer_->getCurrentToken();
-  if (token.get_token_type() == TokenType::ILLEGAL_OR_EOF) {
-    throw std::runtime_error("illegal token or end of file");
+std::string ReturnStatNode::toString() const {
+  std::stringstream ss;
+  ss << "Return";
+  if (returnValue_) {
+    ss << " " << returnValue_->toString();
   }
+  return ss.str();
+}
 
-  auto child_return = std::make_shared<TerminalReturn>(this->lexer_);
-  child_return->Parse();
-  this->children_.push_back(child_return);
-
-  this->lexer_->getNextToken();
-
-  auto child_expr = std::make_shared<LiteralExprNode>(this->lexer_);
-  child_expr->Parse();
-  this->children_.push_back(child_expr);
-
-  this->lexer_->getNextToken();
-
-  auto child_semicolon = std::make_shared<TerminalSeparator>(this->lexer_);
-  child_semicolon->Parse();
-  if (child_semicolon->separator_ != ";") {
-    throw std::runtime_error("expect ;");
-  } else {
-    this->children_.push_back(child_semicolon);
+auto ReturnStatNode::Parse() -> void {
+  // 解析return语句：return [expr];
+  
+  // 解析return关键字
+  Token token = lexer_->getCurrentToken();
+  if (token.getTokenType() != TokenType::KEYWORD || 
+      getKeywordTypeFromToken(token) != KeywordType::RETURN) {
+    throw std::runtime_error("Expected 'return' keyword");
   }
+  
+  auto returnKeyword = std::make_shared<TerminalReturn>(lexer_);
+  returnKeyword->Parse();
+  add_child(returnKeyword);
+  
+  // 解析返回值表达式（如果有）
+  lexer_->getNextToken();
+  token = lexer_->getCurrentToken();
+  
+  // 如果下一个标记是分号，则没有返回值
+  if (token.getTokenType() == TokenType::SEPARATOR && 
+      getSeparatorValueFromToken(token) == ";") {
+    lexer_->getNextToken();
+    return;
+  }
+  
+  // 解析返回值表达式
+  returnValue_ = std::make_shared<LiteralExprNode>(lexer_);
+  returnValue_->Parse();
+  add_child(returnValue_);
+  
+  // 解析分号
+  token = lexer_->getCurrentToken();
+  if (token.getTokenType() == TokenType::SEPARATOR && 
+      getSeparatorValueFromToken(token) == ";") {
+    lexer_->getNextToken();
+  }
+}
+
+std::shared_ptr<ExprNode> ReturnStatNode::getReturnValue() const {
+  return returnValue_;
+}
+
+void ReturnStatNode::setReturnValue(std::shared_ptr<ExprNode> returnValue) {
+  returnValue_ = returnValue;
+}
+
+bool ReturnStatNode::hasReturnValue() const {
+  return returnValue_ != nullptr;
+}
+
+bool ReturnStatNode::isTerminating() const {
+  // return语句总是终止语句
+  return true;
 }
 
 } // namespace mycompiler

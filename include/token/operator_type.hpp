@@ -3,26 +3,28 @@
 
 namespace mycompiler {
 
-enum class Operator_Type {
-  PLUS,
-  DIV,
-  SUB,
-  MUL,
-  EQUAL,
-  DOUBLE_EQUAL,
-  NOT_EQUAL,
-  HAT, // ^
-  SELF_ADD,
-  SELF_SUB,
-  NOT
+// 操作符类型枚举
+enum class OperatorType {
+  PLUS,         // +
+  DIV,          // /
+  SUB,          // -
+  MUL,          // *
+  EQUAL,        // =
+  DOUBLE_EQUAL, // ==
+  NOT_EQUAL,    // !=
+  HAT,          // ^
+  SELF_ADD,     // ++
+  SELF_SUB,     // --
+  NOT           // !
 };
 
+// 操作符类
 class Operator {
 public:
   Operator() = delete;
-  Operator(Operator_Type operator_type) : operator_type_(operator_type) {}
+  Operator(OperatorType operatorType) : operatorType_(operatorType) {}
 
-  Operator_Type operator_type_;
+  OperatorType operatorType_;
 };
 } // namespace mycompiler
 #endif // !OPERATOR_TYPE_HPP
