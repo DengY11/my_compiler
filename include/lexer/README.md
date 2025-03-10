@@ -23,6 +23,17 @@ Lexer（词法分析器）模块是编译器的第一个阶段，负责将源代
 - `isKeyword(std::string &word) -> bool`: 检查字符串是否为关键字。
 - `isOperator(std::string &word) -> bool`: 检查字符串是否为操作符。
 - `isSeparator(std::string &word) -> bool`: 检查字符串是否为分隔符。
+- `getCurrentLine() const -> std::size_t`: 获取当前行号。
+- `getCurrentColumn() const -> std::size_t`: 获取当前列号。
+
+### 位置跟踪功能
+
+Lexer类提供了完整的位置跟踪功能，可以精确记录源代码中的行号和列号：
+
+- 行号从1开始计数，表示当前处理位置在源代码中的行位置。
+- 列号从1开始计数，表示当前处理位置在行中的字符位置。
+
+当Lexer处理源代码时，它会自动更新行号和列号，确保每个生成的Token都有正确的位置信息。这对于编译器的错误报告功能至关重要，可以帮助开发者准确定位源代码中的问题。
 
 ### 辅助类
 
@@ -143,6 +154,10 @@ token = lexer.getCurrentToken();
 
 // 查看下一个Token但不移动指针
 auto nextToken = lexer.peekNextToken();
+
+// 获取当前位置信息
+auto line = lexer.getCurrentLine();
+auto column = lexer.getCurrentColumn();
 ```
 
 ## 如何运行测试
@@ -186,6 +201,21 @@ Lexer模块包含多个测试文件，用于验证其功能的正确性。以下
      ```bash
      ./TestLexerComprehensive
      ```
+   - 运行位置跟踪测试：
+     ```bash
+     ./TestLexerPosition
+     ```
+
+### 测试覆盖范围
+
+Lexer模块的测试覆盖了以下方面：
+
+1. **基本功能测试**：测试Lexer的基本标记化功能，包括关键字、标识符、常量、操作符和分隔符的识别。
+2. **位置跟踪测试**：测试Lexer的行号和列号跟踪功能，确保正确跟踪源代码中的位置。
+3. **复杂代码测试**：测试Lexer处理复杂代码的能力，包括多行代码、嵌套结构等。
+4. **边界情况测试**：测试各种边界情况，如空输入、非法字符等。
+
+所有测试都应该通过，表明Lexer模块的功能正常工作。
 
 ## 如何添加新的关键词和符号
 
@@ -266,46 +296,22 @@ Lexer模块包含多个测试文件，用于验证其功能的正确性。以下
    }
    ```
 
-### 添加新的分隔符
-
-要添加新的分隔符，需要修改以下文件：
-
-1. **更新分隔符池**：
-   在`src/lexer/lexer.cpp`中，找到`SeparatorPool`构造函数，添加新的分隔符：
+5. **更新操作符优先级**：
+   如果需要，在`src/token/token_helper_functions.cpp`中，找到`getOperatorPriority`函数，为新的操作符添加优先级：
    ```cpp
-   SeparatorPool::SeparatorPool() {
-       // 现有分隔符...
-       separators_.insert("$");  // 新分隔符
-       // 其他分隔符...
+   auto getOperatorPriority(const Token &token) -> int {
+       // 现有优先级...
+       if (token.getOperatorType() == OperatorType::NEW_OPERATOR) return X; // X是优先级值
+       // 其他优先级...
    }
    ```
 
-2. **更新分隔符类型检查**：
-   在`src/lexer/lexer_helper_functions.cpp`中，找到`isSeparatorType`函数，确保新的分隔符字符被识别：
-   ```cpp
-   auto isSeparatorType(char ch) -> bool {
-       // 现有检查...
-       return ch == ';' || ch == ',' || /* ... */ || ch == '$';
-   }
-   ```
+## 性能考虑
 
-## 错误处理
+Lexer模块的设计考虑了性能因素：
 
-Lexer模块会在遇到以下情况时抛出异常：
+1. **高效的字符处理**：使用直接的字符比较和简单的状态机，避免复杂的正则表达式匹配。
+2. **最小化内存分配**：尽可能重用字符串和其他对象，减少内存分配和释放的开销。
+3. **预先计算的查找表**：使用预先填充的关键字、操作符和分隔符池，加速查找过程。
 
-1. 数字中包含多个小数点。
-2. 遇到非法操作符。
-3. 遇到非法分隔符。
-
-## 测试
-
-Lexer模块包含全面的测试，覆盖了以下方面：
-
-1. 数字常量的词法分析。
-2. 标识符的词法分析。
-3. 关键字的词法分析。
-4. 操作符的词法分析。
-5. 分隔符的词法分析。
-6. 复杂表达式的词法分析。
-7. 辅助函数的测试。
-8. 错误处理的测试。 
+这些优化确保了Lexer模块在处理大型源代码文件时仍然保持高效。 

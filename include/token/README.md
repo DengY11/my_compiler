@@ -15,6 +15,8 @@ Token（标记）模块是编译器的基础组件，负责定义和处理源代
 - `Token(TokenType type, KeywordType keywordType, std::string value, std::size_t line, std::size_t column)`: 创建一个关键字类型的Token。
 - `Token(TokenType type, OperatorType operatorType, std::string value, std::size_t line, std::size_t column)`: 创建一个操作符类型的Token。
 - `Token(TokenType type, EofOrIllegalType eofOrIllegalType, std::string value, std::size_t line, std::size_t column)`: 创建一个EOF或非法类型的Token。
+- `Token(const Token& other)`: 拷贝构造函数，创建一个与other相同的Token。
+- `Token(Token&& other) noexcept`: 移动构造函数，从other移动资源创建一个新的Token。
 
 #### 主要方法
 
@@ -26,6 +28,17 @@ Token（标记）模块是编译器的基础组件，负责定义和处理源代
 - `getOperatorType() const -> OperatorType`: 获取操作符类型（如果Token是操作符）。
 - `getEofOrIllegalType() const -> EofOrIllegalType`: 获取EOF或非法类型（如果Token是EOF或非法字符）。
 - `printInfo() const -> void`: 打印Token的信息。
+- `operator=(const Token& other) -> Token&`: 赋值操作符，将other的值赋给当前Token。
+- `operator=(Token&& other) noexcept -> Token&`: 移动赋值操作符，将other的资源移动到当前Token。
+
+### 位置跟踪功能
+
+Token类提供了完整的位置跟踪功能，可以精确记录每个标记在源代码中的行号和列号：
+
+- 行号从1开始计数，表示标记在源代码中的行位置。
+- 列号从1开始计数，表示标记在行中的字符位置。
+
+这些位置信息对于编译器的错误报告功能至关重要，可以帮助开发者准确定位源代码中的问题。
 
 ### 枚举类型
 
@@ -222,8 +235,31 @@ auto keywordType = mycompiler::getKeywordTypeFromToken(keywordToken); // Keyword
 
 // 检查操作符类型
 bool isBinary = mycompiler::isBinaryOperator(operatorToken); // true
+
+// 获取Token的位置信息
+auto line = constantToken.getLine(); // 1
+auto column = constantToken.getColumn(); // 16
 ```
 
 ## 测试
 
-Token模块的测试包含在Lexer模块的测试中，覆盖了各种Token类型的创建和处理。要运行测试，请参考Lexer模块的测试说明。 
+Token模块有专门的测试套件，覆盖了各种Token类型的创建、处理和位置跟踪功能。测试包括：
+
+1. **基本功能测试**：测试Token的基本创建和访问功能。
+2. **位置跟踪测试**：测试Token的行号和列号功能，确保正确跟踪源代码中的位置。
+3. **拷贝和移动语义测试**：测试Token的拷贝构造、移动构造和赋值操作。
+4. **边界情况测试**：测试各种边界情况，如空值、极大值等。
+
+要运行Token模块的测试，请执行以下命令：
+
+```bash
+cd test/token
+mkdir -p build && cd build
+cmake ..
+make
+./TestToken  # 基本测试
+./TestTokenPosition  # 位置测试
+./TestTokenPositionComprehensive  # 全面的位置测试
+```
+
+所有测试都应该通过，表明Token模块的功能正常工作。 
