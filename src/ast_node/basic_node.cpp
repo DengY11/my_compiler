@@ -41,8 +41,8 @@ Token BasicNode::consumeToken(TokenType type) {
     std::stringstream ss;
     ss << "Expected token type " << static_cast<int>(type) 
        << " but got " << static_cast<int>(nextToken.getTokenType())
-       << " at line " << nextToken.getLine() 
-       << ", column " << nextToken.getColumn();
+       << " at line " << nextToken.getLineNumber() 
+       << ", column " << nextToken.getColumnNumber();
     throw std::runtime_error(ss.str());
   }
   lexer_->getNextToken();

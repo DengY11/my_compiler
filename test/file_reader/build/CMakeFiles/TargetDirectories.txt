@@ -1,0 +1,4 @@
+/Users/humgic/Applications/my_compiler/test/file_reader/build/CMakeFiles/FileReaderLib.dir
+/Users/humgic/Applications/my_compiler/test/file_reader/build/CMakeFiles/TestFileReader.dir
+/Users/humgic/Applications/my_compiler/test/file_reader/build/CMakeFiles/edit_cache.dir
+/Users/humgic/Applications/my_compiler/test/file_reader/build/CMakeFiles/rebuild_cache.dir

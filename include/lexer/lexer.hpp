@@ -77,6 +77,18 @@ public:
    */
   auto isSeparator(std::string &word) -> bool;
 
+  /**
+   * @brief 获取当前行号
+   * @return 当前行号
+   */
+  auto getCurrentLine() const -> std::size_t;
+  
+  /**
+   * @brief 获取当前列号
+   * @return 当前列号
+   */
+  auto getCurrentColumn() const -> std::size_t;
+
 private:
   std::string input_;         // 输入的源代码
   size_t index_;              // 当前处理位置
@@ -84,6 +96,8 @@ private:
   OperatorPool operatorPool_; // 操作符池
   SeparatorPool separatorPool_; // 分隔符池
   Token curToken_;            // 当前Token
+  std::size_t line_;          // 当前行号
+  std::size_t column_;        // 当前列号
   
   /**
    * @brief 查看当前字符但不移动指针
@@ -107,6 +121,28 @@ private:
    * @return 是否到达输入结束
    */
   auto isEnd() -> bool;
+  
+  /**
+   * @brief 更新行号和列号
+   * @param ch 当前处理的字符
+   */
+  auto updatePosition(char ch) -> void;
+  
+  /**
+   * @brief 跳过单行注释
+   */
+  auto skipSingleLineComment() -> void;
+  
+  /**
+   * @brief 跳过多行注释
+   */
+  auto skipMultiLineComment() -> void;
+  
+  /**
+   * @brief 检查并跳过注释
+   * @return 是否跳过了注释
+   */
+  auto skipComment() -> bool;
 };
 
 } // namespace mycompiler

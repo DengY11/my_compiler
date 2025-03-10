@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libFileReaderLib.a CMakeFiles/FileReaderLib.dir/Users/humgic/Applications/my_compiler/src/file_reader/reader.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libFileReaderLib.a

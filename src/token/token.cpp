@@ -6,29 +6,29 @@
 
 namespace mycompiler {
 
-Token::Token(TokenType constantType, mycompiler::Constant tokenValue)
-    : tokenType_(constantType), tokenValue_(tokenValue) {}
+Token::Token(TokenType constantType, mycompiler::Constant tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(constantType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType keywordType, mycompiler::Keyword tokenValue)
-    : tokenType_(keywordType), tokenValue_(tokenValue) {}
+Token::Token(TokenType keywordType, mycompiler::Keyword tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(keywordType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType commentType, mycompiler::Comment tokenValue)
-    : tokenType_(commentType), tokenValue_(tokenValue) {}
+Token::Token(TokenType commentType, mycompiler::Comment tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(commentType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType identifierType, mycompiler::Identifier tokenValue)
-    : tokenType_(identifierType), tokenValue_(tokenValue) {}
+Token::Token(TokenType identifierType, mycompiler::Identifier tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(identifierType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType operatorType, mycompiler::Operator tokenValue)
-    : tokenType_(operatorType), tokenValue_(tokenValue) {}
+Token::Token(TokenType operatorType, mycompiler::Operator tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(operatorType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue)
-    : tokenType_(eofOrIllegalType), tokenValue_(tokenValue) {}
+Token::Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(eofOrIllegalType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType separatorType, mycompiler::Separator tokenValue)
-    : tokenType_(separatorType), tokenValue_(tokenValue) {}
+Token::Token(TokenType separatorType, mycompiler::Separator tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(separatorType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
-Token::Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue)
-    : tokenType_(preprocessorType), tokenValue_(tokenValue) {}
+Token::Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue, std::size_t line, std::size_t column)
+    : tokenType_(preprocessorType), tokenValue_(tokenValue), line_(line), column_(column) {}
 
 auto Token::getTokenType() const -> TokenType { 
   return this->tokenType_; 
@@ -38,44 +38,52 @@ auto Token::getTokenValue() const -> TokenValueType {
   return this->tokenValue_;
 }
 
-auto makeConstantToken(int value) -> Token {
-  return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
+auto Token::getLineNumber() const -> std::size_t {
+  return this->line_;
 }
 
-auto makeConstantToken(double value) -> Token {
-  return Token(TokenType::CONSTANT, Constant(std::to_string(value)));
+auto Token::getColumnNumber() const -> std::size_t {
+  return this->column_;
 }
 
-auto makeConstantToken(std::string value) -> Token {
-  return Token(TokenType::CONSTANT, Constant(static_cast<std::string>(value)));
+auto makeConstantToken(int value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::CONSTANT, Constant(std::to_string(value)), line, column);
 }
 
-auto makeKeywordToken(KeywordType value) -> Token {
-  return Token(TokenType::KEYWORD, Keyword(value));
+auto makeConstantToken(double value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::CONSTANT, Constant(std::to_string(value)), line, column);
 }
 
-auto makeCommentToken(std::string value) -> Token {
-  return Token(TokenType::COMMENT, Comment(value));
+auto makeConstantToken(std::string value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::CONSTANT, Constant(static_cast<std::string>(value)), line, column);
 }
 
-auto makeIdentifierToken(std::string value) -> Token {
-  return Token(TokenType::IDENT, Identifier(value));
+auto makeKeywordToken(KeywordType value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::KEYWORD, Keyword(value), line, column);
 }
 
-auto makeOperatorToken(OperatorType value) -> Token {
-  return Token(TokenType::OPERATOR, Operator(value));
+auto makeCommentToken(std::string value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::COMMENT, Comment(value), line, column);
 }
 
-auto makeEofOrIllegalToken(EofOrIllegalType value) -> Token {
-  return Token(TokenType::ILLEGAL_OR_EOF, EofOrIllegal(value));
+auto makeIdentifierToken(std::string value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::IDENT, Identifier(value), line, column);
 }
 
-auto makeSeparatorToken(std::string value) -> Token {
-  return Token(TokenType::SEPARATOR, Separator(value));
+auto makeOperatorToken(OperatorType value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::OPERATOR, Operator(value), line, column);
 }
 
-auto makePreprocessorToken(std::string value) -> Token {
-  return Token(TokenType::PREPROCESSOR, Preprocessor(value));
+auto makeEofOrIllegalToken(EofOrIllegalType value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::ILLEGAL_OR_EOF, EofOrIllegal(value), line, column);
+}
+
+auto makeSeparatorToken(std::string value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::SEPARATOR, Separator(value), line, column);
+}
+
+auto makePreprocessorToken(std::string value, std::size_t line, std::size_t column) -> Token {
+  return Token(TokenType::PREPROCESSOR, Preprocessor(value), line, column);
 }
 
 auto Token::printInfo() -> void {
@@ -188,6 +196,8 @@ auto Token::printInfo() -> void {
 auto Token::operator=(const Token &other) -> void {
   this->tokenType_ = other.tokenType_;
   this->tokenValue_ = other.tokenValue_;
+  this->line_ = other.line_;
+  this->column_ = other.column_;
 }
 
 } // namespace mycompiler

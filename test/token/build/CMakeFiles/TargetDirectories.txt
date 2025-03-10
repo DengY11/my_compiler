@@ -1,4 +1,8 @@
-/home/dylan/code/my_compiler/test/token/build/CMakeFiles/TokenLib.dir
-/home/dylan/code/my_compiler/test/token/build/CMakeFiles/TestToken.dir
-/home/dylan/code/my_compiler/test/token/build/CMakeFiles/edit_cache.dir
-/home/dylan/code/my_compiler/test/token/build/CMakeFiles/rebuild_cache.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TokenLib.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TestToken.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TestTokenClass.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TestTokenHelperFunctions.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TestTokenTypes.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/TestTokenPosition.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/edit_cache.dir
+/Users/humgic/Applications/my_compiler/test/token/build/CMakeFiles/rebuild_cache.dir

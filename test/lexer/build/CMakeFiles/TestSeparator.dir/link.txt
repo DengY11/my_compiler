@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/TestSeparator.dir/test_separator.cpp.o -o TestSeparator  libLexerLib.a libTokenLib.a 

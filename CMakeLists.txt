@@ -14,11 +14,18 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-# 添加 src 目录下的所有源文件
-file(GLOB_RECURSE SRC_FILES "src/**/*.cpp")
+# 添加 token 模块的源文件
+file(GLOB TOKEN_SRC_FILES "src/token/*.cpp")
 
-# 创建静态库
-add_library(MyCompilerLib STATIC ${SRC_FILES})
+# 添加 lexer 模块的源文件
+file(GLOB LEXER_SRC_FILES "src/lexer/*.cpp")
+
+# 创建共享的token静态库
+add_library(TokenLib STATIC ${TOKEN_SRC_FILES})
+
+# 创建共享的lexer静态库
+add_library(LexerLib STATIC ${LEXER_SRC_FILES})
+target_link_libraries(LexerLib TokenLib)
 
 # 启用测试
 enable_testing()

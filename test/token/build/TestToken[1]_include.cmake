@@ -1,5 +1,5 @@
-if(EXISTS "/home/dylan/code/my_compiler/test/token/build/TestToken[1]_tests.cmake")
-  include("/home/dylan/code/my_compiler/test/token/build/TestToken[1]_tests.cmake")
+if(EXISTS "/Users/humgic/Applications/my_compiler/test/token/build/TestToken[1]_tests.cmake")
+  include("/Users/humgic/Applications/my_compiler/test/token/build/TestToken[1]_tests.cmake")
 else()
   add_test(TestToken_NOT_BUILT TestToken_NOT_BUILT)
 endif()

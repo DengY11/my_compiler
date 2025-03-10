@@ -1,0 +1,5 @@
+if(EXISTS "/Users/humgic/Applications/my_compiler/build/test/token/TestToken[1]_tests.cmake")
+  include("/Users/humgic/Applications/my_compiler/build/test/token/TestToken[1]_tests.cmake")
+else()
+  add_test(TestToken_NOT_BUILT TestToken_NOT_BUILT)
+endif()

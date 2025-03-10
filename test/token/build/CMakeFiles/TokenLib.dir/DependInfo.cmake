@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dylan/code/my_compiler/src/token/token.cpp" "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token.cpp.o" "gcc" "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token.cpp.o.d"
-  "/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp" "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp.o" "gcc" "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp.o.d"
+  "/Users/humgic/Applications/my_compiler/src/token/token.cpp" "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token.cpp.o" "gcc" "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token.cpp.o.d"
+  "/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp" "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp.o" "gcc" "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token.cpp.o"
-  "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token.cpp.o.d"
-  "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp.o"
-  "CMakeFiles/TokenLib.dir/home/dylan/code/my_compiler/src/token/token_helper_functions.cpp.o.d"
+  "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token.cpp.o"
+  "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token.cpp.o.d"
+  "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp.o"
+  "CMakeFiles/TokenLib.dir/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp.o.d"
   "libTokenLib.a"
   "libTokenLib.pdb"
 )

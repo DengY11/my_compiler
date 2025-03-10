@@ -1,0 +1,1704 @@
+Start testing: Mar 10 21:17 CST
+----------------------------------------------------------
+1/63 Testing: TokenTest.OperatorToken
+1/63 Test: TokenTest.OperatorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.OperatorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.OperatorToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.OperatorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.OperatorToken
+[       OK ] TokenTest.OperatorToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.OperatorToken" end time: Mar 10 21:17 CST
+"TokenTest.OperatorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/63 Testing: TokenTest.SeparatorToken
+2/63 Test: TokenTest.SeparatorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.SeparatorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.SeparatorToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.SeparatorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.SeparatorToken
+[       OK ] TokenTest.SeparatorToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.SeparatorToken" end time: Mar 10 21:17 CST
+"TokenTest.SeparatorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/63 Testing: TokenTest.IntConstantToken
+3/63 Test: TokenTest.IntConstantToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.IntConstantToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.IntConstantToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.IntConstantToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.IntConstantToken
+[       OK ] TokenTest.IntConstantToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.IntConstantToken" end time: Mar 10 21:17 CST
+"TokenTest.IntConstantToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/63 Testing: TokenTest.FloatConstantToken
+4/63 Test: TokenTest.FloatConstantToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.FloatConstantToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.FloatConstantToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.FloatConstantToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.FloatConstantToken
+[       OK ] TokenTest.FloatConstantToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.FloatConstantToken" end time: Mar 10 21:17 CST
+"TokenTest.FloatConstantToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/63 Testing: TokenTest.StringConstantToken
+5/63 Test: TokenTest.StringConstantToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.StringConstantToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.StringConstantToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.StringConstantToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.StringConstantToken
+[       OK ] TokenTest.StringConstantToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.StringConstantToken" end time: Mar 10 21:17 CST
+"TokenTest.StringConstantToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/63 Testing: TokenTest.KeywordToken
+6/63 Test: TokenTest.KeywordToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.KeywordToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.KeywordToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.KeywordToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.KeywordToken
+[       OK ] TokenTest.KeywordToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.KeywordToken" end time: Mar 10 21:17 CST
+"TokenTest.KeywordToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/63 Testing: TokenTest.IdentifierToken
+7/63 Test: TokenTest.IdentifierToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.IdentifierToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.IdentifierToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.IdentifierToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.IdentifierToken
+[       OK ] TokenTest.IdentifierToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.IdentifierToken" end time: Mar 10 21:17 CST
+"TokenTest.IdentifierToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/63 Testing: TokenTest.IllegalToken
+8/63 Test: TokenTest.IllegalToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.IllegalToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.IllegalToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.IllegalToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.IllegalToken
+[       OK ] TokenTest.IllegalToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.IllegalToken" end time: Mar 10 21:17 CST
+"TokenTest.IllegalToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/63 Testing: TokenTest.EOFToken
+9/63 Test: TokenTest.EOFToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.EOFToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.EOFToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.EOFToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.EOFToken
+[       OK ] TokenTest.EOFToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.EOFToken" end time: Mar 10 21:17 CST
+"TokenTest.EOFToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/63 Testing: TokenTest.CommentToken
+10/63 Test: TokenTest.CommentToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.CommentToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.CommentToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.CommentToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.CommentToken
+[       OK ] TokenTest.CommentToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.CommentToken" end time: Mar 10 21:17 CST
+"TokenTest.CommentToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/63 Testing: TokenTest.PreprocessorToken
+11/63 Test: TokenTest.PreprocessorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.PreprocessorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.PreprocessorToken" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.PreprocessorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.PreprocessorToken
+[       OK ] TokenTest.PreprocessorToken (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.PreprocessorToken" end time: Mar 10 21:17 CST
+"TokenTest.PreprocessorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/63 Testing: TokenTest.CopyConstructor
+12/63 Test: TokenTest.CopyConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.CopyConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.CopyConstructor" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.CopyConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.CopyConstructor
+[       OK ] TokenTest.CopyConstructor (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.CopyConstructor" end time: Mar 10 21:17 CST
+"TokenTest.CopyConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/63 Testing: TokenTest.MoveConstructor
+13/63 Test: TokenTest.MoveConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.MoveConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.MoveConstructor" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.MoveConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.MoveConstructor
+[       OK ] TokenTest.MoveConstructor (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.MoveConstructor" end time: Mar 10 21:17 CST
+"TokenTest.MoveConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/63 Testing: TokenTest.PrintInfo
+14/63 Test: TokenTest.PrintInfo
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTest.PrintInfo" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTest.PrintInfo" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTest.PrintInfo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTest
+[ RUN      ] TokenTest.PrintInfo
+[       OK ] TokenTest.PrintInfo (0 ms)
+[----------] 1 test from TokenTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTest.PrintInfo" end time: Mar 10 21:17 CST
+"TokenTest.PrintInfo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/63 Testing: TokenHelperTest.IsUnaryOperator
+15/63 Test: TokenHelperTest.IsUnaryOperator
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperTest.IsUnaryOperator" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperTest.IsUnaryOperator" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperTest.IsUnaryOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperTest
+[ RUN      ] TokenHelperTest.IsUnaryOperator
+[       OK ] TokenHelperTest.IsUnaryOperator (0 ms)
+[----------] 1 test from TokenHelperTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperTest.IsUnaryOperator" end time: Mar 10 21:17 CST
+"TokenHelperTest.IsUnaryOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/63 Testing: TokenHelperTest.IsBinaryOperator
+16/63 Test: TokenHelperTest.IsBinaryOperator
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperTest.IsBinaryOperator" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperTest.IsBinaryOperator" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperTest.IsBinaryOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperTest
+[ RUN      ] TokenHelperTest.IsBinaryOperator
+[       OK ] TokenHelperTest.IsBinaryOperator (0 ms)
+[----------] 1 test from TokenHelperTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperTest.IsBinaryOperator" end time: Mar 10 21:17 CST
+"TokenHelperTest.IsBinaryOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/63 Testing: TokenHelperTest.GetOperatorPriority
+17/63 Test: TokenHelperTest.GetOperatorPriority
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperTest.GetOperatorPriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperTest.GetOperatorPriority" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperTest.GetOperatorPriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperTest
+[ RUN      ] TokenHelperTest.GetOperatorPriority
+[       OK ] TokenHelperTest.GetOperatorPriority (0 ms)
+[----------] 1 test from TokenHelperTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperTest.GetOperatorPriority" end time: Mar 10 21:17 CST
+"TokenHelperTest.GetOperatorPriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/63 Testing: TokenHelperTest.IsIdentifierType
+18/63 Test: TokenHelperTest.IsIdentifierType
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperTest.IsIdentifierType" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperTest.IsIdentifierType" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperTest.IsIdentifierType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperTest
+[ RUN      ] TokenHelperTest.IsIdentifierType
+[       OK ] TokenHelperTest.IsIdentifierType (0 ms)
+[----------] 1 test from TokenHelperTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperTest.IsIdentifierType" end time: Mar 10 21:17 CST
+"TokenHelperTest.IsIdentifierType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/63 Testing: TokenTypesTest.KeywordTypeEnum
+19/63 Test: TokenTypesTest.KeywordTypeEnum
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.KeywordTypeEnum" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.KeywordTypeEnum" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.KeywordTypeEnum
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.KeywordTypeEnum
+[       OK ] TokenTypesTest.KeywordTypeEnum (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.KeywordTypeEnum" end time: Mar 10 21:17 CST
+"TokenTypesTest.KeywordTypeEnum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/63 Testing: TokenTypesTest.KeywordClass
+20/63 Test: TokenTypesTest.KeywordClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.KeywordClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.KeywordClass" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.KeywordClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.KeywordClass
+[       OK ] TokenTypesTest.KeywordClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.KeywordClass" end time: Mar 10 21:17 CST
+"TokenTypesTest.KeywordClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/63 Testing: TokenTypesTest.OperatorTypeEnum
+21/63 Test: TokenTypesTest.OperatorTypeEnum
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.OperatorTypeEnum" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.OperatorTypeEnum" start time: Mar 10 21:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.OperatorTypeEnum
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.OperatorTypeEnum
+[       OK ] TokenTypesTest.OperatorTypeEnum (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.OperatorTypeEnum" end time: Mar 10 21:17 CST
+"TokenTypesTest.OperatorTypeEnum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/63 Testing: TokenTypesTest.OperatorClass
+22/63 Test: TokenTypesTest.OperatorClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.OperatorClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.OperatorClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.OperatorClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.OperatorClass
+[       OK ] TokenTypesTest.OperatorClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.OperatorClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.OperatorClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/63 Testing: TokenTypesTest.EofOrIllegalTypeEnum
+23/63 Test: TokenTypesTest.EofOrIllegalTypeEnum
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.EofOrIllegalTypeEnum" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.EofOrIllegalTypeEnum" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.EofOrIllegalTypeEnum
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.EofOrIllegalTypeEnum
+[       OK ] TokenTypesTest.EofOrIllegalTypeEnum (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.EofOrIllegalTypeEnum" end time: Mar 10 21:18 CST
+"TokenTypesTest.EofOrIllegalTypeEnum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/63 Testing: TokenTypesTest.EofOrIllegalClass
+24/63 Test: TokenTypesTest.EofOrIllegalClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.EofOrIllegalClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.EofOrIllegalClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.EofOrIllegalClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.EofOrIllegalClass
+[       OK ] TokenTypesTest.EofOrIllegalClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.EofOrIllegalClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.EofOrIllegalClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/63 Testing: TokenTypesTest.ConstantClass
+25/63 Test: TokenTypesTest.ConstantClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.ConstantClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.ConstantClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.ConstantClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.ConstantClass
+[       OK ] TokenTypesTest.ConstantClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.ConstantClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.ConstantClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/63 Testing: TokenTypesTest.CommentClass
+26/63 Test: TokenTypesTest.CommentClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.CommentClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.CommentClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.CommentClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.CommentClass
+[       OK ] TokenTypesTest.CommentClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.CommentClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.CommentClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/63 Testing: TokenTypesTest.IdentifierClass
+27/63 Test: TokenTypesTest.IdentifierClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.IdentifierClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.IdentifierClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.IdentifierClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.IdentifierClass
+[       OK ] TokenTypesTest.IdentifierClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.IdentifierClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.IdentifierClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/63 Testing: TokenTypesTest.PreprocessorClass
+28/63 Test: TokenTypesTest.PreprocessorClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.PreprocessorClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.PreprocessorClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.PreprocessorClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.PreprocessorClass
+[       OK ] TokenTypesTest.PreprocessorClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.PreprocessorClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.PreprocessorClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/63 Testing: TokenTypesTest.SeparatorClass
+29/63 Test: TokenTypesTest.SeparatorClass
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.SeparatorClass" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.SeparatorClass" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.SeparatorClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.SeparatorClass
+[       OK ] TokenTypesTest.SeparatorClass (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.SeparatorClass" end time: Mar 10 21:18 CST
+"TokenTypesTest.SeparatorClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/63 Testing: TokenTypesTest.TokenTypeEnum
+30/63 Test: TokenTypesTest.TokenTypeEnum
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenTypesTest.TokenTypeEnum" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenTypesTest.TokenTypeEnum" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenTypesTest.TokenTypeEnum
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenTypesTest
+[ RUN      ] TokenTypesTest.TokenTypeEnum
+[       OK ] TokenTypesTest.TokenTypeEnum (0 ms)
+[----------] 1 test from TokenTypesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenTypesTest.TokenTypeEnum" end time: Mar 10 21:18 CST
+"TokenTypesTest.TokenTypeEnum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/63 Testing: TokenHelperFunctionsTest.GetKeywordTypeFromToken
+31/63 Test: TokenHelperFunctionsTest.GetKeywordTypeFromToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetKeywordTypeFromToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetKeywordTypeFromToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetKeywordTypeFromToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetKeywordTypeFromToken
+[       OK ] TokenHelperFunctionsTest.GetKeywordTypeFromToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetKeywordTypeFromToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetKeywordTypeFromToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/63 Testing: TokenHelperFunctionsTest.GetOperatorTypeFromToken
+32/63 Test: TokenHelperFunctionsTest.GetOperatorTypeFromToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetOperatorTypeFromToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetOperatorTypeFromToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetOperatorTypeFromToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetOperatorTypeFromToken
+[       OK ] TokenHelperFunctionsTest.GetOperatorTypeFromToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetOperatorTypeFromToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetOperatorTypeFromToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/63 Testing: TokenHelperFunctionsTest.GetIdentifierValueFromToken
+33/63 Test: TokenHelperFunctionsTest.GetIdentifierValueFromToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetIdentifierValueFromToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetIdentifierValueFromToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetIdentifierValueFromToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetIdentifierValueFromToken
+[       OK ] TokenHelperFunctionsTest.GetIdentifierValueFromToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetIdentifierValueFromToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetIdentifierValueFromToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/63 Testing: TokenHelperFunctionsTest.GetConstantValueFromToken
+34/63 Test: TokenHelperFunctionsTest.GetConstantValueFromToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetConstantValueFromToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetConstantValueFromToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetConstantValueFromToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetConstantValueFromToken
+[       OK ] TokenHelperFunctionsTest.GetConstantValueFromToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetConstantValueFromToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetConstantValueFromToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/63 Testing: TokenHelperFunctionsTest.GetSeparatorValueFromToken
+35/63 Test: TokenHelperFunctionsTest.GetSeparatorValueFromToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetSeparatorValueFromToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetSeparatorValueFromToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetSeparatorValueFromToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetSeparatorValueFromToken
+[       OK ] TokenHelperFunctionsTest.GetSeparatorValueFromToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetSeparatorValueFromToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetSeparatorValueFromToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/63 Testing: TokenHelperFunctionsTest.IsIdentifierType
+36/63 Test: TokenHelperFunctionsTest.IsIdentifierType
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.IsIdentifierType" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.IsIdentifierType" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.IsIdentifierType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.IsIdentifierType
+[       OK ] TokenHelperFunctionsTest.IsIdentifierType (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.IsIdentifierType" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.IsIdentifierType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/63 Testing: TokenHelperFunctionsTest.IsUnaryOperator
+37/63 Test: TokenHelperFunctionsTest.IsUnaryOperator
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.IsUnaryOperator" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.IsUnaryOperator" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.IsUnaryOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.IsUnaryOperator
+[       OK ] TokenHelperFunctionsTest.IsUnaryOperator (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.IsUnaryOperator" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.IsUnaryOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/63 Testing: TokenHelperFunctionsTest.IsBinaryOperator
+38/63 Test: TokenHelperFunctionsTest.IsBinaryOperator
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.IsBinaryOperator" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.IsBinaryOperator" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.IsBinaryOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.IsBinaryOperator
+[       OK ] TokenHelperFunctionsTest.IsBinaryOperator (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.IsBinaryOperator" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.IsBinaryOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/63 Testing: TokenHelperFunctionsTest.GetOperatorPriorityToken
+39/63 Test: TokenHelperFunctionsTest.GetOperatorPriorityToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetOperatorPriorityToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetOperatorPriorityToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetOperatorPriorityToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetOperatorPriorityToken
+[       OK ] TokenHelperFunctionsTest.GetOperatorPriorityToken (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetOperatorPriorityToken" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetOperatorPriorityToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/63 Testing: TokenHelperFunctionsTest.GetOperatorPriorityString
+40/63 Test: TokenHelperFunctionsTest.GetOperatorPriorityString
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenHelperFunctionsTest.GetOperatorPriorityString" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenHelperFunctionsTest.GetOperatorPriorityString" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenHelperFunctionsTest.GetOperatorPriorityString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenHelperFunctionsTest
+[ RUN      ] TokenHelperFunctionsTest.GetOperatorPriorityString
+[       OK ] TokenHelperFunctionsTest.GetOperatorPriorityString (0 ms)
+[----------] 1 test from TokenHelperFunctionsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenHelperFunctionsTest.GetOperatorPriorityString" end time: Mar 10 21:18 CST
+"TokenHelperFunctionsTest.GetOperatorPriorityString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/63 Testing: TokenClassTest.ConstantConstructor
+41/63 Test: TokenClassTest.ConstantConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.ConstantConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.ConstantConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.ConstantConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.ConstantConstructor
+[       OK ] TokenClassTest.ConstantConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.ConstantConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.ConstantConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/63 Testing: TokenClassTest.KeywordConstructor
+42/63 Test: TokenClassTest.KeywordConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.KeywordConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.KeywordConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.KeywordConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.KeywordConstructor
+[       OK ] TokenClassTest.KeywordConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.KeywordConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.KeywordConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/63 Testing: TokenClassTest.CommentConstructor
+43/63 Test: TokenClassTest.CommentConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.CommentConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.CommentConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.CommentConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.CommentConstructor
+[       OK ] TokenClassTest.CommentConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.CommentConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.CommentConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/63 Testing: TokenClassTest.IdentifierConstructor
+44/63 Test: TokenClassTest.IdentifierConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.IdentifierConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.IdentifierConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.IdentifierConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.IdentifierConstructor
+[       OK ] TokenClassTest.IdentifierConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.IdentifierConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.IdentifierConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/63 Testing: TokenClassTest.OperatorConstructor
+45/63 Test: TokenClassTest.OperatorConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.OperatorConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.OperatorConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.OperatorConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.OperatorConstructor
+[       OK ] TokenClassTest.OperatorConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.OperatorConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.OperatorConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/63 Testing: TokenClassTest.EofOrIllegalConstructor
+46/63 Test: TokenClassTest.EofOrIllegalConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.EofOrIllegalConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.EofOrIllegalConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.EofOrIllegalConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.EofOrIllegalConstructor
+[       OK ] TokenClassTest.EofOrIllegalConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.EofOrIllegalConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.EofOrIllegalConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/63 Testing: TokenClassTest.SeparatorConstructor
+47/63 Test: TokenClassTest.SeparatorConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.SeparatorConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.SeparatorConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.SeparatorConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.SeparatorConstructor
+[       OK ] TokenClassTest.SeparatorConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.SeparatorConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.SeparatorConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/63 Testing: TokenClassTest.PreprocessorConstructor
+48/63 Test: TokenClassTest.PreprocessorConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.PreprocessorConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.PreprocessorConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.PreprocessorConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.PreprocessorConstructor
+[       OK ] TokenClassTest.PreprocessorConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.PreprocessorConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.PreprocessorConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/63 Testing: TokenClassTest.CopyConstructor
+49/63 Test: TokenClassTest.CopyConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.CopyConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.CopyConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.CopyConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.CopyConstructor
+[       OK ] TokenClassTest.CopyConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.CopyConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.CopyConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/63 Testing: TokenClassTest.MoveConstructor
+50/63 Test: TokenClassTest.MoveConstructor
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MoveConstructor" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MoveConstructor" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MoveConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MoveConstructor
+[       OK ] TokenClassTest.MoveConstructor (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MoveConstructor" end time: Mar 10 21:18 CST
+"TokenClassTest.MoveConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/63 Testing: TokenClassTest.GetTokenType
+51/63 Test: TokenClassTest.GetTokenType
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.GetTokenType" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.GetTokenType" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.GetTokenType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.GetTokenType
+[       OK ] TokenClassTest.GetTokenType (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.GetTokenType" end time: Mar 10 21:18 CST
+"TokenClassTest.GetTokenType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/63 Testing: TokenClassTest.GetTokenValue
+52/63 Test: TokenClassTest.GetTokenValue
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.GetTokenValue" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.GetTokenValue" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.GetTokenValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.GetTokenValue
+[       OK ] TokenClassTest.GetTokenValue (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.GetTokenValue" end time: Mar 10 21:18 CST
+"TokenClassTest.GetTokenValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/63 Testing: TokenClassTest.PrintInfo
+53/63 Test: TokenClassTest.PrintInfo
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.PrintInfo" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.PrintInfo" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.PrintInfo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.PrintInfo
+[       OK ] TokenClassTest.PrintInfo (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.PrintInfo" end time: Mar 10 21:18 CST
+"TokenClassTest.PrintInfo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/63 Testing: TokenClassTest.MakeConstantTokenInt
+54/63 Test: TokenClassTest.MakeConstantTokenInt
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeConstantTokenInt" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeConstantTokenInt" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeConstantTokenInt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeConstantTokenInt
+[       OK ] TokenClassTest.MakeConstantTokenInt (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeConstantTokenInt" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeConstantTokenInt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/63 Testing: TokenClassTest.MakeConstantTokenDouble
+55/63 Test: TokenClassTest.MakeConstantTokenDouble
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeConstantTokenDouble" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeConstantTokenDouble" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeConstantTokenDouble
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeConstantTokenDouble
+[       OK ] TokenClassTest.MakeConstantTokenDouble (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeConstantTokenDouble" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeConstantTokenDouble" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/63 Testing: TokenClassTest.MakeConstantTokenString
+56/63 Test: TokenClassTest.MakeConstantTokenString
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeConstantTokenString" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeConstantTokenString" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeConstantTokenString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeConstantTokenString
+[       OK ] TokenClassTest.MakeConstantTokenString (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeConstantTokenString" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeConstantTokenString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/63 Testing: TokenClassTest.MakeKeywordToken
+57/63 Test: TokenClassTest.MakeKeywordToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeKeywordToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeKeywordToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeKeywordToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeKeywordToken
+[       OK ] TokenClassTest.MakeKeywordToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeKeywordToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeKeywordToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/63 Testing: TokenClassTest.MakeCommentToken
+58/63 Test: TokenClassTest.MakeCommentToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeCommentToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeCommentToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeCommentToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeCommentToken
+[       OK ] TokenClassTest.MakeCommentToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeCommentToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeCommentToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/63 Testing: TokenClassTest.MakeIdentifierToken
+59/63 Test: TokenClassTest.MakeIdentifierToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeIdentifierToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeIdentifierToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeIdentifierToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeIdentifierToken
+[       OK ] TokenClassTest.MakeIdentifierToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeIdentifierToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeIdentifierToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/63 Testing: TokenClassTest.MakeOperatorToken
+60/63 Test: TokenClassTest.MakeOperatorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeOperatorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeOperatorToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeOperatorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeOperatorToken
+[       OK ] TokenClassTest.MakeOperatorToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeOperatorToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeOperatorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/63 Testing: TokenClassTest.MakeEofOrIllegalToken
+61/63 Test: TokenClassTest.MakeEofOrIllegalToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeEofOrIllegalToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeEofOrIllegalToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeEofOrIllegalToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeEofOrIllegalToken
+[       OK ] TokenClassTest.MakeEofOrIllegalToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeEofOrIllegalToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeEofOrIllegalToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/63 Testing: TokenClassTest.MakeSeparatorToken
+62/63 Test: TokenClassTest.MakeSeparatorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakeSeparatorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakeSeparatorToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakeSeparatorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakeSeparatorToken
+[       OK ] TokenClassTest.MakeSeparatorToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakeSeparatorToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakeSeparatorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/63 Testing: TokenClassTest.MakePreprocessorToken
+63/63 Test: TokenClassTest.MakePreprocessorToken
+Command: "/Users/humgic/Applications/my_compiler/build/test/token/TestToken" "--gtest_filter=TokenClassTest.MakePreprocessorToken" "--gtest_also_run_disabled_tests"
+Directory: /Users/humgic/Applications/my_compiler/build/test/token
+"TokenClassTest.MakePreprocessorToken" start time: Mar 10 21:18 CST
+Output:
+----------------------------------------------------------
+Running main() from /tmp/googletest-20250207-4735-e28tfc/googletest-1.16.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TokenClassTest.MakePreprocessorToken
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TokenClassTest
+[ RUN      ] TokenClassTest.MakePreprocessorToken
+[       OK ] TokenClassTest.MakePreprocessorToken (0 ms)
+[----------] 1 test from TokenClassTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TokenClassTest.MakePreprocessorToken" end time: Mar 10 21:18 CST
+"TokenClassTest.MakePreprocessorToken" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 10 21:18 CST

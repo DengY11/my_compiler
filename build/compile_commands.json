@@ -1,0 +1,146 @@
+[
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TokenLib.dir/src/token/token.cpp.o -c /Users/humgic/Applications/my_compiler/src/token/token.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/token/token.cpp",
+  "output": "CMakeFiles/TokenLib.dir/src/token/token.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TokenLib.dir/src/token/token_helper_functions.cpp.o -c /Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/token/token_helper_functions.cpp",
+  "output": "CMakeFiles/TokenLib.dir/src/token/token_helper_functions.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/LexerLib.dir/src/lexer/keyword_pool.cpp.o -c /Users/humgic/Applications/my_compiler/src/lexer/keyword_pool.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/lexer/keyword_pool.cpp",
+  "output": "CMakeFiles/LexerLib.dir/src/lexer/keyword_pool.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/LexerLib.dir/src/lexer/lexer.cpp.o -c /Users/humgic/Applications/my_compiler/src/lexer/lexer.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/lexer/lexer.cpp",
+  "output": "CMakeFiles/LexerLib.dir/src/lexer/lexer.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/LexerLib.dir/src/lexer/lexer_helper_functions.cpp.o -c /Users/humgic/Applications/my_compiler/src/lexer/lexer_helper_functions.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/lexer/lexer_helper_functions.cpp",
+  "output": "CMakeFiles/LexerLib.dir/src/lexer/lexer_helper_functions.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/LexerLib.dir/src/lexer/operator_pool.cpp.o -c /Users/humgic/Applications/my_compiler/src/lexer/operator_pool.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/lexer/operator_pool.cpp",
+  "output": "CMakeFiles/LexerLib.dir/src/lexer/operator_pool.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/LexerLib.dir/src/lexer/separator_pool.cpp.o -c /Users/humgic/Applications/my_compiler/src/lexer/separator_pool.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/src/lexer/separator_pool.cpp",
+  "output": "CMakeFiles/LexerLib.dir/src/lexer/separator_pool.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexer.dir/test_lexer.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexer.dir/test_lexer.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerSimple.dir/test_lexer_simple.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_simple.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_simple.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerSimple.dir/test_lexer_simple.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerDebug.dir/test_lexer_debug.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_debug.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_debug.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerDebug.dir/test_lexer_debug.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerComprehensive.dir/test_lexer_comprehensive.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_comprehensive.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_comprehensive.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerComprehensive.dir/test_lexer_comprehensive.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerSeparator.dir/test_lexer_separator.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_separator.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_separator.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerSeparator.dir/test_lexer_separator.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerPosition.dir/test_lexer_position.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_position.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_position.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerPosition.dir/test_lexer_position.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerPositionComprehensive.dir/test_lexer_position_comprehensive.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_position_comprehensive.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_position_comprehensive.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerPositionComprehensive.dir/test_lexer_position_comprehensive.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/lexer",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestLexerComment.dir/test_lexer_comment.cpp.o -c /Users/humgic/Applications/my_compiler/test/lexer/test_lexer_comment.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/lexer/test_lexer_comment.cpp",
+  "output": "test/lexer/CMakeFiles/TestLexerComment.dir/test_lexer_comment.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestToken.dir/test_token.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token.cpp",
+  "output": "test/token/CMakeFiles/TestToken.dir/test_token.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestToken.dir/test_token_types.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_types.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_types.cpp",
+  "output": "test/token/CMakeFiles/TestToken.dir/test_token_types.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestToken.dir/test_token_helper_functions.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_helper_functions.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_helper_functions.cpp",
+  "output": "test/token/CMakeFiles/TestToken.dir/test_token_helper_functions.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestToken.dir/test_token_class.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_class.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_class.cpp",
+  "output": "test/token/CMakeFiles/TestToken.dir/test_token_class.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestTokenClass.dir/test_token_class.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_class.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_class.cpp",
+  "output": "test/token/CMakeFiles/TestTokenClass.dir/test_token_class.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestTokenHelperFunctions.dir/test_token_helper_functions.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_helper_functions.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_helper_functions.cpp",
+  "output": "test/token/CMakeFiles/TestTokenHelperFunctions.dir/test_token_helper_functions.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestTokenTypes.dir/test_token_types.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_types.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_types.cpp",
+  "output": "test/token/CMakeFiles/TestTokenTypes.dir/test_token_types.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestTokenPosition.dir/test_token_position.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_position.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_position.cpp",
+  "output": "test/token/CMakeFiles/TestTokenPosition.dir/test_token_position.cpp.o"
+},
+{
+  "directory": "/Users/humgic/Applications/my_compiler/build/test/token",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/humgic/Applications/my_compiler/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o CMakeFiles/TestTokenPositionComprehensive.dir/test_token_position_comprehensive.cpp.o -c /Users/humgic/Applications/my_compiler/test/token/test_token_position_comprehensive.cpp",
+  "file": "/Users/humgic/Applications/my_compiler/test/token/test_token_position_comprehensive.cpp",
+  "output": "test/token/CMakeFiles/TestTokenPositionComprehensive.dir/test_token_position_comprehensive.cpp.o"
+}
+]

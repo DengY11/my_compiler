@@ -50,6 +50,14 @@ target_link_libraries(TestBasicNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LI
 add_executable(TestExprNode test_expr_node.cpp)
 target_link_libraries(TestExprNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
 
+# 创建字面量表达式节点测试
+add_executable(TestLiteralExprNode test_literal_expr_node.cpp)
+target_link_libraries(TestLiteralExprNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建标识符表达式节点测试
+add_executable(TestIdentExprNode test_ident_expr_node.cpp)
+target_link_libraries(TestIdentExprNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
 # 创建二元表达式节点测试
 add_executable(TestBinaryExprNode test_binary_expr_node.cpp)
 target_link_libraries(TestBinaryExprNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
@@ -57,6 +65,10 @@ target_link_libraries(TestBinaryExprNode ASTNodeLib LexerLib TokenLib ${GTEST_BO
 # 创建声明节点测试
 add_executable(TestDeclNode test_decl_node.cpp)
 target_link_libraries(TestDeclNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建变量声明节点测试
+add_executable(TestVarDeclNode test_var_decl_node.cpp)
+target_link_libraries(TestVarDeclNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
 
 # 创建函数声明节点测试
 add_executable(TestFuncDeclNode test_func_decl_node.cpp)
@@ -66,10 +78,30 @@ target_link_libraries(TestFuncDeclNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH
 add_executable(TestStatNode test_stat_node.cpp)
 target_link_libraries(TestStatNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
 
+# 创建块语句节点测试
+add_executable(TestBlockStatNode test_block_stat_node.cpp)
+target_link_libraries(TestBlockStatNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建返回语句节点测试
+add_executable(TestReturnStatNode test_return_stat_node.cpp)
+target_link_libraries(TestReturnStatNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
 # 创建if语句节点测试
 add_executable(TestIfStatNode test_if_stat_node.cpp)
 target_link_libraries(TestIfStatNode ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
 
 # 创建综合测试
 add_executable(TestASTNodeComprehensive test_ast_node_comprehensive.cpp)
-target_link_libraries(TestASTNodeComprehensive ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread) 
+target_link_libraries(TestASTNodeComprehensive ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建简单的AST节点位置测试
+add_executable(TestASTNodePositionSimple test_ast_node_position_simple.cpp)
+target_link_libraries(TestASTNodePositionSimple ASTNodeLib LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建独立的AST节点位置测试
+add_executable(TestASTNodePositionStandalone test_ast_node_position_standalone.cpp)
+target_link_libraries(TestASTNodePositionStandalone LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread)
+
+# 创建AST节点类型位置测试
+add_executable(TestASTNodeTypesPosition test_ast_node_types_position.cpp)
+target_link_libraries(TestASTNodeTypesPosition LexerLib TokenLib ${GTEST_BOTH_LIBRARIES} pthread) 

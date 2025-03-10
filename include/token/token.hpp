@@ -35,14 +35,14 @@ public:
   Token(Token &&other) = default;
 
   // 各种类型的Token构造函数
-  Token(TokenType constantType, mycompiler::Constant tokenValue);
-  Token(TokenType keywordType, mycompiler::Keyword tokenValue);
-  Token(TokenType commentType, mycompiler::Comment tokenValue);
-  Token(TokenType identifierType, mycompiler::Identifier tokenValue);
-  Token(TokenType operatorType, mycompiler::Operator tokenValue);
-  Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue);
-  Token(TokenType separatorType, mycompiler::Separator tokenValue);
-  Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue);
+  Token(TokenType constantType, mycompiler::Constant tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType keywordType, mycompiler::Keyword tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType commentType, mycompiler::Comment tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType identifierType, mycompiler::Identifier tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType operatorType, mycompiler::Operator tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType eofOrIllegalType, mycompiler::EofOrIllegal tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType separatorType, mycompiler::Separator tokenValue, std::size_t line = 0, std::size_t column = 0);
+  Token(TokenType preprocessorType, mycompiler::Preprocessor tokenValue, std::size_t line = 0, std::size_t column = 0);
 
   // 赋值操作符
   auto operator=(const Token &other) -> void;
@@ -56,29 +56,37 @@ public:
   // 获取Token值
   auto getTokenValue() const -> TokenValueType;
 
+  // 获取行号
+  auto getLineNumber() const -> std::size_t;
+
+  // 获取列号
+  auto getColumnNumber() const -> std::size_t;
+
 private:
   TokenType tokenType_;     // Token类型
   TokenValueType tokenValue_; // Token值
+  std::size_t line_;        // 行号
+  std::size_t column_;      // 列号
 };
 
 // 创建各种类型的Token的工厂函数
-auto makeConstantToken(int value) -> Token;
-auto makeConstantToken(double value) -> Token;
-auto makeConstantToken(std::string value) -> Token;
+auto makeConstantToken(int value, std::size_t line = 0, std::size_t column = 0) -> Token;
+auto makeConstantToken(double value, std::size_t line = 0, std::size_t column = 0) -> Token;
+auto makeConstantToken(std::string value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeKeywordToken(KeywordType value) -> Token;
+auto makeKeywordToken(KeywordType value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeCommentToken(std::string value) -> Token;
+auto makeCommentToken(std::string value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeIdentifierToken(std::string value) -> Token;
+auto makeIdentifierToken(std::string value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeOperatorToken(OperatorType value) -> Token;
+auto makeOperatorToken(OperatorType value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeEofOrIllegalToken(EofOrIllegalType value) -> Token;
+auto makeEofOrIllegalToken(EofOrIllegalType value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makeSeparatorToken(std::string value) -> Token;
+auto makeSeparatorToken(std::string value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
-auto makePreprocessorToken(std::string value) -> Token;
+auto makePreprocessorToken(std::string value, std::size_t line = 0, std::size_t column = 0) -> Token;
 
 } // namespace mycompiler
 
